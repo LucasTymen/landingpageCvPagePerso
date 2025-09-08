@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact — Lucas Tymen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="logo" href="/">🐙 Lucas Tymen</a>
+      <nav class="nav">
+        <a href="/cv.html">CV</a>
+        <a href="/projets.html">Projets</a>
+        <a class="active" href="/contact.html" class="cta cta-small">Contact</a>
+      </nav>
+    </header>
+    <main class="container">
+      <h1>Me contacter</h1>
+      <p>Un projet, un audit ou une question ? Écrivez-moi.</p>
+      <form class="form" id="contact-form" action="https://formspree.io/f/xbldoewr" method="POST">
+        <div class="grid2">
+          <label>
+            <span>Nom</span>
+            <input type="text" name="name" required />
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" required />
+          </label>
+        </div>
+        <label>
+          <span>Message</span>
+          <textarea name="message" rows="6" required></textarea>
+        </label>
+        <button class="cta" type="submit">Envoyer</button>
+      </form>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>🐙 Lucas Tymen — Growth & Acquisition</div>
+        <nav class="foot-nav">
+          <a href="/cv.html">CV</a>
+          <a href="/projets.html">Projets</a>
+          <a href="/contact.html">Contact</a>
+        </nav>
+      </div>
+    </footer>
+    <script src="/assets/js/contact.js"></script>
+  </body>
+  </html>
+
+
