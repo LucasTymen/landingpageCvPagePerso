@@ -6,9 +6,11 @@ const sampleProjects = [
 
 const grid = document.getElementById('projects-grid');
 if (grid){
-  sampleProjects.forEach(p => {
+  sampleProjects.forEach((p, i) => {
     const el = document.createElement('article');
-    el.className = 'card';
+    el.className = 'card reveal';
+    el.setAttribute('data-reveal', '');
+    el.style.setProperty('--d', `${0.05 + i * 0.1}s`);
     el.innerHTML = `
       <h3>${p.title}</h3>
       <p><strong>${p.tag}</strong> — ${p.brief}</p>
