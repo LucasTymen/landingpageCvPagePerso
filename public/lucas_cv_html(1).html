@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas TYMEN - Growth Hacker & Automatisation</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: white;
+            color: #333;
+            line-height: 1.4;
+        }
+        
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 0 auto;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        
+        .left-column {
+            background: linear-gradient(135deg, #4a9b8e, #6eb5a6);
+            color: white;
+            width: 35%;
+            padding: 30px;
+            box-sizing: border-box;
+        }
+        
+        .right-column {
+            width: 65%;
+            padding: 30px;
+            background: white;
+            box-sizing: border-box;
+        }
+        
+        .profile-photo {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            background: white;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            color: #4a9b8e;
+            font-weight: bold;
+        }
+        
+        .qr-code {
+            width: 120px;
+            height: 120px;
+            background: white;
+            margin: 20px auto;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #4a9b8e;
+            font-size: 12px;
+            text-align: center;
+        }
+        
+        .presbook {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin: 20px 0;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        
+        .cv-link {
+            background: #4a9b8e;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin: 10px 0;
+            text-decoration: none;
+            display: block;
+            border-radius: 5px;
+        }
+        
+        .cv-link:hover {
+            background: #3a8b7e;
+        }
+        
+        .left-section {
+            margin-bottom: 25px;
+        }
+        
+        .left-section h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            border-bottom: 2px solid rgba(255,255,255,0.3);
+            padding-bottom: 5px;
+        }
+        
+        .left-section ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .left-section li {
+            margin-bottom: 8px;
+        }
+        
+        .header {
+            border-bottom: 3px solid #4a9b8e;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .name {
+            font-size: 32px;
+            font-weight: bold;
+            color: #4a9b8e;
+            margin: 0;
+        }
+        
+        .title {
+            font-size: 20px;
+            color: #666;
+            margin: 5px 0;
+        }
+        
+        .contact-info {
+            margin-top: 15px;
+            font-size: 14px;
+        }
+        
+        .contact-info div {
+            margin-bottom: 5px;
+        }
+        
+        .contact-info a {
+            color: #4a9b8e;
+            text-decoration: none;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        .section h2 {
+            color: #4a9b8e;
+            font-size: 22px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #4a9b8e;
+            padding-bottom: 5px;
+        }
+        
+        .about-text {
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+        
+        .skills-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .skills-list li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .skills-list li:before {
+            content: "●";
+            color: #4a9b8e;
+            position: absolute;
+            left: 0;
+        }
+        
+        .skill-category {
+            font-weight: bold;
+            color: #4a9b8e;
+        }
+        
+        .job-title {
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 5px;
+        }
+        
+        .job-details {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+        
+        .job-tasks {
+            list-style: none;
+            padding: 0;
+            margin-left: 15px;
+        }
+        
+        .job-tasks li {
+            margin-bottom: 5px;
+            padding-left: 15px;
+            position: relative;
+        }
+        
+        .job-tasks li:before {
+            content: "•";
+            color: #4a9b8e;
+            position: absolute;
+            left: 0;
+        }
+        
+        .soft-skills {
+            counter-reset: skill-counter;
+        }
+        
+        .soft-skill {
+            margin-bottom: 15px;
+            counter-increment: skill-counter;
+        }
+        
+        .soft-skill:before {
+            content: counter(skill-counter) ". ";
+            color: #4a9b8e;
+            font-weight: bold;
+        }
+        
+        .soft-skill-title {
+            font-weight: bold;
+            color: #4a9b8e;
+        }
+        
+        .formation-item {
+            margin-bottom: 8px;
+            padding-left: 15px;
+            position: relative;
+        }
+        
+        .formation-item:before {
+            content: "●";
+            color: #4a9b8e;
+            position: absolute;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-column">
+            <div class="profile-photo">LT</div>
+            
+            <div class="qr-code">
+                QR Code<br>
+                Portfolio
+            </div>
+            
+            <div class="presbook">Presbook</div>
+            
+            <a href="https://lucastymengraphxland.org/" class="cv-link">CV complet ICI</a>
+            
+            <div class="left-section">
+                <h3>Langues :</h3>
+                <ul>
+                    <li><strong>Anglais</strong> (Courant)</li>
+                    <li><strong>Espagnol</strong> (notions)</li>
+                </ul>
+                
+                <p><strong>permis B – véhiculé</strong></p>
+            </div>
+            
+            <div class="left-section">
+                <h3>Hobbies :</h3>
+                <ul>
+                    <li>Art</li>
+                    <li>musique (metal, electro, jazz, Soul)</li>
+                    <li>cinéma de genre</li>
+                    <li>gaming (RPG, steam)</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="right-column">
+            <div class="header">
+                <h1 class="name">Lucas TYMEN</h1>
+                <p class="title">Growth Hacker & Automatisation</p>
+                <div class="contact-info">
+                    <div>Maisons Alfort (94700) - portfolio : <a href="https://lucastymengraphxland.org/">https://lucastymengraphxland.org/</a></div>
+                    <div>Tél : 06 62 09 82 57 - <a href="mailto:lucas.tymen@gmail.com">lucas.tymen@gmail.com</a> - <a href="https://github.com/LucasTymen">https://github.com/LucasTymen</a></div>
+                    <div><a href="https://www.linkedin.com/in/lucas-tymen-310255123/">https://www.linkedin.com/in/lucas-tymen-310255123/</a></div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>À propos de moi :</h2>
+                <p class="about-text">
+                    Après une carrière en développement et IT, je me suis tourné vers le <strong>growth hacking et l'automatisation</strong>. 
+                    Passionné par l'analyse de données, j'aime concevoir des stratégies d'acquisition innovantes avec <strong>Python (scraping, APIs), 
+                    GitLab CI/CD et AWS</strong>. En formation chez <strong>Rocket School</strong>, j'affine mes compétences en <strong>expérimentation 
+                    data-driven, tests A/B et growth marketing</strong> pour <strong>scaler la croissance et optimiser la conversion</strong>.
+                </p>
+            </div>
+            
+            <div class="section">
+                <h2>Compétences Techniques :</h2>
+                <ul class="skills-list">
+                    <li><span class="skill-category">Growth & Acquisition :</span> Scraping (Scrapy, Selenium), APIs, Data Mining, Automatisation.</li>
+                    <li><span class="skill-category">Java</span> (version 8 à 17) - JEE 8 et 9, JSP / Servlet.</li>
+                    <li><span class="skill-category">Marketing & Expérimentation :</span> SEO, A/B Testing, Funnel d'acquisition, Analyse de conversion.</li>
+                    <li><span class="skill-category">Technologies & DevOps :</span> Python, GitLab CI/CD, AWS, SQL, Webhooks, N8N, Flowwise.</li>
+                    <li><span class="skill-category">Outils :</span> PhantomBuster, Zapier, Notion, Google Analytics, Looker Studio, Trello.</li>
+                    <li><span class="skill-category">Développement full stack</span> Ruby On Rails / HTML5 / CSS3 / JavaScript (VueJs) / Stimulus / Mysql / Python 3 / Django / Nodes.JS (automatisation).</li>
+                    <li><span class="skill-category">Base de données :</span> SQL - MySQL 8 - DBeaver, JMeurise</li>
+                    <li><span class="skill-category">Organisation de projets :</span> Kanban - Figma (UX design)</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2>Expérience Professionnelle et projets d'études :</h2>
+                
+                <div class="job-title">Conseiller Growth & Développeur - Origin Traiteur (Juillet 2025 - Présent)</div>
+                <ul class="job-tasks">
+                    <li><strong>Architecture conteneurisée</strong> sur serveur Hetzner (Django, N8N, Flowise)</li>
+                    <li><strong>Automatisation intelligente</strong> des processus métier avec intégration LLM</li>
+                    <li><strong>Optimisation des workflows</strong> et développement de solutions growth-driven</li>
+                </ul>
+                
+                <div class="job-title">Growth Hacker & Automatisation - Parazar (Projet collectif, 2021 - 1er de promo) :</div>
+                <ul class="job-tasks">
+                    <li>Développement d'un <strong>scraper automatisé</strong> pour collecter des offres d'emploi tech.</li>
+                    <li><strong>Automatisation du suivi et relance</strong> de candidatures avec des outils no-code.</li>
+                    <li>Mise en place d'un <strong>dashboard de suivi des performances</strong> (SQL + Looker Studio).</li>
+                </ul>
+                
+                <div class="job-title">Optimisation SEO et Data - Projet personnel :</div>
+                <ul class="job-tasks">
+                    <li>Analyse et amélioration du SEO d'un blog personnel, augmentation de <strong>40% du trafic organique</strong>.</li>
+                    <li>Utilisation de Google Analytics et Looker Studio pour analyser les performances.</li>
+                </ul>
+                
+                <div class="job-title">Responsable IT - A.P.S.I. (DG) (2000-2022) :</div>
+                <ul class="job-tasks">
+                    <li>Gestion d'un parc IT (300 machines), mise en place d'un plan PSSI.</li>
+                    <li><strong>Automatisation des processus</strong> de monitoring et de gestion des tickets (GLPI, Apache).</li>
+                    <li>Implémentation de solutions de suivi des performances réseaux et applications.</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2>Formation :</h2>
+                <div class="formation-item"><strong>2025</strong> - Rocket School – POEI et alternance - Growth Hacker</div>
+                <div class="formation-item"><strong>2023</strong> - ASTON - POEC Développement JAVA - Spring - Angular - Hibernate</div>
+                <div class="formation-item"><strong>2022</strong> - Le Wagon (Batch 1000) - Développeur Web Full-stack - Ruby on Rails / JS</div>
+                <div class="formation-item"><strong>2020</strong> – CFORPRO – Technicien Informatique (maintenance et sécurité S.I.) - (PCIE)</div>
+                <div class="formation-item"><strong>2017</strong> - RNCP Niv6- BAC +3 - M2i Formation de 9 mois - Infographiste Multimédia (Web designer)</div>
+                <div class="formation-item"><strong>1997</strong> - RNCP Niv6- Paris 1 (Panthéon Sorbonne) - Licence : Histoire de l'art (Double licence)</div>
+            </div>
+            
+            <div class="section">
+                <h2>Softs-Skills :</h2>
+                <div class="soft-skills">
+                    <div class="soft-skill">
+                        <span class="soft-skill-title">Esprit de synthèse :</span> Capacité à assimiler rapidement les informations et à les communiquer de manière concise. Exemple : Synthétiser les besoins des utilisateurs pour le projet Petsitter chez Aston en équipe de 5 développeurs.
+                    </div>
+                    <div class="soft-skill">
+                        <span class="soft-skill-title">Adaptabilité & Apprentissage continu :</span> Transition du développement à l'automatisation.
+                    </div>
+                    <div class="soft-skill">
+                        <span class="soft-skill-title">Bon relationnel :</span> Capacité à travailler en équipe et à communiquer de manière efficace. Exemple : Collaborer avec des équipes de développement et des parties prenantes pour assurer le succès des projets.
+                    </div>
+                    <div class="soft-skill">
+                        <span class="soft-skill-title">Polyvalence :</span> à l'aise sur plusieurs domaines complémentaires : développement, growth marketing, webdesign et IT.
+                    </div>
+                    <div class="soft-skill">
+                        <span class="soft-skill-title">Passion :</span> Engagement et enthousiasme pour le développement web et les technologies numériques. Exemple : Participer à des projets collaboratifs et poursuivre des formations pour approfondir les compétences.
+                    </div>
+                    <div class="soft-skill">
+                        <span class="soft-skill-title">Culture artistique :</span> Sensibilité aux aspects esthétiques et créatifs du développement web. Exemple : Intégration de designs innovants et attrayants dans les projets de développement.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
