@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Contact — Lucas Tymen</title>
+    <link rel="icon" type="image/svg+xml" href="/Monogramme_Round_Whites_plainSvg.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
@@ -11,9 +12,10 @@
   </head>
   <body>
     <header class="site-header">
-      <a class="logo" href="/">🐙 Lucas Tymen</a>
+      <a class="logo" href="/"><img src="/Monogramme_Round_Whites_plainSvg.svg" alt="Lucas Tymen" style="height: 32px; vertical-align: middle; margin-right: 8px;">Lucas Tymen</a>
       <nav class="nav">
         <a href="/cv.html">CV</a>
+        <a href="/cv-landing.html">CV interactif</a>
         <a href="/projets.html">Projets</a>
         <a class="active" href="/contact.html" class="cta cta-small">Contact</a>
       </nav>
@@ -21,29 +23,41 @@
     <main class="container">
       <h1>Me contacter</h1>
       <p>Un projet, un audit ou une question ? Écrivez-moi.</p>
-      <form class="form" id="contact-form" action="https://formspree.io/f/xbldoewr" method="POST">
+      <form class="form" id="contact-form">
         <div class="grid2">
           <label>
             <span>Nom</span>
-            <input type="text" name="name" required />
+            <input type="text" name="name" id="name" required />
           </label>
           <label>
             <span>Email</span>
-            <input type="email" name="email" required />
+            <input type="email" name="email" id="email" required />
           </label>
         </div>
         <label>
           <span>Message</span>
-          <textarea name="message" rows="6" required></textarea>
+          <textarea name="message" id="message" rows="6" required></textarea>
         </label>
         <button class="cta" type="submit">Envoyer</button>
+        <div id="form-status" style="margin-top: 16px; padding: 12px; border-radius: 8px; display: none;"></div>
       </form>
+      
+      <div style="margin-top: 32px; padding: 20px; background: var(--card); border: 1px solid var(--border); border-radius: 12px;">
+        <h3>Contact direct</h3>
+        <p>Vous pouvez aussi me contacter directement :</p>
+        <ul style="list-style: none; padding: 0; margin: 12px 0;">
+          <li style="margin: 8px 0;"><strong>Email :</strong> <a href="mailto:lucas.tymen@gmail.com" style="color: var(--accent);">lucas.tymen@gmail.com</a></li>
+          <li style="margin: 8px 0;"><strong>Téléphone :</strong> <a href="tel:0662098257" style="color: var(--accent);">06 62 09 82 57</a></li>
+          <li style="margin: 8px 0;"><strong>LinkedIn :</strong> <a href="https://www.linkedin.com/in/lucas-tymen-310255123/" target="_blank" rel="noopener" style="color: var(--accent);">lucas-tymen-310255123</a></li>
+        </ul>
+      </div>
     </main>
     <footer class="site-footer">
       <div class="container footer-grid">
-        <div>🐙 Lucas Tymen — Growth & Acquisition</div>
+        <div><img src="/Monogramme_Round_Whites_plainSvg.svg" alt="Lucas Tymen" style="height: 20px; vertical-align: middle; margin-right: 6px;">Lucas Tymen — Growth & Acquisition</div>
         <nav class="foot-nav">
           <a href="/cv.html">CV</a>
+          <a href="/cv-landing.html">CV interactif</a>
           <a href="/projets.html">Projets</a>
           <a href="/contact.html">Contact</a>
         </nav>
