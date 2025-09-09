@@ -22,8 +22,10 @@ J'industrialise des workflows d'acquisition et d'automatisation (**Python, n8n, 
 - SEO, A/B testing, funnels d'acquisition, analyse de conversion
 
 ### Automation & Développement
-- Python, Node.js, Ruby on Rails, Django, JavaScript (Vue.js), HTML5/CSS3, Stimulus
-- Webhooks, intégrations API, services
+- **Backend** : Python, Node.js, Ruby on Rails, Django, Java (8-21)
+- **Frontend** : JavaScript (Vue.js), TypeScript, Angular, HTML5/CSS3, Stimulus
+- **Frameworks** : Spring Boot, Hibernate, JPA
+- **Web Services** : REST, GraphQL, APIs, Webhooks
 
 ### DevOps & Observabilité
 - GitLab CI/CD, Docker, AWS
@@ -32,6 +34,16 @@ J'industrialise des workflows d'acquisition et d'automatisation (**Python, n8n, 
 ### Data & Analytics
 - SQL/MySQL 8, DBeaver, Looker Studio, Google Analytics
 - Modélisation (JMerise)
+
+### Sécurité & Cybersécurité
+- Pentesting (Kali Linux, Metasploit, Wireshark)
+- Sécurité réseaux, OWASP
+- Plan PSSI, audits sécurité
+
+### Design & Création
+- Adobe Creative Suite (Photoshop, Illustrator, InDesign)
+- Brand design, charte graphique, print design
+- Blender, 3DS Max, Sketchup
 
 ### Outils
 - PhantomBuster, Zapier, Notion, Trello
@@ -50,6 +62,21 @@ J'industrialise des workflows d'acquisition et d'automatisation (**Python, n8n, 
 - Action: **scraper automatisé** (Scrapy/Selenium) + relances no-code orchestrées.
 - Résultat: **dashboard SQL + Looker Studio** pour décisions rapides et priorisation.
 
+### Projet collaboratif — Pet-Sitter (Aston, 2023)
+- Objectif: plateforme de mise en relation propriétaires/prestataires animaux.
+- Action: **développement full-stack** (Java 17, Spring Boot, Angular, MySQL).
+- Résultat: **projet d'équipe** (5 devs) avec déploiement AWS.
+
+### Projets collaboratifs — Le Wagon (2022)
+- **L'accroche** : plateforme de partage créations et mise en relation créatifs.
+- **Chewie N'B** : clone AirBnB thème Star Wars.
+- Stack: Ruby on Rails, JavaScript, PostgreSQL, déploiement Heroku.
+
+### Stage Design & Branding — El Farniente (2017)
+- Refonte charte design et création site web statique.
+- Brand design: typographie, colorimétrie, logos, iconographie (Adobe CS).
+- Site: HTML5, CSS3, jQuery responsive, intégration backend PHP.
+
 ### Optimisation SEO & Data — Projet personnel
 - Objectif: développer le trafic organique de manière pérenne.
 - Action: audit technique + contenu + maillage + mesure (GA/Looker Studio).
@@ -64,6 +91,7 @@ J'industrialise des workflows d'acquisition et d'automatisation (**Python, n8n, 
 
 ## Formation
 
+- **2024-2026** — Concepteur Développeur d'Application — Titre RNCP Niv 7
 - **2025** — Rocket School – POEI et alternance — Growth Hacker
 - **2023** — ASTON — POEC Développement Java — Spring · Angular · Hibernate
 - **2022** — Le Wagon (Batch 1000) — Développeur Web Full‑stack — Ruby on Rails · JS

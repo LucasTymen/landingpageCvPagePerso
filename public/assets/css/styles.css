@@ -25,7 +25,8 @@ a{color:var(--text);text-decoration:none}
 .subhead{color:var(--muted);max-width:60ch}
 .hero-ctas{margin-top:20px;display:flex;gap:12px}
 .socials{margin-top:14px;display:flex;gap:16px;color:var(--muted)}
-.hero-visual{position:relative;height:420px}
+.hero-visual{position:relative;height:420px;display:flex;align-items:center;justify-content:center}
+.profile-photo{position:absolute;width:200px;height:200px;border-radius:50%;overflow:hidden;z-index:2;border:4px solid var(--accent);box-shadow:0 20px 40px rgba(0,225,255,.3)}
 .orb{position:absolute;filter:blur(18px);opacity:.8;border-radius:50%;mix-blend-mode:screen}
 .orb-1{width:240px;height:240px;background:radial-gradient(circle at 30% 30%,#8efcff,transparent 60%);left:10%;top:10%;animation:float 7s ease-in-out infinite}
 .orb-2{width:320px;height:320px;background:radial-gradient(circle at 60% 40%,#6d5efc,transparent 60%);right:5%;top:20%;animation:float 9s ease-in-out infinite reverse}
