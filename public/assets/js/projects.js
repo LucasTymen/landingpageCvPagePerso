@@ -26,6 +26,13 @@ const sampleProjects = [
     impact: "+40% trafic", 
     brief: "Analyse et amélioration du SEO d'un blog personnel avec utilisation de Google Analytics et Looker Studio.", 
     link: "/seo-project.html" 
+  },
+  { 
+    title: "Squid Research - Assistant recherche d'emploi", 
+    tag: "Django + IA", 
+    impact: "Backend fonctionnel", 
+    brief: "Application web d'assistance à la recherche d'emploi avec automatisation IA. Django + n8n + Flowise pour optimiser CV, lettres de motivation et suivi de candidatures.", 
+    link: "/squid-research.html" 
   }
 ];
 

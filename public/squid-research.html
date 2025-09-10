@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Squid Research — Lucas Tymen</title>
+    <meta name="description" content="Projet de recherche et développement personnel axé sur l'innovation et l'expérimentation technologique.">
+    <link rel="icon" type="image/svg+xml" href="/Monogramme_Round_Whites_plainSvg.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="logo" href="/"><img src="/Monogramme_Round_Whites_plainSvg.svg" alt="Lucas Tymen" style="height: 32px; vertical-align: middle; margin-right: 8px;">Lucas Tymen</a>
+      <nav class="nav">
+        <a href="/cv.html">CV</a>
+        <a href="/projets.html">Projets</a>
+        <a href="/contact.html" class="cta cta-small">Contact</a>
+      </nav>
+    </header>
+    <main class="container">
+      <div class="hero">
+        <h1 data-reveal class="reveal">Squid Research</h1>
+        <p class="subhead" data-reveal class="reveal" style="--d:.1s">Assistant intelligent pour la recherche d'emploi avec automatisation IA</p>
+      </div>
+
+      <section class="project-meta">
+        <div class="meta-tags">
+          <span class="tag">Django</span>
+          <span class="tag">n8n</span>
+          <span class="tag">Flowise</span>
+          <span class="tag">PostgreSQL</span>
+          <span class="tag">Redis</span>
+          <span class="tag">Celery</span>
+          <span class="tag">Docker</span>
+          <span class="tag">IA</span>
+        </div>
+      </section>
+
+      <section class="project-content">
+        <h2>Contexte du projet</h2>
+        <p>Squid Research est une application web moderne conçue pour gérer et optimiser la recherche d'emploi. Elle combine la puissance de Django, l'automatisation de n8n et l'intelligence artificielle de Flowise pour créer une expérience complète et automatisée de recherche d'emploi.</p>
+
+        <h2>Fonctionnalités principales</h2>
+        <ul>
+          <li><strong>📝 Gestion des candidatures :</strong> Suivi complet de vos candidatures</li>
+          <li><strong>🏢 Gestion des entreprises :</strong> Base de données des entreprises et agences</li>
+          <li><strong>🤖 Automatisation intelligente :</strong> Relances et suivis automatisés</li>
+          <li><strong>🧠 Assistant IA :</strong> Optimisation de CV et conseils personnalisés</li>
+          <li><strong>📊 Tableaux de bord :</strong> Statistiques et analyses de votre recherche</li>
+          <li><strong>🔔 Notifications :</strong> Alertes et rappels intelligents</li>
+        </ul>
+
+        <h2>Architecture technique</h2>
+        <div class="architecture-diagram">
+          <div class="tech-stack">
+            <div class="tech-item">
+              <strong>🐍 Django (Backend)</strong> - Port 8000
+            </div>
+            <div class="tech-item">
+              <strong>🤖 n8n (Automatisation)</strong> - Port 5679
+            </div>
+            <div class="tech-item">
+              <strong>🧠 Flowise (IA/Chatbot)</strong> - Port 3001
+            </div>
+            <div class="tech-item">
+              <strong>🗄️ PostgreSQL (DB)</strong> - Port 5432
+            </div>
+            <div class="tech-item">
+              <strong>⚡ Redis (Cache)</strong> - Port 6379
+            </div>
+            <div class="tech-item">
+              <strong>🔄 Celery (Worker)</strong> - Tâches en arrière-plan
+            </div>
+            <div class="tech-item">
+              <strong>📊 Flower (Monitoring)</strong> - Port 5555
+            </div>
+            <div class="tech-item">
+              <strong>🚀 Nginx (Proxy)</strong> - Port 80/443
+            </div>
+          </div>
+        </div>
+
+        <h2>État d'avancement</h2>
+        <div class="progress-section">
+          <h3>✅ Phase 1 : Modèles Django (Terminée)</h3>
+          <ul>
+            <li>Configuration Docker complète</li>
+            <li>Intégration n8n et Flowise</li>
+            <li>Modèles : Company, JobApplication, FollowUp</li>
+            <li>Structure de documentation organisée</li>
+          </ul>
+
+          <h3>🔄 Phase 2 : APIs Django (En cours)</h3>
+          <ul>
+            <li>Django REST Framework</li>
+            <li>Endpoints CRUD</li>
+            <li>Authentification JWT</li>
+            <li>Webhooks pour n8n</li>
+          </ul>
+
+          <h3>⏳ Phase 3 : Frontend React (À venir)</h3>
+          <h3>⏳ Phase 4 : Automatisation n8n (À venir)</h3>
+          <h3>⏳ Phase 5 : IA Flowise (À venir)</h3>
+        </div>
+
+        <h2>Technologies et outils</h2>
+        <div class="tech-tags">
+          <span class="tech-tag">Django</span>
+          <span class="tech-tag">n8n</span>
+          <span class="tech-tag">Flowise</span>
+          <span class="tech-tag">PostgreSQL</span>
+          <span class="tech-tag">Redis</span>
+          <span class="tech-tag">Celery</span>
+          <span class="tech-tag">Docker</span>
+          <span class="tech-tag">Nginx</span>
+          <span class="tech-tag">Flower</span>
+          <span class="tech-tag">IA</span>
+          <span class="tech-tag">Automatisation</span>
+        </div>
+
+        <h2>Résultats actuels</h2>
+        <ul>
+          <li><strong>Backend Django fonctionnel</strong> avec modèles complets</li>
+          <li><strong>Architecture conteneurisée</strong> avec Docker Compose</li>
+          <li><strong>Intégration n8n et Flowise</strong> opérationnelle</li>
+          <li><strong>Base de données PostgreSQL</strong> configurée</li>
+          <li><strong>Système de cache Redis</strong> intégré</li>
+          <li><strong>Monitoring Flower</strong> pour Celery</li>
+        </ul>
+
+        <h2>Apprentissages clés</h2>
+        <ul>
+          <li>Architecture microservices avec Docker</li>
+          <li>Intégration d'outils d'automatisation (n8n)</li>
+          <li>Déploiement d'IA conversationnelle (Flowise)</li>
+          <li>Gestion de tâches asynchrones (Celery)</li>
+          <li>Monitoring et observabilité</li>
+          <li>Développement full-stack avec Django</li>
+        </ul>
+
+        <h2>Liens du projet</h2>
+        <div class="project-links">
+          <a href="https://github.com/LucasTymen/squidresearch" target="_blank" class="cta cta-secondary">📁 Repository GitHub</a>
+          <a href="https://gitlab.com/LucasTymen/squidresearch" target="_blank" class="cta cta-secondary">📁 Repository GitLab</a>
+        </div>
+      </section>
+
+      <div class="project-actions">
+        <a href="/projets.html" class="cta cta-secondary">← Retour aux projets</a>
+        <a href="/contact.html" class="cta">Discuter du projet</a>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div><img src="/Monogramme_Round_Whites_plainSvg.svg" alt="Lucas Tymen" style="height: 20px; vertical-align: middle; margin-right: 6px;">Lucas Tymen — Optimisation & Automatisation</div>
+        <nav class="foot-nav">
+          <a href="/cv.html">CV</a>
+          <a href="/projets.html">Projets</a>
+          <a href="/contact.html">Contact</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>
