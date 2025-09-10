@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funnel de Conversion - Processus d'Optimisation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0b0f1a 0%, #0e1220 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            color: #e7ecff;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .main-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #6cf0ff;
+            margin-bottom: 3rem;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .funnel-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .funnel-stage {
+            position: relative;
+            margin-bottom: 8px;
+            border-radius: 12px;
+            color: white;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 80px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid rgba(108, 240, 255, 0.2);
+        }
+
+        .funnel-stage:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(108, 240, 255, 0.2);
+        }
+
+        .stage-1 {
+            width: 100%;
+            background: linear-gradient(135deg, #6d5efc 0%, #00e1ff 100%);
+        }
+
+        .stage-2 {
+            width: 85%;
+            margin-left: auto;
+            margin-right: auto;
+            background: linear-gradient(135deg, #00e1ff 0%, #0ea5e9 100%);
+        }
+
+        .stage-3 {
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+            background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);
+        }
+
+        .stage-4 {
+            width: 55%;
+            margin-left: auto;
+            margin-right: auto;
+            background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+        }
+
+        .stage-5 {
+            width: 40%;
+            margin-left: auto;
+            margin-right: auto;
+            background: linear-gradient(135deg, #0369a1 0%, #0c4a6e 100%);
+            position: relative;
+        }
+
+        .stage-content {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 0 20px;
+        }
+
+        .stage-icon {
+            font-size: 1.8rem;
+            opacity: 0.9;
+        }
+
+        .stage-text {
+            flex: 1;
+            text-align: left;
+        }
+
+        .stage-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        .stage-subtitle {
+            font-size: 0.9rem;
+            opacity: 0.85;
+            font-weight: 400;
+        }
+
+        .kpi-section {
+            margin-top: 2rem;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .kpi-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            min-width: 80px;
+            border: 1px solid rgba(108, 240, 255, 0.1);
+        }
+
+        .kpi-icon {
+            font-size: 1.5rem;
+            color: #6cf0ff;
+        }
+
+        .kpi-label {
+            font-size: 0.8rem;
+            color: #a0abcb;
+            font-weight: 500;
+        }
+
+        .flow-arrow {
+            position: absolute;
+            right: -30px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.5rem;
+            color: #6cf0ff;
+        }
+
+        @media (max-width: 768px) {
+            .main-title {
+                font-size: 2rem;
+                margin-bottom: 2rem;
+            }
+            
+            .stage-content {
+                gap: 10px;
+                padding: 0 15px;
+            }
+            
+            .stage-icon {
+                font-size: 1.5rem;
+            }
+            
+            .stage-title {
+                font-size: 1rem;
+            }
+            
+            .stage-subtitle {
+                font-size: 0.8rem;
+            }
+            
+            .kpi-section {
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="main-title">De l'Identification à la Performance</h1>
+        
+        <div class="funnel-container">
+            <div class="funnel-stage stage-1">
+                <div class="stage-content">
+                    <div class="stage-icon">🔍</div>
+                    <div class="stage-text">
+                        <div class="stage-title">Problèmes Identifiés</div>
+                        <div class="stage-subtitle">Découverte & Reconnaissance des Enjeux</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="funnel-stage stage-2">
+                <div class="stage-content">
+                    <div class="stage-icon">🔬</div>
+                    <div class="stage-text">
+                        <div class="stage-title">Analyse des Processus</div>
+                        <div class="stage-subtitle">Diagnostic & Évaluation Technique</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="funnel-stage stage-3">
+                <div class="stage-content">
+                    <div class="stage-icon">⚙️</div>
+                    <div class="stage-text">
+                        <div class="stage-title">Solutions Techniques</div>
+                        <div class="stage-subtitle">Conception & Planification</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="funnel-stage stage-4">
+                <div class="stage-content">
+                    <div class="stage-icon">🚀</div>
+                    <div class="stage-text">
+                        <div class="stage-title">Déploiement</div>
+                        <div class="stage-subtitle">Phase d'Implémentation</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="funnel-stage stage-5">
+                <div class="stage-content">
+                    <div class="stage-icon">📊</div>
+                    <div class="stage-text">
+                        <div class="stage-title">Résultats Mesurables</div>
+                        <div class="stage-subtitle">Métriques de Performance</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="kpi-section">
+            <div class="kpi-item">
+                <div class="kpi-icon">📈</div>
+                <div class="kpi-label">Croissance</div>
+            </div>
+            <div class="kpi-item">
+                <div class="kpi-icon">💰</div>
+                <div class="kpi-label">Économies</div>
+            </div>
+            <div class="kpi-item">
+                <div class="kpi-icon">⏱️</div>
+                <div class="kpi-label">Efficacité</div>
+            </div>
+            <div class="kpi-item">
+                <div class="kpi-icon">🎯</div>
+                <div class="kpi-label">Conversion</div>
+            </div>
+            <div class="kpi-item">
+                <div class="kpi-icon">🤖</div>
+                <div class="kpi-label">Automatisation</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
