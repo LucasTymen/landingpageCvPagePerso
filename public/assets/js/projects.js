@@ -1,7 +1,32 @@
 const sampleProjects = [
-  { title: "+60% MQL en 90 jours", tag: "B2B SaaS", impact: "+60% MQL", brief: "Refonte lead scoring, paid + content, LP testing, routing SDR.", link: "#" },
-  { title: "CAC -35% paid social", tag: "DTC", impact: "-35% CAC", brief: "Refonte creative engine, audiences, MMM light, incréments.", link: "#" },
-  { title: "+22% activation onboarding", tag: "Produit", impact: "+22%", brief: "Emails/FTUX orientés aha moment, checklists, segmentation.", link: "#" }
+  { 
+    title: "Parazar - Scraper automatisé", 
+    tag: "Growth Hacking", 
+    impact: "1er de promo", 
+    brief: "Développement d'un scraper automatisé pour collecter des offres d'emploi tech avec dashboard de suivi des performances.", 
+    link: "/parazar.html" 
+  },
+  { 
+    title: "Avtis - Spoutnik65 Astral", 
+    tag: "Projet d'études", 
+    impact: "Présentation complète", 
+    brief: "Projet d'études avec présentation détaillée des solutions développées et des résultats obtenus.", 
+    link: "/avtis.html" 
+  },
+  { 
+    title: "Engage Paris - Performance Max", 
+    tag: "Google Ads", 
+    impact: "Multi-régional", 
+    brief: "Création et déploiement d'une campagne Google Ads Performance Max avec ciblage géographique multi-régional.", 
+    link: "/engage-paris.html" 
+  },
+  { 
+    title: "SEO & Analytics - Blog personnel", 
+    tag: "Optimisation", 
+    impact: "+40% trafic", 
+    brief: "Analyse et amélioration du SEO d'un blog personnel avec utilisation de Google Analytics et Looker Studio.", 
+    link: "/seo-project.html" 
+  }
 ];
 
 const grid = document.getElementById('projects-grid');

@@ -35,10 +35,10 @@ J'industrialise des workflows d'acquisition et d'automatisation (**Python, n8n, 
 - SQL/MySQL 8, DBeaver, Looker Studio, Google Analytics
 - Modélisation (JMerise)
 
-### Sécurité & Cybersécurité
-- Pentesting (Kali Linux, Metasploit, Wireshark)
-- Sécurité réseaux, OWASP
-- Plan PSSI, audits sécurité
+### Sécurité & Monitoring
+- Plan PSSI, bonnes pratiques sécurité
+- Monitoring réseaux et applications
+- Gestion des incidents et tickets
 
 ### Design & Création
 - Adobe Creative Suite (Photoshop, Illustrator, InDesign)
