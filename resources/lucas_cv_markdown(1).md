@@ -11,15 +11,33 @@
 
 ## À propos de moi
 
-J'industrialise des workflows d'acquisition et d'automatisation (**Python, n8n, APIs, CI/CD**) pour générer des résultats mesurables. Approche **data-driven** (SEO, A/B testing) et intégrations orientées produit. Exemple: **+40% trafic organique** suite à des optimisations ciblées et un pilotage analytique. Actuellement en formation **Rocket School** pour renforcer l'expérimentation et le scale.
+J'industrialise des workflows d'acquisition et d'automatisation (**Python, n8n, APIs, CI/CD**) pour générer des résultats mesurables. Approche **data-driven** (SEO, A/B testing) et intégrations orientées produit. 
+
+**Résultats concrets :**
+- **+40% trafic organique** (audit SEO + contenu data-driven)
+- **1er de promo** sur projet Parazar (scraping + automatisation)
+- **Architecture conteneurisée** déployée (Django, n8n, Flowise)
+
+Actuellement en formation **Rocket School** pour renforcer l'expérimentation et le scale.
+
+---
+
+## 🎯 Résultats clés
+
+- **+40% trafic organique** (optimisation SEO data-driven)
+- **1er de promo** sur projet Parazar (scraping + automatisation)
+- **Architecture conteneurisée** déployée (Django, n8n, Flowise)
+- **Dashboard SQL + Looker Studio** pour pilotage décisions
+- **Workflows automatisés** avec intégration LLM
 
 ---
 
 ## Compétences techniques
 
 ### Growth & Acquisition
-- Scraping (Scrapy, Selenium), APIs, data mining, automatisation
-- SEO, A/B testing, funnels d'acquisition, analyse de conversion
+- **Scraping & Data:** Scrapy, Selenium, APIs, data mining, automatisation
+- **Marketing:** SEO, A/B testing, funnels d'acquisition, analyse de conversion
+- **Résultats:** +40% trafic organique, 1er de promo Parazar
 
 ### Automation & Développement
 - **Backend** : Python, Node.js, Ruby on Rails, Django, Java (8-21)
@@ -32,8 +50,9 @@ J'industrialise des workflows d'acquisition et d'automatisation (**Python, n8n, 
 - Suivi/monitoring, alerting
 
 ### Data & Analytics
-- SQL/MySQL 8, DBeaver, Looker Studio, Google Analytics
-- Modélisation (JMerise)
+- **Bases de données:** SQL/MySQL 8, DBeaver, modélisation (JMerise)
+- **Visualisation:** Looker Studio, Google Analytics, dashboards
+- **Impact:** Pilotage data-driven des décisions business
 
 ### Sécurité & Monitoring
 - Plan PSSI, bonnes pratiques sécurité
@@ -53,14 +72,16 @@ J'industrialise des workflows d'acquisition et d'automatisation (**Python, n8n, 
 ## Expérience professionnelle
 
 ### Conseiller Growth & Développeur — Origin Traiteur (Juillet 2025 – Présent)
-- Objectif: fiabiliser et accélérer la mise en production des workflows d'acquisition.
-- Action: **architecture conteneurisée** sur Hetzner (Django, n8n, Flowise) + CI/CD.
-- Résultat: déploiements reproductibles et **workflows automatisés** alignés métier (LLM inclus).
+- **Objectif:** fiabiliser et accélérer la mise en production des workflows d'acquisition
+- **Action:** architecture conteneurisée sur Hetzner (Django, n8n, Flowise) + CI/CD
+- **Résultat:** déploiements reproductibles et workflows automatisés alignés métier (LLM inclus)
+- **🔗 [Voir la présentation du projet](resources/2503_Avtis_Spoutnik65_Astral_Présentation.pdf)**
 
-### Growth Hacker & Automatisation — Parazar (Projet collectif, 2021 — 1er de promo)
-- Objectif: alimenter un pipeline candidats/entreprises dans la tech.
-- Action: **scraper automatisé** (Scrapy/Selenium) + relances no-code orchestrées.
-- Résultat: **dashboard SQL + Looker Studio** pour décisions rapides et priorisation.
+### Growth Hacker & Automatisation — Parazar (Projet collectif, 2021 — **1er de promo**)
+- **Objectif:** alimenter un pipeline candidats/entreprises dans la tech
+- **Action:** scraper automatisé (Scrapy/Selenium) + relances no-code orchestrées
+- **Résultat:** dashboard SQL + Looker Studio pour décisions rapides et priorisation
+- **📄 [Voir la présentation du projet](resources/2506_Challenge3_Soutenance Parazar-1.pdf)**
 
 ### Projet collaboratif — Pet-Sitter (Aston, 2023)
 - Objectif: plateforme de mise en relation propriétaires/prestataires animaux.
@@ -68,9 +89,10 @@ J'industrialise des workflows d'acquisition et d'automatisation (**Python, n8n, 
 - Résultat: **projet d'équipe** (5 devs) avec déploiement AWS.
 
 ### Projets collaboratifs — Le Wagon (2022)
-- **L'accroche** : plateforme de partage créations et mise en relation créatifs.
-- **Chewie N'B** : clone AirBnB thème Star Wars.
-- Stack: Ruby on Rails, JavaScript, PostgreSQL, déploiement Heroku.
+- **L'accroche:** plateforme de partage créations et mise en relation créatifs
+- **Chewie N'B:** clone AirBnB thème Star Wars
+- **Stack:** Ruby on Rails, JavaScript, PostgreSQL, déploiement Heroku
+- **📱 [Voir les projets](https://github.com/LucasTymen)**
 
 ### Stage Design & Branding — El Farniente (2017)
 - Refonte charte design et création site web statique.
@@ -78,9 +100,10 @@ J'industrialise des workflows d'acquisition et d'automatisation (**Python, n8n, 
 - Site: HTML5, CSS3, jQuery responsive, intégration backend PHP.
 
 ### Optimisation SEO & Data — Projet personnel
-- Objectif: développer le trafic organique de manière pérenne.
-- Action: audit technique + contenu + maillage + mesure (GA/Looker Studio).
-- Résultat: **+40% trafic organique** et vision claire des leviers ROI.
+- **Objectif:** développer le trafic organique de manière pérenne
+- **Action:** audit technique + contenu + maillage + mesure (GA/Looker Studio)
+- **Résultat:** **+40% trafic organique** et vision claire des leviers ROI
+- **📊 Métriques:** Analyse des performances via Google Analytics + Looker Studio
 
 ### Responsable IT — A.P.S.I. (DG) (2000–2022)
 - Gestion d'un parc IT (~300 machines), plan PSSI et sécurité opérationnelle.
