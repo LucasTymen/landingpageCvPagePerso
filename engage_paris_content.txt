@@ -1,0 +1,329 @@
+GOOGLE ADS
+
+ENGAGE PARIS - ESPAGNE PERFMAX
+
+Suivi via Google Tag Manager + GA4.
+Optimisation du taux de clic (CTR) : 13,04 %
+sur les groupes les plus pertinents.
+CPC moyen : 0,14 € – Coût total : 12,57 €
+pour 90 clics (campagne PerfMax
+uniquement).
+
+Zone géographique Impressions
+
+Clics
+
+Coût (€)
+
+CPC moyen (€)
+
+Interactions
+
+Interaction Rate
+
+Conversion
+
+Espagne
+
+1,483
+
+22
+
+5,35
+
+0,24
+
+775
+
+52,26%
+
+0
+
+Bretagne
+
+9
+
+1
+
+1,79
+
+1,79
+
+4
+
+44,44%
+
+0
+
+Pays de la Loire
+
+12
+
+0
+
+0,03
+
+-
+
+5
+
+41,67%
+
+0
+
+Corse, 75001, 75002
+
+0
+
+0
+
+0
+
+-
+
+0
+
+0,00%
+
+0
+
+Résultat principal : 946 interactions, mais
+pas encore de lead qualifié enregistré à ce
+stade.
+
+Insight clé :
+L'Espagne représente 99% du trafic.
+Très bon taux d'interaction (52%) mais aucune
+conversion enregistrée.
+
+Zone géographique Reach
+
+Impressions
+
+Clicks
+
+Statut
+
+Espagne
+
+45,600,000
+
+1,483
+
+22
+
+0
+
+Actif
+
+Bretagne
+
+4,630,000
+
+9
+
+1
+
+0
+
+Actif
+
+Pays de la Loire
+
+4,370,000
+
+12
+
+0
+
+0
+
+Actif
+
+0
+
+0
+
+0
+
+Aucune action
+
+0
+
+0
+
+0
+
+Aucune traction
+
+Corse
+Paris (1er au 4e)
+
+257
+≈1,311,000
+
+Yvelines + Hauts-de- —
+
+—
+
+—
+
+—
+
+Aucune donnée
+
+TESTS D'ASSETS : TITRES ET TITRES LONGS
+Type de titre
+
+Exemple
+
+Performance
+
+Observation
+
+Titre court
+
+"Osez changer de voie à Paris"
+
+Élevée
+
+Inspirant, ancré géographiquement
+
+Titre court
+
+"Devenez acteur de votre avenir"
+
+Faible
+
+Trop générique
+
+Titre long
+
+"Découvrez nos formations accessibles à Paris"
+
+Moyenne
+
+Informatif, mais pas assez différenciant
+
+Conclusion :
+Les titres spécifiques à la zone
+géographique performent mieux que les
+messages motivationnels trop vagues.
+
+LANDING PAGE
+a. Conception
+Figma >> Framer >>NextJs >> Vercel
+Responsive : Desktop / Mobile / Tablette
+Refonte technique : recodée en Next.js
+pour intégrer Tag Manager
+b. Déploiement
+Hébergement via Vercel
+Surveillance via GA4, Tag Manager, et
+Looker Studio
+
+intégration du formulaire
+de leads
+
+FORMULAIRE DE LEAD + AUTOMATISATION
+a. Stack utilisée
+Tally : création du formulaire
+Make : webhook automatisé
+Google Sheets : réception des leads en
+live
+Tagging & tracking : via GTM
+b. Résultat
+Process entièrement automatisé
+Intégration dans la landing page validée
+Plusieurs tests internes (Lucas) ont
+permis de valider le flux complet
+
+WAALAXY
+
+1. Structure utilisée
+Modèle Waalaxy : Visit + Invitation + 3 Messages
+Objectif : Génération de leads qualifiés sur LinkedIn
+pour Engage Paris
+Complexité du workflow : Niveau 2 – Débutant, mais
+multistep
+2. Performance de la campagne
+IndicateurValeur
+Nombre total de prospects
+556 (183 en attente + 356 différés + 15 actifs + 2
+terminés)
+Prospects ayant terminé la séquence
+2
+Taux de réponse global
+5.8 %
+Niveau d’efficacité Waalaxy
+Niveau 1 (moyenne basse)
+
+ANNEXES
+
+DONNÉES PERTINENTES SUPPLÉMENTAIRES À AFFICHER
+Résultats spécifiques à la partie Lucas
+1. Performance Google Ads
+Total clics campagne : 90
+Clics zone Espagne : 83 (92% des clics)
+CTR moyen : 2.76 %
+Coût total : 12.57 €
+CPC moyen : 0.14 €
+Conversions mesurées (formulaire) : 1
+Conversion rate : ~1.11 %
+Taux de scroll (GA4) : 15.8 %
+User engagement : 31.6 %
+2. Source de trafic (GA4)
+100% du trafic est en (direct) →
+problématique de tracking
+?
+Indicateur
+Aucun trafic référent Meta ou Waalaxy
+Mot-clé le plus performant
+identifié dans GA4
+Landing page : uniquement
+“/”,de
+sans
+Période
+clics la plus dense
+paramètres UTMs visibles
+
+Valeur
+
+Insight clé
+
+“Salon professionnel Paris” (33.3% CTR)
+
+Ultra ciblé, gros intérêt
+
+21 et 24 mai matin
+
+Idéal pour diffusion future
+
+Répartition appareil
+
+Mobile 88 %, desktop 11 %
+
+Nécessité d’optimiser mobile
+
+Réseaux de diffusion
+
+Search Partner 66.7 %
+
+Revoir si on veut plus de Google Search direct
+
+Zone France non-performante (CTR = 0 %)
+
+Paris intra-muros
+
+Clics = 0 sur plusieurs arrondissements ciblés
+
+Paramétrage du suivi via Google Tag Manager + GA4.
+Optimisation du taux de clic (CTR) : 13,04 % sur les groupes les plus
+pertinents.
+CPC moyen : 0,14 € – Coût total : 12,57 € pour 90 clics (campagne
+PerfMax uniquement).
+Résultat principal : 946 interactions, mais pas encore de lead qualifié
+enregistré à ce stade.
+
+WHAT WE DO
+
+

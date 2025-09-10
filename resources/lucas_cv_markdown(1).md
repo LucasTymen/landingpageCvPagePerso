@@ -15,7 +15,7 @@ J'industrialise des workflows d'acquisition et d'automatisation (**Python, n8n, 
 
 **Résultats concrets :**
 - **+40% trafic organique** (audit SEO + contenu data-driven)
-- **1er de promo** sur projet Parazar (scraping + automatisation)
+- **1er de promo** sur projet Parazar (SEO + email + automatisation contenu)
 - **Architecture conteneurisée** déployée (Django, n8n, Flowise)
 
 Actuellement en formation **Rocket School** pour renforcer l'expérimentation et le scale.
@@ -25,9 +25,10 @@ Actuellement en formation **Rocket School** pour renforcer l'expérimentation et
 ## 🎯 Résultats clés
 
 - **+40% trafic organique** (optimisation SEO data-driven)
-- **1er de promo** sur projet Parazar (scraping + automatisation)
+- **1er de promo** sur projet Parazar (SEO + email + automatisation contenu)
 - **Architecture conteneurisée** déployée (Django, n8n, Flowise)
-- **Dashboard SQL + Looker Studio** pour pilotage décisions
+- **Campagne Google Ads** : CTR 13,04%, CPC 0,14€, 1,11% conversion
+- **3000€/mois économisés** via automatisation (Parazar)
 - **Workflows automatisés** avec intégration LLM
 
 ---
@@ -37,7 +38,7 @@ Actuellement en formation **Rocket School** pour renforcer l'expérimentation et
 ### Growth & Acquisition
 - **Scraping & Data:** Scrapy, Selenium, APIs, data mining, automatisation
 - **Marketing:** SEO, A/B testing, funnels d'acquisition, analyse de conversion
-- **Résultats:** +40% trafic organique, 1er de promo Parazar
+- **Résultats:** +40% trafic organique, 1er de promo Parazar (SEO + email + automatisation)
 
 ### Automation & Développement
 - **Backend** : Python, Node.js, Ruby on Rails, Django, Java (8-21)
@@ -75,12 +76,14 @@ Actuellement en formation **Rocket School** pour renforcer l'expérimentation et
 - **Objectif:** fiabiliser et accélérer la mise en production des workflows d'acquisition
 - **Action:** architecture conteneurisée sur Hetzner (Django, n8n, Flowise) + CI/CD
 - **Résultat:** déploiements reproductibles et workflows automatisés alignés métier (LLM inclus)
+- **Stack:** Docker, GitLab CI/CD, monitoring, observabilité complète
 - **🔗 [Voir la présentation du projet](resources/2503_Avtis_Spoutnik65_Astral_Présentation.pdf)**
 
 ### Growth Hacker & Automatisation — Parazar (Projet collectif, 2021 — **1er de promo**)
-- **Objectif:** alimenter un pipeline candidats/entreprises dans la tech
-- **Action:** scraper automatisé (Scrapy/Selenium) + relances no-code orchestrées
-- **Résultat:** dashboard SQL + Looker Studio pour décisions rapides et priorisation
+- **Objectif:** optimiser l'acquisition et la rétention d'un site de rencontre (18-35 ans)
+- **Action:** SEO technique (Ahrefs, PageSpeed), email marketing, automatisation contenu, algorithme matching
+- **Résultat:** 100% problèmes SEO résolus, déliverabilité 4,6/10→10/10, 3000€/mois économisés
+- **Stack:** n8n + Claude + MCP + GA4 API pour reporting automatisé
 - **📄 [Voir la présentation du projet](resources/2506_Challenge3_Soutenance Parazar-1.pdf)**
 
 ### Projet collaboratif — Pet-Sitter (Aston, 2023)
@@ -98,6 +101,13 @@ Actuellement en formation **Rocket School** pour renforcer l'expérimentation et
 - Refonte charte design et création site web statique.
 - Brand design: typographie, colorimétrie, logos, iconographie (Adobe CS).
 - Site: HTML5, CSS3, jQuery responsive, intégration backend PHP.
+
+### Campagne Google Ads Performance Max — Engage Paris (2025)
+- **Objectif:** maximiser la portée publicitaire multi-régionale (Espagne, Paris, Bretagne)
+- **Action:** campagne Performance Max, tests A/B titres, landing page Next.js, automatisation leads
+- **Résultat:** CTR 13,04%, CPC 0,14€, 90 clics pour 12,57€, 1,11% conversion rate
+- **Stack:** Figma → Framer → Next.js → Vercel + Tally + Make + Google Sheets + GTM
+- **📄 [Voir la présentation du projet](resources/engageParis_Campagne Performance Max – Zone Espagne + IDF Création et déploiement d'une campagne Google Ads Performance Max. Ciblage géographique multi-régional Espagne, Paris (1er au 4e arr.), Bretagne, Yve.pdf)**
 
 ### Optimisation SEO & Data — Projet personnel
 - **Objectif:** développer le trafic organique de manière pérenne

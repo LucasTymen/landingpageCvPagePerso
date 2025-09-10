@@ -1,0 +1,658 @@
+x
+Soutenance Hackathon Challenge 3
+Lilian BARTY-CHRISTOPHE
+Adam BAYAR
+Yannis BENMESSAOUD
+Nathalie MONDJO
+Lucas TYMEN
+
+Contexte & Objectifs
+
+🙋
+Parazar, site de rencontre
+qui veut révolutionner la
+rencontre spontanée !
+Parazar est un site de matching amical
+dont le concept est d'organiser des
+rencontres réelles, en petits groupes,
+sans attentes particulières
+
+Cibles : 18-35 ans
+
+🎯
+
+Objectifs à venir : passer la
+barre des 100K inscrits,
+sortir une application
+courant 2025
+
+💰
+
+Canaux d'acquisition
+existants : site Web, email,
+Tiktok, Instagram (Meta
+Ads)
+
+⚠️
+Contrainte : budget limité,
+délai de 3 semaines,
+compétences Growth de
+l'équipe limitées
+
+2
+
+Brainstormer, prioriser puis s’aligner
+Onboarding & audit client
+
+🔧 ✔️ 🎉
+
+Méthodologie
+
+Ajustement
+
+Validation
+
+Go Live & formation
+
+💻 🧪
+
+Ateliers de brainstorming
+& priorisation
+
+Développement
+
+Test
+
+3
+
+Des chantiers axés autour du TOFU et du MOFU
+
+Funnel AARRR
+
+Acquisition
+Activation
+
+Automatisation de l'animation social media
+Indexation SEO
+Automatisation de blogging et de podcasts
+Prototypage d'application V1
+Prototypage de site V2
+Optimisation des Campagne emails de retargeting
+
+Rétention
+Referral
+
+Automatisation de blogging et de podcasts
+
+Installation d'outils de suivi
+Mise en conformité sur les cookies
+
+Revenue
+
+Automatisation de blogging et de podcasts
+Automatisation du matching
+
+4
+
+Reprendre les bases du SEO pour le site Parazar
+SEOptimisation du site Web
+
+Acquisition
+
+Contexte
+Actions
+
+Résultats
+
+Un site Web non-optimisé SEO.
+SEO Technique
+SEO Sémantique
+Sensibiliser les équipes sur l’importance de l’optimisation SEO
+
+⟶ Slide suivante !
+
+5
+
+Acquisition
+
+Reprendre les bases du SEO pour le site Parazar
+SEOptimisation du site Web : focus
+
+Résultats
+
+100%
+
+des problèmes
+Screaming Frog
+traités
+
+-0,9s
+
+vitesse de
+chargement mobile
+
+6
+
+Des campagnes emailings assainies
+Optimisation des campagnes email de retargering
+
+Activation
+
+Contexte
+Beaucoup d’emails finissaient en Spam
+Note de déliverabilité à 4,6/10
+
+Actions
+Audit technique complet des campagnes emails
+Reconfiguration du domaine
+Mise en place d’un plan de chauffe du domaine
+
+Résultats
+
+10/
+
+10 note de
+déliverabilité
+
+3
+
+jours pour passer à
+“Livraison parfaite”
+
+0
+
+Blacklists vs 4
+avant
+
+7
+
+Un prototype d’application et de site V2 entre IA et human touch
+Site 2 et app V1
+
+Activation
+
+Contexte
+Actions
+
+Résultats
+
+Challenger des screens d’application réalisés par outil IA et le rebranding à venir
+Organiser le parcours client
+Créer un prototype intéractif
+Auditer l’UX/UI et proposer des recommandations
+Adapter le rebranding au site responsive
+
+20 recommandations UX
+
+3 jours / homme
+
+8
+
+Rétention
+
+Et si par hasard vous scanniez le QR Code ?
+Blog & Podcast automatisé (1/2)
+
+9
+
+Rétention
+
+Blog & Podcast automatisé
+Workflow de création de contenu
+
+10
+
+Du Contenu enrichi pour + de visibilité et de préférence de marque
+Blog & Podcast automatisé (2/2)
+
+Contexte
+
+Développer l’autorité du site Web
+Sensibiliser les équipes sur l’importance de l’optimisation SEO
+
+Rétention
+
+Actions
+
+Aucun contenu publié hors Social Media
+
+Résultats
+
+60s
+
+pour publier
+un article
+
+2min
+
+pour créer et publier
+un podcast de 5 min
+
+11
+
+Prototype de matching de groupes automatisé
+Algorithme : Le scaling à portée de Parazar
+
+Automatisation
+
+Contexte
+Le matching des participants est
+actuellement fait manuellement.
+
+Actions
+Création d’un algorithme
+Assez?
+
+Résultats
+
+2h
+
+d’économies
+réalisées/session (estimation)
+
+62,5 à 87,5€
+
+d’économies
+réalisées/session (estimation)
+
+12
+
+Prévisions financières : des économies à réinvestir !
+
+Analyses & Recommandations
+
+Sans automatisation
+Tâche
+
+Temps pris
+manuelle
+ment
+
+Création
+d’un article
+de blog
+
+3h
+
+Constitutio
+n des
+groupes
+
+Production
+d’un
+podcast
+simple
+
+2h
+
+2h30
+
+Résultats
+
+Fréquence
+
+2 fois/semaine
+
+2 fois/semaine
+
+1 fois/semaine
+
+50h
+
+Avec automatisation
+Hypothèse de
+TJM : 480€
+
+60 €/h
+
+60 €/h
+
+60 €/h
+
+gagnées / mois
+
+Tâche
+
+📝 Blog
+
+automatisé
+
+🔗 Groupes
+
+automatisés
+
+🎙️ Podcast
+
+automatisé
+
+3000€
+
+Temps
+gagné/
+mois
+
+24 h
+
+16 h
+
+10 h
+
+Economie/mois
+
+Détail
+
+1440€
+
+Rédaction +
+publication
+automatisée
+
+960€
+
+Matching
+automatisé
++
+distribution
+
+600€
+
+Génération
+via IA voix,
+contenu
+auto
+
+économisés / mois
+
+13
+
+Analyses & Recommandations
+
+Recommandations (1/3)
+
+Campagne emailing
+Créer un (ou plusieurs) domaine hors de parazar.co pour les campagnes d’emailings
+Systématiser les Tests anti-spam
+Toujours préchauffer les emails à l’aide d’outils spécifiques dont Lemwarm et Warmbox
+Nettoyer la Base de Données client. Outils : Nerverbounce, Emailable
+
+Social media
+Inciter à la création de contenu organique
+Automatiser la gestion des comptes social media. Outil : Manychat
+Plus de contenu sur Tiktok
+
+14
+
+Analyses & Recommandations
+
+Recommandations (2/3)
+
+SEO
+Systématiser l’optimisation de contenu sur le site Web pour entretenir les performances
+Développer le netlinking, le backlinking et l’affiliation
+Sans contenu de blog ou landing SEO optimisée, le site plafonnera probablement à <10k
+impressions mensuelles.
+
+TOFU/MOFU
+Produire du rich content : photos, videos, podcasts
+Etablir un calendrier de publications
+
+15
+
+Analyses & Recommandations
+
+Recommandations (3/3)
+
+Parcours client
+Clarifier l’onboarding (questionnaire plus intégré au parcours)
+Mise en place d’un Chatbot client
+Analyser avec Clarity les comportements des utilisateurs +
+Taguer finement les évènements avec GTM
+
+16
+
+Merci pour votre confiance !
+Nous croyons en votre projet.
+Des questions ?
+
+x
+
+x
+
+Annexes
+
+Annexe : Personae (1/4)
+
+Présentaton des personae
+
+19
+
+Annexe : Personae (2/4)
+
+Emma – 22 ans, “L’Étudiante exploratrice”
+
+20
+
+Annexe : Personae (3/4)
+
+Brice – 28 ans, “Le Nomade hybride”
+
+21
+
+Annexe : Personae (4/4)
+
+Laure – 32 ans, “La Pro’ fraîchement célib’”
+
+22
+
+Annexe : ateliers (1/3)
+
+Brainstorming de l’équipe Growth Marketing
+
+23
+
+Annexe : ateliers (2/3)
+
+Brainstorming avec fondateur
+
+24
+
+Annexe : ateliers (3/3)
+
+Priorisation des sujets par le fondateur et le CTO
+
+25
+
+Pourquoi le SEO, et d’où on partait
+
+Annexe : focus SEO (1/4)
+
+Le SEO, c’est l’art d’être trouvé gratuitement par les bonnes personnes.
+
+Contexte
+
+Objectifs
+
+Le site Parazar.co était quasiment invisible sur Google
+Aucun positionnement sur les mots-clés liés aux rencontres sociales,
+expériences en ville, etc.
+Pas de trafic organique significatif (<10 visiteurs/jour)
+Remonter en 1re page sur les requêtes stratégiques
+Préparer un socle SEO solide avant les campagnes d’acquisition
+Optimiser la structure, vitesse et contenu pour favoriser l’indexation
+
+26
+
+SEO : Ce qu’on a mis en place
+
+Annexe : focus SEO (2/4)
+
+Actions
+Audit technique complet (Google Search Console, Screaming
+Frog, GTmetrix)
+Optimisation de la vitesse (Lazy loading, cache, compression…)
+SEO On-page : titres, balises, structure Hn, meta-descriptions
+Contenu ciblé : création ou enrichissement des pages avec motsclés à potentiel
+
+✍
+
+Outils
+Ahrefs (recherche de mots-clés et backlinks)
+PageSpeed Insights
+Yoast SEO (ou équivalent pour la partie CMS)
+Search Console + IndexNow
+
+27
+
+Annexe : focus SEO (3/4)
+
+SEO : Résultats concrets et impact business
+
+Résultats d’audit SpeedSight
+28
+
+Annexe : focus SEO (4/4)
+
+Projections SEO
+
+Hypothèse : les effort de SEO optimisé sont poursuivis dans les mois suivant le hackathon.
+
+29
+
+Annexe : focus campagne emailing (1/2)
+
+Campagne emailings : Hygiène & Délivrabilité
+
+Contexte
+
+Actions
+
+Résultats
+
+Préparation au scaling des campagnes Parazar
+Objectif : Zéro spam, zéro email foireux, 100% délivrabilité
+
+📩 Mails qui arrivent : anti-spam + audit SMTP
+🧼 Données propres : filtrage des emails invalides (formulaire Tally)
+📡 Infrastructures prêtes : test MxToolbox + audit DNS
+🔎 Regex & typage des emails dans le code Python
+🧪 MxToolbox : 0 erreur, 129 tests passés ✅
+🚨 Warning détecté : Reverse DNS ≠ SMTP banner (non bloquant)
+🧹 CSV nettoyé, NaN/None filtrés
+💥 Repos GitHub mis à jour + logs de validation
+
+30
+
+Annexe : focus campagne emailing (2/2)
+
+Campagne emailings : actions mises en place (2/2)
+
+Résultats
+
+📢 Note de délivrabilité passée de 4.6 à 10/10 :
+
++117% de progression en 4 actions clés : "Gmail
+nous considère fiables"
+"Infrastructure 100% clean"
+Passage de 'spam probable' à 'livraison
+parfaite' en 3 jours chrono
+
+🔐
+🕒
+
+31
+
+Annexe : Automatisation du matching
+
+Matching de groupes automatisé
+Le scaling à portée de Parazar
+
+🧮 Calcul de la valeur générée par poste
+(base 1 session)
+
+🟨 1. Temps économisé par l’algo :
+2 heures / session × TJM horaire de Victor
+à 62,5 €/session (TJM 500 €/j)
+à 87,5 €/session (TJM 700 €/j)
+
+🟩 2. Coût marginal de l’algo (≈ 0 €/session)
+
+Donc valeur nette = 62,5 à 87,5 € économisés / session
+
+Extrapolation selon volume d'activité
+Sessions / mois
+
+Valeur économisée
+(basse)
+
+Valeur économisée
+(haute)
+
+4 sessions
+
+250 € / mois
+
+350 € / mois
+
+8 sessions
+
+500 € / mois
+
+700 € / mois
+
+12 sessions
+
+750 € / mois
+
+1 050 € / mois
+
+20 sessions
+
+1 250 € / mois
+
+1 750 € / mois
+
+📌 Bonus : Productivité indirecte
+
+🔄 Scalabilité instantanée : l’algo peut trier 100+ sessions sans effort humain supplémentaire.
+⏳ Temps de Victor réalloué à la stratégie, levées, partenaires, etc.
+💸 Économie de recrutement d’un ou plusieurs Ops pour gérer la charge.
+
+32
+
+Annexe : Automatisation des stats
+
+Automatisation des Reportings
+
+Contexte
+
+Actions
+
+🛠️ Stack automatisée :
+
+n8n : orchestrateur de workflows
+Claude : résumé + catégorisation des insights
+MCP (Marketing Control Panel) : dashboard décisionnel
+centralisé
+GA4 API : extraction automatisée des rapports
+(engagement, trafic, sources, rebond...)
+
+⚙️ Workflow automatique (visuel simplifié) :
+🟠 Déclencheur automatique
+→ 🔵 Requête API GA4 : top pages, durée sessions, bounce rate
+→ 🔵 Envoi dans Claude : synthèse en langage naturel
+→ 🔵 Injection dans MCP : affichage par mois, par source, par page
+→ 🟢 Actions automatiques activables (ex : ciblage emailing,
+contenu, tests A/B)
+🧩 6 rapports GA4 déclenchés à chaque exécution → analysés et
+routés automatiquement
+
+Résultats
+
+📊 Résultat business :
+⏱️ +70 % gain de temps sur le reporting GA4
+🧠 Vision qualitative + quantitative des pages et canaux
+🚀 Décisions activées plus rapidement (actions prioritaires extraites par Claude)
+
+33
+
+
