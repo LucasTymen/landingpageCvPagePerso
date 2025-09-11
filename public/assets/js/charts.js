@@ -308,6 +308,11 @@ document.addEventListener('DOMContentLoaded', () => {
   if (document.getElementById('particles-seo')) {
     charts.initializeSEOParticles();
   }
+  
+  // Initialize main SEO particles system
+  if (document.getElementById('particles-seo-main')) {
+    charts.initializeMainSEOParticles();
+  }
 });
 
 // Additional SEO particles system
@@ -342,4 +347,78 @@ ParazarCharts.prototype.initializeSEOParticles = function() {
       }, 8000);
     }
   }, 2000);
+};
+
+// Main SEO particles system (complete integration)
+ParazarCharts.prototype.initializeMainSEOParticles = function() {
+  const container = document.getElementById('particles-seo-main');
+  if (!container) return;
+  
+  const particleCount = 20;
+  
+  for (let i = 0; i < particleCount; i++) {
+    const particle = document.createElement('div');
+    particle.className = 'particle';
+    particle.style.left = Math.random() * 100 + 'vw';
+    particle.style.animationDelay = Math.random() * 6 + 's';
+    particle.style.animationDuration = (4 + Math.random() * 4) + 's';
+    container.appendChild(particle);
+  }
+  
+  // Continuous particle generation
+  setInterval(() => {
+    if (container.querySelectorAll('.particle').length < 30) {
+      const particle = document.createElement('div');
+      particle.className = 'particle';
+      particle.style.left = Math.random() * 100 + 'vw';
+      particle.style.animationDuration = (4 + Math.random() * 4) + 's';
+      container.appendChild(particle);
+      
+      setTimeout(() => {
+        if (particle.parentNode) {
+          particle.parentNode.removeChild(particle);
+        }
+      }, 8000);
+    }
+  }, 2000);
+  
+  // Tooltip system for data points
+  const tooltip = document.getElementById('chart-tooltip');
+  const dataPoints = document.querySelectorAll('.data-point');
+  
+  dataPoints.forEach(point => {
+    point.addEventListener('mouseenter', (e) => {
+      const value = e.target.dataset.value;
+      const week = e.target.dataset.week;
+      tooltip.innerHTML = `<strong>Semaine ${week}</strong><br>Score SEO: ${value}/10`;
+      tooltip.style.opacity = '1';
+    });
+    
+    point.addEventListener('mouseleave', () => {
+      tooltip.style.opacity = '0';
+    });
+    
+    point.addEventListener('mousemove', (e) => {
+      tooltip.style.left = e.pageX + 10 + 'px';
+      tooltip.style.top = e.pageY - 40 + 'px';
+    });
+  });
+  
+  // Animate cards on scroll
+  const cards = document.querySelectorAll('.metric-card');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.transform = 'translateY(0)';
+        entry.target.style.opacity = '1';
+      }
+    });
+  });
+  
+  cards.forEach(card => {
+    card.style.transform = 'translateY(20px)';
+    card.style.opacity = '0';
+    card.style.transition = 'all 0.6s ease';
+    observer.observe(card);
+  });
 };
