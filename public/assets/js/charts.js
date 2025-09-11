@@ -287,7 +287,7 @@ class ParazarCharts {
   }
 }
 
-// Initialize charts when DOM is loaded
+  // Initialize charts when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
   const charts = new ParazarCharts();
   
@@ -303,4 +303,43 @@ document.addEventListener('DOMContentLoaded', () => {
   if (document.getElementById('timeline-chart')) {
     charts.createTimelineChart('timeline-chart');
   }
+  
+  // Initialize SEO particles system
+  if (document.getElementById('particles-seo')) {
+    charts.initializeSEOParticles();
+  }
 });
+
+// Additional SEO particles system
+ParazarCharts.prototype.initializeSEOParticles = function() {
+  const container = document.getElementById('particles-seo');
+  if (!container) return;
+  
+  const particleCount = 20;
+  
+  for (let i = 0; i < particleCount; i++) {
+    const particle = document.createElement('div');
+    particle.className = 'particle';
+    particle.style.left = Math.random() * 100 + 'vw';
+    particle.style.animationDelay = Math.random() * 6 + 's';
+    particle.style.animationDuration = (4 + Math.random() * 4) + 's';
+    container.appendChild(particle);
+  }
+  
+  // Continuous particle generation
+  setInterval(() => {
+    if (container.querySelectorAll('.particle').length < 30) {
+      const particle = document.createElement('div');
+      particle.className = 'particle';
+      particle.style.left = Math.random() * 100 + 'vw';
+      particle.style.animationDuration = (4 + Math.random() * 4) + 's';
+      container.appendChild(particle);
+      
+      setTimeout(() => {
+        if (particle.parentNode) {
+          particle.parentNode.removeChild(particle);
+        }
+      }, 8000);
+    }
+  }, 2000);
+};

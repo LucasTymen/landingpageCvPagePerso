@@ -142,10 +142,67 @@
             </div>
           </div>
           
-          <!-- SEO Performance Chart -->
+          <!-- SEO Performance Chart - Intégration complète -->
           <div class="chart-container" data-reveal class="reveal" style="--d:.35s">
-            <h3 style="text-align: center; color: #6cf0ff; margin-bottom: 30px;">Performance SEO - Évolution sur 3 semaines</h3>
-            <div id="seo-performance-chart"></div>
+            <div class="particles" id="particles-seo"></div>
+            <div class="chart-grid">
+              <svg width="100%" height="100%">
+                <defs>
+                  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+                    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#6cf0ff" stroke-width="0.5"/>
+                  </pattern>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#grid)" />
+              </svg>
+            </div>
+            
+            <div class="chart-container">
+              <svg width="100%" height="100%" viewBox="0 0 800 400">
+                <defs>
+                  <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:#00bcd4"/>
+                    <stop offset="50%" style="stop-color:#6cf0ff"/>
+                    <stop offset="100%" style="stop-color:#0097a7"/>
+                  </linearGradient>
+                </defs>
+                
+                <!-- Axes -->
+                <line x1="80" y1="350" x2="720" y2="350" stroke="#8bb3c7" stroke-width="2"/>
+                <line x1="80" y1="350" x2="80" y2="50" stroke="#8bb3c7" stroke-width="2"/>
+                
+                <!-- Y-axis labels -->
+                <text x="70" y="350" class="axis-label">0</text>
+                <text x="70" y="290" class="axis-label">2</text>
+                <text x="70" y="230" class="axis-label">4</text>
+                <text x="70" y="170" class="axis-label">6</text>
+                <text x="70" y="110" class="axis-label">8</text>
+                <text x="70" y="60" class="axis-label">10</text>
+                
+                <!-- X-axis labels -->
+                <text x="200" y="375" class="axis-label">Semaine 1</text>
+                <text x="400" y="375" class="axis-label">Semaine 2</text>
+                <text x="600" y="375" class="axis-label">Semaine 3</text>
+                
+                <!-- Curve -->
+                <path d="M 200,212 Q 300,180 400,132 Q 500,90 600,60" class="curve-path"/>
+                
+                <!-- Data points -->
+                <circle cx="200" cy="212" r="8" class="data-point" data-value="4.6" data-week="1"/>
+                <circle cx="400" cy="132" r="8" class="data-point" data-value="7.2" data-week="2"/>
+                <circle cx="600" cy="60" r="8" class="data-point" data-value="10.0" data-week="3"/>
+                
+                <!-- Icons -->
+                <g transform="translate(180,190)">
+                  <circle r="15" fill="#6cf0ff" opacity="0.2"/>
+                  <path d="M-6,-8 L6,-8 L8,0 L6,8 L-6,8 L-8,0 Z M0,-4 L0,4" stroke="#6cf0ff" stroke-width="2" fill="none"/>
+                </g>
+                
+                <g transform="translate(580,40)">
+                  <circle r="15" fill="#4caf50" opacity="0.2"/>
+                  <path d="M-6,0 L-2,4 L6,-4" stroke="#4caf50" stroke-width="3" fill="none"/>
+                </g>
+              </svg>
+            </div>
             
             <!-- SEO Metrics Grid -->
             <div class="metrics-grid">
@@ -292,6 +349,8 @@
       </div>
     </footer>
 
+    <div class="tooltip" id="chart-tooltip"></div>
+    
     <script src="/assets/js/main.js"></script>
     <script src="/assets/js/charts.js"></script>
   </body>
