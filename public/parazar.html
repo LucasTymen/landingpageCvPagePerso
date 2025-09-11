@@ -27,6 +27,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/styles.css" />
+    <link rel="stylesheet" href="/assets/css/charts.css" />
   </head>
   <body>
     <!-- Google Tag Manager (noscript) -->
@@ -116,6 +117,12 @@
               </ul>
             </div>
           </div>
+          
+          <!-- Architecture Diagram -->
+          <div class="chart-container" data-reveal class="reveal" style="--d:.3s">
+            <h3 style="text-align: center; color: #6cf0ff; margin-bottom: 30px;">Architecture Technique</h3>
+            <div id="architecture-diagram"></div>
+          </div>
         </section>
 
         <section class="project-section" data-reveal class="reveal" style="--d:.3s">
@@ -132,6 +139,51 @@
             <div class="result-card">
               <div class="result-number">100%</div>
               <div class="result-label">automatisation</div>
+            </div>
+          </div>
+          
+          <!-- SEO Performance Chart -->
+          <div class="chart-container" data-reveal class="reveal" style="--d:.35s">
+            <h3 style="text-align: center; color: #6cf0ff; margin-bottom: 30px;">Performance SEO - Évolution sur 3 semaines</h3>
+            <div id="seo-performance-chart"></div>
+            
+            <!-- SEO Metrics Grid -->
+            <div class="metrics-grid">
+              <div class="metric-card">
+                <svg class="metric-icon" viewBox="0 0 24 24">
+                  <path d="M13,13H11V7H13M13,17H11V15H13M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z"/>
+                </svg>
+                <div class="metric-title">Vitesse de chargement mobile</div>
+                <div class="metric-value">-0.9s</div>
+                <div class="metric-improvement">Amélioration significative</div>
+              </div>
+              
+              <div class="metric-card">
+                <svg class="metric-icon" viewBox="0 0 24 24">
+                  <path d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z"/>
+                </svg>
+                <div class="metric-title">Délivrabilité email</div>
+                <div class="metric-value">10/10</div>
+                <div class="metric-improvement">4.6/10 → 10/10</div>
+              </div>
+              
+              <div class="metric-card">
+                <svg class="metric-icon" viewBox="0 0 24 24">
+                  <path d="M9,3V4H4V6H5V19A2,2 0 0,0 7,21H17A2,2 0 0,0 19,19V6H20V4H15V3H9M7,6H17V19H7V6M9,8V17H11V8H9M13,8V17H15V8H13Z"/>
+                </svg>
+                <div class="metric-title">Indexation</div>
+                <div class="metric-value">+40%</div>
+                <div class="metric-improvement">Pages indexées supplémentaires</div>
+              </div>
+              
+              <div class="metric-card">
+                <svg class="metric-icon" viewBox="0 0 24 24">
+                  <path d="M12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12.5,7V12.25L17,14.92L16.25,16.15L11,13V7H12.5Z"/>
+                </svg>
+                <div class="metric-title">Temps de réponse</div>
+                <div class="metric-value">-70%</div>
+                <div class="metric-improvement">Réduction significative</div>
+              </div>
             </div>
           </div>
         </section>
@@ -155,6 +207,55 @@
                 📄 Télécharger la présentation complète (PDF)
               </a>
               <p class="download-note">Présentation détaillée du projet avec architecture technique et résultats</p>
+            </div>
+          </div>
+          
+          <!-- Timeline Chart -->
+          <div class="chart-container" data-reveal class="reveal" style="--d:.45s">
+            <h3 style="text-align: center; color: #6cf0ff; margin-bottom: 30px;">Timeline du Projet - 3 Semaines</h3>
+            <div id="timeline-chart"></div>
+            
+            <!-- Techniques Grid -->
+            <div class="techniques-grid">
+              <div class="technique-item">
+                <div class="technique-category">Performance</div>
+                <div class="technique-list">
+                  • Lazy loading<br>
+                  • Cache optimisé<br>
+                  • Compression avancée<br>
+                  • CDN intégration
+                </div>
+              </div>
+              
+              <div class="technique-item">
+                <div class="technique-category">SEO On-page</div>
+                <div class="technique-list">
+                  • Titres optimisés<br>
+                  • Balises Hn structurées<br>
+                  • Meta-descriptions<br>
+                  • Schema markup
+                </div>
+              </div>
+              
+              <div class="technique-item">
+                <div class="technique-category">Outils SEO</div>
+                <div class="technique-list">
+                  • Yoast SEO<br>
+                  • Structure optimisée<br>
+                  • Sitemap XML<br>
+                  • Analytics avancés
+                </div>
+              </div>
+              
+              <div class="technique-item">
+                <div class="technique-category">Mobile-first</div>
+                <div class="technique-list">
+                  • Design responsive<br>
+                  • Touch optimisé<br>
+                  • PWA features<br>
+                  • AMP intégration
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -192,5 +293,6 @@
     </footer>
 
     <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/charts.js"></script>
   </body>
 </html>
