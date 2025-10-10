@@ -21,6 +21,22 @@ J'industrialise des workflows d'acquisition et d'automatisation (**Python, n8n, 
 - Scraping (Scrapy, Selenium), APIs, data mining, automatisation
 - SEO, A/B testing, funnels d'acquisition, analyse de conversion
 
+### Analytics & Tracking
+- Google Analytics 4 (GA4), Google Tag Manager (GTM)
+- Tracking conversions, analyse des parcours utilisateurs (funnel AARRR)
+
+### Gestion de Campagnes Publicitaires
+- Google Ads (Search, Display, Performance Max)
+- Stratégies d'enchères, optimisation budgétaire, A/B testing créatives
+
+### Optimisation & KPI
+- Définition et suivi KPI (CAC, LTV, ROI, taux de conversion)
+- Analyse rentabilité, wordpricing et enchères intelligentes
+
+### SEO Avancé
+- Audit SEO technique et sémantique
+- Recherche et optimisation mots-clés, analyse concurrence, stratégie de contenu
+
 ### Automation & Développement
 - **Backend** : Python, Node.js, Ruby on Rails, Django, Java (8-21)
 - **Frontend** : JavaScript (Vue.js), TypeScript, Angular, HTML5/CSS3, Stimulus
@@ -52,10 +68,10 @@ J'industrialise des workflows d'acquisition et d'automatisation (**Python, n8n, 
 
 ## Expérience professionnelle
 
-### Conseiller Growth & Développeur — Origin Traiteur (Juillet 2025 – Présent)
+### Développeur & Conseiller Growth — Origin Traiteur (Alternance — Juin 2025 – Octobre 2025)
 - Objectif: fiabiliser et accélérer la mise en production des workflows d'acquisition.
-- Action: **architecture conteneurisée** sur Hetzner (Django, n8n, Flowise) + CI/CD.
-- Résultat: déploiements reproductibles et **workflows automatisés** alignés métier (LLM inclus).
+- Action: **Développement Python** et containerisation Docker d'une architecture complète. **Déploiement sur serveur Hetzner** (Django, n8n, Flowise).
+- Résultat: **Automatisation des workflows métier** avec n8n (intégration Slack, Gmail et processus intelligents via LLM). Déploiements reproductibles et solutions growth-driven.
 
 ### Growth Hacker & Automatisation — Parazar (Projet collectif, 2021 — 1er de promo)
 - Objectif: alimenter un pipeline candidats/entreprises dans la tech.
@@ -93,6 +109,11 @@ J'industrialise des workflows d'acquisition et d'automatisation (**Python, n8n, 
 
 - **2024-2026** — Concepteur Développeur d'Application — Titre RNCP Niv 7
 - **2025** — Rocket School – POEI et alternance — Growth Hacker
+  - Stratégies de campagnes marketing (Google Ads, Performance Max, Display)
+  - Monitoring et analyse avancée (GA4, GTM, tracking conversions)
+  - Études et optimisation des KPI (CAC, LTV, ROI, funnel AARRR)
+  - SEO technique et stratégies d'acquisition organique
+  - Optimisation du wordpricing et enchères intelligentes
 - **2023** — ASTON — POEC Développement Java — Spring · Angular · Hibernate
 - **2022** — Le Wagon (Batch 1000) — Développeur Web Full‑stack — Ruby on Rails · JS
 - **2020** — CFORPRO — Technicien Informatique (maintenance et sécurité S.I.) — (PCIE)
