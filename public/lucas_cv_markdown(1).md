@@ -73,12 +73,12 @@ J'industrialise des workflows d'acquisition et d'automatisation (**Python, n8n, 
 - Action: **Développement Python** et containerisation Docker d'une architecture complète. **Déploiement sur serveur Hetzner** (Django, n8n, Flowise).
 - Résultat: **Automatisation des workflows métier** avec n8n (intégration Slack, Gmail et processus intelligents via LLM). Déploiements reproductibles et solutions growth-driven.
 
-### Growth Hacker & Automatisation — Parazar (Projet collectif, 2021 — 1er de promo)
+### Growth Hacker & Automatisation — Parazar (Challenge 3 Rocket School, 2025 — 1er de promo)
 - Objectif: alimenter un pipeline candidats/entreprises dans la tech.
 - Action: **scraper automatisé** (Scrapy/Selenium) + relances no-code orchestrées.
 - Résultat: **dashboard SQL + Looker Studio** pour décisions rapides et priorisation.
 
-### Projet collaboratif — Pet-Sitter (Aston, 2023)
+### Projet collaboratif — Pet-Sitter (Aston, 2024)
 - Objectif: plateforme de mise en relation propriétaires/prestataires animaux.
 - Action: **développement full-stack** (Java 17, Spring Boot, Angular, MySQL).
 - Résultat: **projet d'équipe** (5 devs) avec déploiement AWS.
@@ -107,7 +107,7 @@ J'industrialise des workflows d'acquisition et d'automatisation (**Python, n8n, 
 
 ## Formation
 
-- **2024-2026** — Concepteur Développeur d'Application — Titre RNCP Niv 7
+
 - **2025** — Rocket School – POEI et alternance — Growth Hacker
   - Stratégies de campagnes marketing (Google Ads, Performance Max, Display)
   - Monitoring et analyse avancée (GA4, GTM, tracking conversions)
