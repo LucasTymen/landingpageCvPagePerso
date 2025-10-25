@@ -68,15 +68,32 @@ J'industrialise des workflows d'acquisition et d'automatisation (**Python, n8n, 
 
 ## Expérience professionnelle
 
-### Développeur & Conseiller Growth — Origin Traiteur (Alternance — Juin 2025 – Octobre 2025)
-- Objectif: fiabiliser et accélérer la mise en production des workflows d'acquisition.
-- Action: **Développement Python** et containerisation Docker d'une architecture complète. **Déploiement sur serveur Hetzner** (Django, n8n, Flowise).
-- Résultat: **Automatisation des workflows métier** avec n8n (intégration Slack, Gmail et processus intelligents via LLM). Déploiements reproductibles et solutions growth-driven.
+### Conseiller Growth & Développeur — Origin Traiteur (Juillet 2025 – Octobre 2025)
+- **Objectif:** Mise en place workflows d'acquisition et automatisation des processus métier.
+- **Actions réalisées:** 
+  - Création d'algorithme et automatisation de relance de devis sur Slack et Outlook
+  - Développement architecture conteneurisée Django + n8n + Flowise
+  - Mise en place CI/CD GitLab pour déploiements automatisés
+  - Intégration workflows métier avec monitoring temps réel
+- **Résultat:** Infrastructure robuste et scalable avec workflows alignés métier et déploiements reproductibles.
 
-### Growth Hacker & Automatisation — Parazar (Challenge 3 Rocket School, 2025 — 1er de promo)
-- Objectif: alimenter un pipeline candidats/entreprises dans la tech.
-- Action: **scraper automatisé** (Scrapy/Selenium) + relances no-code orchestrées.
-- Résultat: **dashboard SQL + Looker Studio** pour décisions rapides et priorisation.
+### Consultant Growth & Automatisation — Parazar (2021 – Janvier 2025)
+- **Objectif:** Création d'un algorithme de matching de rencontre et optimisation des processus.
+- **Actions réalisées:** 
+  - Algorithme de matching automatisé (gain: 3000€ mensuel)
+  - Amélioration délivrabilité email (60% d'amélioration du score)
+  - Optimisation SEO (40% augmentation de trafic organique)
+  - Réalisation maquette site et monitoring analyses data temps réel (MCP)
+- **Résultat:** Solutions complètes d'automatisation avec impact financier mesurable.
+
+### Consultant Growth — Engage Paris (2024)
+- **Objectif:** Création de campagnes Google Ads et Meta Ads avec tracking complet.
+- **Actions réalisées:** 
+  - Création landing pages et hébergement online
+  - Tracking GA4, cold-emailing, data scraping
+  - Automatisation formulaires (Make/Zapier et Google Forms)
+  - Conseil en stratégie d'acquisition
+- **Résultat:** Campagnes optimisées avec suivi analytique complet.
 
 ### Projet collaboratif — Pet-Sitter (Aston, 2024)
 - Objectif: plateforme de mise en relation propriétaires/prestataires animaux.
@@ -108,7 +125,7 @@ J'industrialise des workflows d'acquisition et d'automatisation (**Python, n8n, 
 ## Formation
 
 
-- **2025** — Rocket School – POEI et alternance — Growth Hacker
+- **Depuis 2025** — Rocket School – POEI et alternance — Growth Hacker (marketing d'acquisition)
   - Stratégies de campagnes marketing (Google Ads, Performance Max, Display)
   - Monitoring et analyse avancée (GA4, GTM, tracking conversions)
   - Études et optimisation des KPI (CAC, LTV, ROI, funnel AARRR)
@@ -131,12 +148,28 @@ J'industrialise des workflows d'acquisition et d'automatisation (**Python, n8n, 
 
 ---
 
-## Hobbies
+## Réseaux sociaux
 
-- Art
-- Musique (metal, electro, jazz, soul)
-- Cinéma de genre
-- Gaming (RPG, Steam)
+- **LinkedIn:** https://www.linkedin.com/in/lucas-tymen-310255123/
+- **GitHub:** @LucasTymen
+- **Twitter:** @lucastymen
+
+## Centres d'intérêt
+
+- **Art**
+- **Musique** (metal, electro, jazz, soul)
+- **Cinéma de genre**
+- **Gaming** (RPG, Steam)
+
+---
+
+## Références
+
+- **Anthony Loivel** — Fondateur & Chef d'entreprises, Origin Traiteur / Dans Le Sens du Goût  
+  https://www.linkedin.com/in/anthony-loivel-84b22410/
+
+- **Victor Pecot** — Fondateur @Parazar, Parazar  
+  https://www.linkedin.com/in/victor-pecot-803023140/
 
 ---
 
