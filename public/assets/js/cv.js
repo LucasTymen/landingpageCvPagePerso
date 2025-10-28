@@ -1,7 +1,12 @@
 (async function renderCV(){
   try{
+    // Determine language based on current path
+    const isEnglish = window.location.pathname.startsWith('/en/');
+    const mdFile = isEnglish ? '/lucas_cv_markdown_en.md' : '/lucas_cv_markdown(1).md';
+    const fallbackText = isEnglish ? "Unable to load resume at the moment." : "Impossible de charger le CV pour le moment.";
+    
     // Prefer markdown if present, fallback to HTML
-    const mdResp = await fetch('/lucas_cv_markdown(1).md');
+    const mdResp = await fetch(mdFile);
     if (mdResp.ok){
       const text = await mdResp.text();
       document.getElementById('cv-container').innerHTML = marked.parse(text);
@@ -18,7 +23,7 @@
   }catch(err){
     console.error(err);
   }
-  document.getElementById('cv-container').textContent = "Impossible de charger le CV pour le moment.";
+  document.getElementById('cv-container').textContent = fallbackText;
 })();
 
 
