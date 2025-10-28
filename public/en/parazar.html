@@ -89,121 +89,239 @@
                 </defs>
                 <rect width="100%" height="100%" fill="url(#grid)" />
               </svg>
-              
-              <div class="chart-content">
-                <div class="y-axis">
-                  <span>10</span>
-                  <span>8</span>
-                  <span>6</span>
-                  <span>4</span>
-                  <span>2</span>
-                  <span>0</span>
-                </div>
+            </div>
+            
+            <div class="chart-container">
+              <svg width="100%" height="100%" viewBox="0 0 800 400">
+                <defs>
+                  <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:#00bcd4"/>
+                    <stop offset="50%" style="stop-color:#6cf0ff"/>
+                    <stop offset="100%" style="stop-color:#0097a7"/>
+                  </linearGradient>
+                </defs>
                 
-                <div class="chart-area">
-                  <div class="data-line">
-                    <svg width="100%" height="100%" viewBox="0 0 400 200">
-                      <defs>
-                        <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                          <stop offset="0%" style="stop-color:#6cf0ff;stop-opacity:1" />
-                          <stop offset="100%" style="stop-color:#00e1ff;stop-opacity:0.3" />
-                        </linearGradient>
-                      </defs>
-                      <path d="M 50 150 Q 150 100 200 80 T 350 60" 
-                            stroke="url(#lineGradient)" 
-                            stroke-width="3" 
-                            fill="none"
-                            stroke-linecap="round"/>
-                      <circle cx="200" cy="80" r="6" fill="#6cf0ff" class="data-point"/>
-                      <circle cx="350" cy="60" r="6" fill="#00ff88" class="data-point success"/>
-                    </svg>
-                  </div>
-                  
-                  <div class="x-axis">
-                    <span>Week 1</span>
-                    <span>Week 2</span>
-                    <span>Week 3</span>
-                  </div>
+                <!-- Axes -->
+                <line x1="80" y1="350" x2="720" y2="350" stroke="#8bb3c7" stroke-width="2"/>
+                <line x1="80" y1="350" x2="80" y2="50" stroke="#8bb3c7" stroke-width="2"/>
+                
+                <!-- Y-axis labels -->
+                <text x="70" y="350" class="axis-label">0</text>
+                <text x="70" y="290" class="axis-label">2</text>
+                <text x="70" y="230" class="axis-label">4</text>
+                <text x="70" y="170" class="axis-label">6</text>
+                <text x="70" y="110" class="axis-label">8</text>
+                <text x="70" y="60" class="axis-label">10</text>
+                
+                <!-- X-axis labels -->
+                <text x="200" y="375" class="axis-label">Week 1</text>
+                <text x="400" y="375" class="axis-label">Week 2</text>
+                <text x="600" y="375" class="axis-label">Week 3</text>
+                
+                <!-- Curve -->
+                <path d="M 200,212 Q 300,180 400,132 Q 500,90 600,60" class="curve-path"/>
+                
+                <!-- Data points -->
+                <circle cx="200" cy="212" r="8" class="data-point" data-value="4.6" data-week="1"/>
+                <circle cx="400" cy="132" r="8" class="data-point" data-value="7.2" data-week="2"/>
+                <circle cx="600" cy="60" r="8" class="data-point" data-value="10.0" data-week="3"/>
+                
+                <!-- Icons -->
+                <g transform="translate(180,190)">
+                  <circle r="15" fill="#6cf0ff" opacity="0.2"/>
+                  <path d="M-6,-8 L6,-8 L8,0 L6,8 L-6,8 L-8,0 Z M0,-4 L0,4" stroke="#6cf0ff" stroke-width="2" fill="none"/>
+                </g>
+                
+                <g transform="translate(580,40)">
+                  <circle r="15" fill="#4caf50" opacity="0.2"/>
+                  <path d="M-6,0 L-2,4 L6,-4" stroke="#4caf50" stroke-width="3" fill="none"/>
+                </g>
+              </svg>
+            </div>
+          </div>
+          
+          <div class="metrics-grid">
+            <div class="metric-card">
+              <svg class="metric-icon" viewBox="0 0 24 24">
+                <path d="M13,13H11V7H13M13,17H11V15H13M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z"/>
+              </svg>
+              <div class="metric-title">Mobile loading speed</div>
+              <div class="metric-value">-0.9s</div>
+              <div class="metric-improvement">Significant improvement</div>
+            </div>
+            
+            <div class="metric-card">
+              <svg class="metric-icon" viewBox="0 0 24 24">
+                <path d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z"/>
+              </svg>
+              <div class="metric-title">Email deliverability</div>
+              <div class="metric-value">10/10</div>
+              <div class="metric-improvement">4.6/10 → 10/10</div>
+            </div>
+            
+            <div class="metric-card">
+              <svg class="metric-icon" viewBox="0 0 24 24">
+                <path d="M9,3V4H4V6H5V19A2,2 0 0,0 7,21H17A2,2 0 0,0 19,19V6H20V4H15V3H9M7,6H17V19H7V6M9,8V17H11V8H9M13,8V17H15V8H13Z"/>
+              </svg>
+              <div class="metric-title">Indexing</div>
+              <div class="metric-value">+40%</div>
+              <div class="metric-improvement">Additional indexed pages</div>
+            </div>
+            
+            <div class="metric-card">
+              <svg class="metric-icon" viewBox="0 0 24 24">
+                <path d="M12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12.5,7V12.25L17,14.92L16.25,16.15L11,13V7H12.5Z"/>
+              </svg>
+              <div class="metric-title">Response time</div>
+              <div class="metric-value">-70%</div>
+              <div class="metric-improvement">Significant reduction</div>
+            </div>
+          </div>
+          
+          <div class="timeline">
+            <h3 class="timeline-header">Project timeline</h3>
+            <div class="timeline-track">
+              <div class="timeline-progress"></div>
+            </div>
+            <div class="timeline-points">
+              <div class="timeline-point">
+                <div class="timeline-label">
+                  <strong>Week 1</strong><br>
+                  Project start<br>
+                  Score: 4.6/10
+                </div>
+              </div>
+              <div class="timeline-point">
+                <div class="timeline-label">
+                  <strong>Week 2</strong><br>
+                  Technical optimizations<br>
+                  Score: 7.2/10
+                </div>
+              </div>
+              <div class="timeline-point">
+                <div class="timeline-label">
+                  <strong>Week 3</strong><br>
+                  Final results<br>
+                  Score: 10/10
                 </div>
               </div>
             </div>
           </div>
           
-          <div class="metrics-grid">
-            <div class="metric-card" data-reveal class="reveal" style="--d:.3s">
-              <div class="metric-icon">⚠️</div>
-              <div class="metric-content">
-                <h3>Mobile loading speed</h3>
-                <div class="metric-value">-0.9s</div>
-                <div class="metric-subtitle">Significant improvement</div>
+          <div class="timeline">
+            <h3 class="timeline-header">Techniques used</h3>
+            <div class="techniques-grid">
+              <div class="technique-item">
+                <div class="technique-category">Performance</div>
+                <div class="technique-list">
+                  • Lazy loading<br>
+                  • Optimized cache<br>
+                  • Advanced compression<br>
+                  • CDN integration
+                </div>
               </div>
-            </div>
-            
-            <div class="metric-card" data-reveal class="reveal" style="--d:.4s">
-              <div class="metric-icon">📧</div>
-              <div class="metric-content">
-                <h3>Email deliverability</h3>
-                <div class="metric-value">10/10</div>
-                <div class="metric-subtitle">4.6/10 → 10/10</div>
+              
+              <div class="technique-item">
+                <div class="technique-category">On-page SEO</div>
+                <div class="technique-list">
+                  • Optimized titles<br>
+                  • Structured Hn tags<br>
+                  • Meta descriptions<br>
+                  • Schema markup
+                </div>
               </div>
-            </div>
-            
-            <div class="metric-card" data-reveal class="reveal" style="--d:.5s">
-              <div class="metric-icon">🗑️</div>
-              <div class="metric-content">
-                <h3>Screaming Frog issues</h3>
-                <div class="metric-value">100%</div>
-                <div class="metric-subtitle">All issues resolved</div>
+              
+              <div class="technique-item">
+                <div class="technique-category">SEO Tools</div>
+                <div class="technique-list">
+                  • Yoast SEO<br>
+                  • Optimized structure<br>
+                  • XML Sitemap<br>
+                  • Advanced analytics
+                </div>
               </div>
-            </div>
-            
-            <div class="metric-card" data-reveal class="reveal" style="--d:.6s">
-              <div class="metric-icon">⏱️</div>
-              <div class="metric-content">
-                <h3>Article publishing</h3>
-                <div class="metric-value">60s</div>
-                <div class="metric-subtitle">For 1 article</div>
+              
+              <div class="technique-item">
+                <div class="technique-category">Mobile-first</div>
+                <div class="technique-list">
+                  • Responsive design<br>
+                  • Touch optimized<br>
+                  • PWA features<br>
+                  • AMP integration
+                </div>
               </div>
             </div>
           </div>
         </section>
 
-        <!-- Project Details -->
-        <section class="project-section" data-reveal class="reveal" style="--d:.7s">
-          <h2>Project Objective</h2>
-          <p>Create a friendly dating site aiming for 100K users and app launch in 2025, with specific constraints:</p>
-          <ul>
-            <li>SEO optimization and email campaign improvement</li>
-            <li>App/site V2 prototyping</li>
-            <li>Automated blog/podcast creation</li>
-            <li>Automated matching algorithm</li>
-          </ul>
+        <section class="project-section" data-reveal class="reveal" style="--d:.25s">
+          <h2>🎯 Project Objective</h2>
+          <p>Optimize Parazar's growth, a friendly matching site for real meetings in small groups (target 18-35 years). Goals: reach 100K registrations and launch an application in 2025.</p>
+          <p><strong>Constraints:</strong> Limited budget, 3-week deadline, limited Growth team skills.</p>
         </section>
 
-        <section class="project-section" data-reveal class="reveal" style="--d:.8s">
-          <h2>Solutions Developed</h2>
+        <section class="project-section" data-reveal class="reveal" style="--d:.25s">
+          <h2>🛠️ Solutions Developed</h2>
           <div class="solution-grid">
             <div class="solution-card">
-              <h3>🔍 SEO Optimization</h3>
-              <p>Complete technical and semantic SEO audit with Screaming Frog, GTmetrix, and Search Console integration.</p>
+              <h3>Complete SEO Optimization</h3>
+              <p>Redo SEO basics for Parazar site with complete technical audit and optimizations.</p>
+              <ul>
+                <li>Complete technical audit (Google Search Console, Screaming Frog, GTmetrix)</li>
+                <li>Speed optimization (Lazy loading, cache, compression)</li>
+                <li>On-page SEO: titles, tags, Hn structure, meta descriptions</li>
+                <li>100% Screaming Frog issues treated</li>
+              </ul>
             </div>
+            
             <div class="solution-card">
-              <h3>📧 Email Campaign Optimization</h3>
-              <p>Email deliverability improvement with Lemwarm, Warmbox, and MxToolbox monitoring.</p>
+              <h3>Optimized Email Campaigns</h3>
+              <p>Cleaning up retargeting email campaigns with deliverability improvement.</p>
+              <ul>
+                <li>Complete technical audit of email campaigns</li>
+                <li>Domain reconfiguration and warm-up plan</li>
+                <li>Deliverability score: 4.6/10 → 10/10</li>
+                <li>0 blacklists vs 4 before</li>
+              </ul>
             </div>
+            
             <div class="solution-card">
-              <h3>🤖 Automated Blog/Podcast</h3>
-              <p>Automated content creation with Claude AI and MCP integration for rapid publishing.</p>
+              <h3>App & Site V2 Prototype</h3>
+              <p>Creation of an application prototype and V2 site between AI and human touch.</p>
+              <ul>
+                <li>UX/UI design for mobile app</li>
+                <li>Prototype development with Figma</li>
+                <li>User journey optimization</li>
+                <li>20 UX recommendations delivered</li>
+              </ul>
             </div>
+            
             <div class="solution-card">
-              <h3>🎯 Automated Matching</h3>
-              <p>Intelligent matching algorithm with n8n workflows and GA4 API integration.</p>
+              <h3>Automated Blog & Podcast</h3>
+              <p>Content automation system for blog articles and podcasts.</p>
+              <ul>
+                <li>Claude AI integration for content creation</li>
+                <li>MCP (Model Context Protocol) setup</li>
+                <li>60s to publish an article</li>
+                <li>2min for 5-minute podcast</li>
+              </ul>
+            </div>
+            
+            <div class="solution-card">
+              <h3>Automated Matching</h3>
+              <p>Intelligent matching algorithm for user connections.</p>
+              <ul>
+                <li>n8n workflow automation</li>
+                <li>GA4 API integration for data analysis</li>
+                <li>Machine learning matching algorithm</li>
+                <li>Real-time performance monitoring</li>
+              </ul>
             </div>
           </div>
         </section>
 
-        <section class="project-section" data-reveal class="reveal" style="--d:.9s">
-          <h2>Results Obtained</h2>
+        <section class="project-section" data-reveal class="reveal" style="--d:.3s">
+          <h2>📊 Results Obtained</h2>
           <div class="results-grid">
             <div class="result-item">
               <span class="result-number">100%</span>
@@ -232,7 +350,7 @@
           </div>
         </section>
 
-        <section class="project-section" data-reveal class="reveal" style="--d:1s">
+        <section class="project-section" data-reveal class="reveal" style="--d:.35s">
           <h2>💰 Financial Impact</h2>
           <div class="impact-highlights">
             <div class="impact-item">
@@ -250,7 +368,7 @@
           </div>
         </section>
 
-        <section class="project-section" data-reveal class="reveal" style="--d:1.1s">
+        <section class="project-section" data-reveal class="reveal" style="--d:.4s">
           <h2>🔗 Technologies Used</h2>
           <div class="tech-grid">
             <span class="tech-item">n8n</span>
@@ -268,7 +386,7 @@
           </div>
         </section>
 
-        <section class="project-section" data-reveal class="reveal" style="--d:1.2s">
+        <section class="project-section" data-reveal class="reveal" style="--d:.45s">
           <h2>👥 Project Team</h2>
           <div class="team-grid">
             <div class="team-member">
@@ -291,7 +409,7 @@
         </section>
 
         <!-- Documentation -->
-        <section class="project-section" data-reveal class="reveal" style="--d:1.3s">
+        <section class="project-section" data-reveal class="reveal" style="--d:.5s">
           <h2>Documentation</h2>
           <div class="download-section" style="margin-top: 20px;">
             <a href="https://www.canva.com/design/DAGtnFBdwRQ/n6oS_XnZHOMVLGvxp2ZK2Q/view" class="cta" target="_blank" rel="noopener noreferrer">
@@ -302,7 +420,7 @@
         </section>
       </div>
 
-      <div class="project-navigation" data-reveal class="reveal" style="--d:1.4s">
+      <div class="project-navigation" data-reveal class="reveal" style="--d:.55s">
         <a href="/en/projects.html" class="cta ghost">← Back to projects</a>
         <a href="/en/contact.html" class="cta">Let's work together →</a>
       </div>
