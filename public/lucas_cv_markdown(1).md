@@ -133,7 +133,8 @@ J'industrialise des workflows d'acquisition et d'automatisation (**Python, n8n, 
   - Optimisation du wordpricing et enchères intelligentes
 - **2023** — ASTON — POEC Développement Java — Spring · Angular · Hibernate
 - **2022** — Le Wagon (Batch 1000) — Développeur Web Full‑stack — Ruby on Rails · JS
-- **2020** — CFORPRO — Technicien Informatique (maintenance et sécurité S.I.) — (PCIE)
+- **2020
+** — CFORPRO — Technicien Informatique (maintenance et sécurité S.I.) — (PCIE)
 - **2017** — RNCP Niv6 — M2i (9 mois) — Infographiste Multimédia (Web designer)
 - **1997** — RNCP Niv6 — Paris 1 (Panthéon‑Sorbonne) — Licence : Histoire de l'art (Double licence)
 
