@@ -51,6 +51,23 @@ if (grid){
     `;
     grid.appendChild(el);
   });
+  
+  // Re-initialize animations for dynamically created elements
+  setTimeout(() => {
+    const newNodes = document.querySelectorAll('[data-reveal]:not(.in)');
+    if ('IntersectionObserver' in window && newNodes.length) {
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting){
+            const el = entry.target;
+            el.classList.add('in');
+            io.unobserve(el);
+          }
+        });
+      }, { threshold: .15, rootMargin: '0px 0px -10% 0px' });
+      newNodes.forEach(el => io.observe(el));
+    }
+  }, 100);
 }
 
 
