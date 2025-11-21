@@ -62,7 +62,7 @@
     <main class="container">
       <div class="hero">
         <h1 data-reveal class="reveal">Squid Research</h1>
-        <p class="subhead" data-reveal class="reveal" style="--d:.1s">Assistant intelligent pour la recherche d'emploi avec automatisation IA</p>
+        <p class="subhead" data-reveal class="reveal" style="--d:.1s">Plateforme d'automatisation intelligente pour la recherche d'emploi avec enrichissement multi-sources, recherche LinkedIn et architecture Docker scalable</p>
       </div>
 
       <section class="project-meta">
@@ -74,50 +74,63 @@
           <span class="tag">Redis</span>
           <span class="tag">Celery</span>
           <span class="tag">Docker</span>
+          <span class="tag">React</span>
+          <span class="tag">Pytest</span>
+          <span class="tag">OAuth</span>
           <span class="tag">IA</span>
         </div>
       </section>
 
       <section class="project-content">
         <h2>Contexte du projet</h2>
-        <p>Squid Research est une application web moderne conçue pour gérer et optimiser la recherche d'emploi. Elle combine la puissance de Django, l'automatisation de n8n et l'intelligence artificielle de Flowise pour créer une expérience complète et automatisée de recherche d'emploi.</p>
+        <p>Squid Research est une application web moderne conçue pour gérer et optimiser la recherche d'emploi. Elle combine la puissance de Django, l'automatisation de n8n, l'intelligence artificielle de Flowise, et un système d'enrichissement multi-sources pour créer une expérience complète et automatisée de recherche d'emploi.</p>
 
         <h2>Fonctionnalités principales</h2>
         <ul>
-          <li><strong>📝 Gestion des candidatures :</strong> Suivi complet de vos candidatures</li>
-          <li><strong>🏢 Gestion des entreprises :</strong> Base de données des entreprises et agences</li>
-          <li><strong>🤖 Automatisation intelligente :</strong> Relances et suivis automatisés</li>
-          <li><strong>🧠 Assistant IA :</strong> Optimisation de CV et conseils personnalisés</li>
-          <li><strong>📊 Tableaux de bord :</strong> Statistiques et analyses de votre recherche</li>
-          <li><strong>🔔 Notifications :</strong> Alertes et rappels intelligents</li>
+          <li><strong>📝 Gestion des candidatures :</strong> Suivi complet de vos candidatures avec analytics avancées</li>
+          <li><strong>🏢 Gestion des entreprises :</strong> Base de données enrichie avec Module Enriched (INSEE, Pappers, Societe.com)</li>
+          <li><strong>🤖 Automatisation intelligente :</strong> Relances et suivis automatisés avec IA</li>
+          <li><strong>🔍 Module Enriched :</strong> Enrichissement multi-sources avec cache Redis, orchestration optimisée et rate limiting humanisé</li>
+          <li><strong>🔎 Recherche LinkedIn :</strong> Recherche indirecte de prospects via Google Search, paramétrable par localisation, titre et mots-clés</li>
+          <li><strong>📧 Email OAuth :</strong> Connexion Gmail/Outlook via OAuth, 95% de délivrabilité, tokens chiffrés</li>
+          <li><strong>🧠 Assistant IA :</strong> Optimisation de CV et conseils personnalisés via Flowise</li>
+          <li><strong>📊 Tableaux de bord :</strong> Statistiques et analyses en temps réel</li>
+          <li><strong>🐳 Architecture Docker :</strong> 9 services containerisés (PostgreSQL, Redis, Django, Celery, React, n8n, Flowise, Tor)</li>
+          <li><strong>✅ Qualité & Tests :</strong> 29 tests unitaires (100% réussite), 88% de couverture de code</li>
         </ul>
 
         <h2>Architecture technique</h2>
         <div class="architecture-diagram">
           <div class="tech-stack">
             <div class="tech-item">
-              <strong>🐍 Django (Backend)</strong> - Port 8000
+              <strong>🐍 Django (Backend)</strong> - API REST, ORM, authentification
             </div>
             <div class="tech-item">
-              <strong>🤖 n8n (Automatisation)</strong> - Port 5679
+              <strong>⚛️ React (Frontend)</strong> - Interface utilisateur moderne
             </div>
             <div class="tech-item">
-              <strong>🧠 Flowise (IA/Chatbot)</strong> - Port 3001
+              <strong>🤖 n8n (Automatisation)</strong> - Workflows et intégrations
             </div>
             <div class="tech-item">
-              <strong>🗄️ PostgreSQL (DB)</strong> - Port 5432
+              <strong>🧠 Flowise (IA/Chatbot)</strong> - LLM et assistants conversationnels
             </div>
             <div class="tech-item">
-              <strong>⚡ Redis (Cache)</strong> - Port 6379
+              <strong>🗄️ PostgreSQL (DB)</strong> - Base de données relationnelle
             </div>
             <div class="tech-item">
-              <strong>🔄 Celery (Worker)</strong> - Tâches en arrière-plan
+              <strong>⚡ Redis (Cache)</strong> - Cache intelligent pour Module Enriched
             </div>
             <div class="tech-item">
-              <strong>📊 Flower (Monitoring)</strong> - Port 5555
+              <strong>🔄 Celery (Worker)</strong> - Tâches asynchrones en arrière-plan
             </div>
             <div class="tech-item">
-              <strong>🚀 Nginx (Proxy)</strong> - Port 80/443
+              <strong>🌐 Tor (Proxy)</strong> - Anonymat pour scraping
+            </div>
+            <div class="tech-item">
+              <strong>📊 Flower (Monitoring)</strong> - Monitoring Celery
+            </div>
+            <div class="tech-item">
+              <strong>🚀 Nginx (Proxy)</strong> - Reverse proxy et load balancing
             </div>
           </div>
         </div>
@@ -126,58 +139,97 @@
         <div class="progress-section">
           <h3>✅ Phase 1 : Modèles Django (Terminée)</h3>
           <ul>
-            <li>Configuration Docker complète</li>
+            <li>Configuration Docker complète (9 services)</li>
             <li>Intégration n8n et Flowise</li>
-            <li>Modèles : Company, JobApplication, FollowUp</li>
+            <li>Modèles : Company, JobApplication, FollowUp, EmailAccount</li>
             <li>Structure de documentation organisée</li>
           </ul>
 
-          <h3>🔄 Phase 2 : APIs Django (En cours)</h3>
+          <h3>✅ Phase 2 : APIs Django (Terminée)</h3>
           <ul>
             <li>Django REST Framework</li>
-            <li>Endpoints CRUD</li>
-            <li>Authentification JWT</li>
+            <li>Endpoints CRUD complets</li>
+            <li>Authentification JWT et OAuth</li>
             <li>Webhooks pour n8n</li>
+            <li>API Module Enriched</li>
+            <li>API LinkedIn Prospect Search</li>
           </ul>
 
-          <h3>⏳ Phase 3 : Frontend React (À venir)</h3>
-          <h3>⏳ Phase 4 : Automatisation n8n (À venir)</h3>
-          <h3>⏳ Phase 5 : IA Flowise (À venir)</h3>
+          <h3>✅ Phase 3 : Module Enriched (Terminée)</h3>
+          <ul>
+            <li>Enrichissement multi-sources (INSEE, Pappers, Societe.com)</li>
+            <li>Cache Redis intelligent</li>
+            <li>Orchestration optimisée par domaine</li>
+            <li>Rate limiting humanisé (5-8s entre requêtes)</li>
+          </ul>
+
+          <h3>✅ Phase 4 : Recherche LinkedIn (Terminée)</h3>
+          <ul>
+            <li>Recherche indirecte via Google Search</li>
+            <li>Génération de requêtes paramétrables</li>
+            <li>Extraction et parsing de profils</li>
+            <li>API REST complète</li>
+            <li>29 tests unitaires (100% réussite, 88% couverture)</li>
+          </ul>
+
+          <h3>✅ Phase 5 : Email OAuth (Terminée)</h3>
+          <ul>
+            <li>Connexion Gmail/Outlook via OAuth</li>
+            <li>Tokens chiffrés AES-256</li>
+            <li>Tracking ouvertures/clics</li>
+            <li>95% de délivrabilité</li>
+          </ul>
+
+          <h3>🔄 Phase 6 : Frontend React (En cours)</h3>
+          <h3>⏳ Phase 7 : Automatisation n8n avancée (À venir)</h3>
+          <h3>⏳ Phase 8 : IA Flowise avancée (À venir)</h3>
         </div>
 
         <h2>Technologies et outils</h2>
         <div class="tech-tags">
           <span class="tech-tag">Django</span>
-          <span class="tech-tag">n8n</span>
-          <span class="tech-tag">Flowise</span>
+          <span class="tech-tag">React</span>
           <span class="tech-tag">PostgreSQL</span>
           <span class="tech-tag">Redis</span>
           <span class="tech-tag">Celery</span>
           <span class="tech-tag">Docker</span>
+          <span class="tech-tag">n8n</span>
+          <span class="tech-tag">Flowise</span>
+          <span class="tech-tag">Pytest</span>
+          <span class="tech-tag">OAuth</span>
           <span class="tech-tag">Nginx</span>
           <span class="tech-tag">Flower</span>
+          <span class="tech-tag">Tor</span>
           <span class="tech-tag">IA</span>
           <span class="tech-tag">Automatisation</span>
         </div>
 
         <h2>Résultats actuels</h2>
         <ul>
-          <li><strong>Backend Django fonctionnel</strong> avec modèles complets</li>
-          <li><strong>Architecture conteneurisée</strong> avec Docker Compose</li>
+          <li><strong>Backend Django fonctionnel</strong> avec modèles complets et API REST</li>
+          <li><strong>Architecture conteneurisée</strong> avec 9 services Docker</li>
+          <li><strong>Module Enriched opérationnel</strong> avec enrichissement multi-sources et cache Redis</li>
+          <li><strong>Recherche LinkedIn fonctionnelle</strong> avec 29 tests unitaires (88% couverture)</li>
+          <li><strong>Email OAuth intégré</strong> (Gmail/Outlook) avec 95% de délivrabilité</li>
           <li><strong>Intégration n8n et Flowise</strong> opérationnelle</li>
-          <li><strong>Base de données PostgreSQL</strong> configurée</li>
-          <li><strong>Système de cache Redis</strong> intégré</li>
+          <li><strong>Base de données PostgreSQL</strong> configurée et optimisée</li>
+          <li><strong>Système de cache Redis</strong> pour Module Enriched</li>
           <li><strong>Monitoring Flower</strong> pour Celery</li>
+          <li><strong>Qualité du code</strong> : 88% de couverture, tests complets</li>
         </ul>
 
         <h2>Apprentissages clés</h2>
         <ul>
-          <li>Architecture microservices avec Docker</li>
+          <li>Architecture microservices avec Docker (9 services)</li>
+          <li>Enrichissement multi-sources avec cache intelligent</li>
+          <li>Scraping humanisé avec rate limiting et rotation User-Agent</li>
+          <li>Intégration OAuth (Gmail/Outlook) avec tokens chiffrés</li>
           <li>Intégration d'outils d'automatisation (n8n)</li>
           <li>Déploiement d'IA conversationnelle (Flowise)</li>
           <li>Gestion de tâches asynchrones (Celery)</li>
+          <li>Tests unitaires et couverture de code (Pytest, 88%)</li>
           <li>Monitoring et observabilité</li>
-          <li>Développement full-stack avec Django</li>
+          <li>Développement full-stack avec Django et React</li>
         </ul>
 
         <h2>Liens du projet</h2>

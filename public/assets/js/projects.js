@@ -29,9 +29,9 @@ const sampleProjects = [
   },
   { 
     title: "Squid Research - Assistant recherche d'emploi", 
-    tag: "Django + IA", 
-    impact: "Backend fonctionnel", 
-    brief: "Application web d'assistance à la recherche d'emploi avec automatisation IA. Django + n8n + Flowise pour optimiser CV, lettres de motivation et suivi de candidatures.", 
+    tag: "Django + IA + Docker", 
+    impact: "9 services Docker • 88% tests", 
+    brief: "Plateforme d'automatisation intelligente avec Module Enriched (multi-sources), recherche LinkedIn, OAuth email, architecture Docker scalable. 29 tests unitaires, 88% couverture.", 
     link: "/squid-research.html" 
   }
 ];
