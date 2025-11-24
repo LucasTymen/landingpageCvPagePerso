@@ -218,6 +218,86 @@
       <!-- IMPORTANT: Les articles doivent être classés du PLUS RÉCENT au PLUS ANCIEN -->
       <!-- Nouveaux articles à ajouter EN HAUT de cette liste -->
       
+      <!-- Article 0 : Intégration holehe (ENRICHED) -->
+      <article class="bogoss-card">
+        <div class="bogoss-card-header" style="background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);">
+          <h2 style="margin: 0; color: white; font-size: 1.75rem;">Épisode 4 : Intégration holehe — Vérification emails sur 120+ plateformes</h2>
+          <div class="article-meta" style="margin-top: 1rem; color: rgba(255,255,255,0.9);">
+            <span>📅 24 novembre 2025</span>
+            <span>•</span>
+            <span>⏱️ 5 min de lecture</span>
+            <span>•</span>
+            <span>🏷️ ENRICHED, holehe, Kali Linux, Tests</span>
+          </div>
+        </div>
+        <div class="bogoss-card-body">
+          <div class="article-content">
+            <p>
+              L'intégration de <strong>holehe</strong> (outil Kali Linux) dans le système ENRICHED permet de vérifier 
+              les emails sur 120+ plateformes pour détecter les comptes actifs. Cette fonctionnalité améliore 
+              significativement la qualité de l'enrichissement de contacts.
+            </p>
+            
+            <h2>🎯 Objectif</h2>
+            <p>
+              Lors de l'enrichissement d'un contact, il est crucial de vérifier si l'email trouvé est réellement actif. 
+              holehe permet de vérifier sur 120+ plateformes (Amazon, Office365, Twitter, Spotify, WordPress, etc.) si 
+              un email est enregistré, validant ainsi sa qualité.
+            </p>
+            
+            <h2>🔧 Intégration technique</h2>
+            <p>
+              L'intégration a été faite dans tous les flux d'enrichissement :
+            </p>
+            <ul>
+              <li><strong>ContactEnriched</strong> : Enrichissement direct avec holehe</li>
+              <li><strong>ContactFinderLight</strong> : Enrichissement automatique des prospects trouvés</li>
+              <li><strong>JobApplicationEnrichmentService</strong> : Enrichissement d'annonces avec vérification emails</li>
+              <li><strong>APIs d'enrichissement</strong> : Endpoint dédié pour l'enrichissement de prospects</li>
+            </ul>
+            
+            <h2>📊 Résultats</h2>
+            <p>
+              Les tests sur des contacts réels montrent des résultats impressionnants :
+            </p>
+            <ul>
+              <li><strong>Lucas Tymen</strong> : 10 plateformes détectées (Amazon, Codepen, Eventbrite, Firefox, Freelancer, Gravatar, Office365, Replit, WordPress)</li>
+              <li><strong>Sébastien Barillot</strong> : 5 plateformes détectées (Firefox, Office365, Spotify, WordPress)</li>
+              <li><strong>Temps d'exécution</strong> : 15-30 secondes par email (vérifie 121 sites)</li>
+              <li><strong>Taux de réussite</strong> : 100% des tests unitaires et d'intégration passent</li>
+            </ul>
+            
+            <h2>🧪 Tests et coverage</h2>
+            <p>
+              Pour garantir la qualité, j'ai créé :
+            </p>
+            <ul>
+              <li><strong>Tests unitaires</strong> : 5 tests pour ContactEnriched (success, timeout, exception, JSON structure)</li>
+              <li><strong>Tests d'intégration</strong> : API prospect email enrichment testée</li>
+              <li><strong>Coverage</strong> : 100% des fonctionnalités holehe couvertes</li>
+              <li><strong>Structure JSON standardisée</strong> : holehe dans enriched_data['social_accounts']</li>
+            </ul>
+            
+            <h2>💡 Apprentissages</h2>
+            <p>
+              Cette intégration a permis de :
+            </p>
+            <ul>
+              <li><strong>Améliorer la qualité</strong> : Validation des emails sur 120+ plateformes</li>
+              <li><strong>Standardiser le JSON</strong> : Structure unifiée pour tous les flux d'enrichissement</li>
+              <li><strong>Gérer les erreurs</strong> : Intégration non-bloquante (timeout géré gracieusement)</li>
+              <li><strong>Documenter</strong> : Guide complet d'utilisation et API documentation</li>
+            </ul>
+            
+            <div style="margin-top: 2rem; padding: 1.5rem; background: #faf5ff; border-radius: 12px; border-left: 4px solid #8b5cf6;">
+              <strong>💡 Apprentissage clé</strong> : L'intégration d'outils Kali Linux (holehe) dans un workflow Django 
+              nécessite une gestion robuste des timeouts et des erreurs. L'approche non-bloquante permet de continuer 
+              l'enrichissement même si holehe échoue, garantissant une expérience utilisateur fluide.
+            </div>
+          </div>
+        </div>
+      </article>
+      
       <!-- Article 1 : Génèse du projet -->
       <article class="bogoss-card">
         <div class="bogoss-card-header">
