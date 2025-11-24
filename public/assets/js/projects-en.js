@@ -1,5 +1,12 @@
 const sampleProjects = [
   { 
+    title: "Squid Research - Job Search Assistant", 
+    tag: "Django + AI + Docker", 
+    impact: "9 Docker services • 88% tests", 
+    brief: "Intelligent automation platform with Enriched Module (multi-sources), LinkedIn search, OAuth email, scalable Docker architecture. 29 unit tests, 88% coverage.", 
+    link: "/en/squid-research.html" 
+  },
+  { 
     title: "Parazar - Dating Site", 
     tag: "Growth Hacking", 
     impact: "🏆 1st Place - 20/20", 
@@ -26,13 +33,6 @@ const sampleProjects = [
     impact: "+40% traffic", 
     brief: "Analysis and improvement of personal blog SEO using Google Analytics and Looker Studio.", 
     link: "/en/seo-project.html" 
-  },
-  { 
-    title: "Squid Research - Job Search Assistant", 
-    tag: "Django + AI + Docker", 
-    impact: "9 Docker services • 88% tests", 
-    brief: "Intelligent automation platform with Enriched Module (multi-sources), LinkedIn search, OAuth email, scalable Docker architecture. 29 unit tests, 88% coverage.", 
-    link: "/en/squid-research.html" 
   }
 ];
 
