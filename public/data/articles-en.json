@@ -7,7 +7,11 @@
     "date": "2025-11-24T08:00:00+01:00",
     "updated": "2025-11-24T08:00:00+01:00",
     "author": "Lucas Tymen",
-    "tags": ["Enrichment", "APIs", "Cache"],
+    "tags": [
+      "Enrichment",
+      "APIs",
+      "Cache"
+    ],
     "category": "Development",
     "readTime": 6,
     "image": null,
@@ -23,7 +27,11 @@
     "date": "2025-11-24T07:00:00+01:00",
     "updated": "2025-11-24T07:00:00+01:00",
     "author": "Lucas Tymen",
-    "tags": ["Architecture", "Docker", "Django"],
+    "tags": [
+      "Architecture",
+      "Docker",
+      "Django"
+    ],
     "category": "Architecture",
     "readTime": 5,
     "image": null,
@@ -32,4 +40,3 @@
     "gradient": "linear-gradient(135deg, #667eea 0%, #764ba2 100%)"
   }
 ]
-

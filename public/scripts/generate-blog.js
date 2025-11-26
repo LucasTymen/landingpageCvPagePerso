@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
 /**
- * Script de génération automatique du fichier articles.json
- * Scanne le dossier data/articles/ et génère un fichier JSON centralisé
+ * Script de génération automatique des fichiers articles.json (FR et EN)
+ * Scanne les dossiers data/articles/ et data/articles-en/ et génère les fichiers JSON centralisés
  * 
  * Usage: node scripts/generate-blog.js
  */
@@ -10,29 +10,35 @@
 const fs = require('fs');
 const path = require('path');
 
-const ARTICLES_DIR = path.join(__dirname, '../data/articles');
-const OUTPUT_FILE = path.join(__dirname, '../data/articles.json');
+const ARTICLES_DIR_FR = path.join(__dirname, '../data/articles');
+const ARTICLES_DIR_EN = path.join(__dirname, '../data/articles-en');
+const OUTPUT_FILE_FR = path.join(__dirname, '../data/articles.json');
+const OUTPUT_FILE_EN = path.join(__dirname, '../data/articles-en.json');
 
-function generateBlogIndex() {
-  console.log('🔍 Scan du dossier articles...');
+function generateBlogIndex(lang = 'fr') {
+  const articlesDir = lang === 'en' ? ARTICLES_DIR_EN : ARTICLES_DIR_FR;
+  const outputFile = lang === 'en' ? OUTPUT_FILE_EN : OUTPUT_FILE_FR;
+  const langLabel = lang === 'en' ? 'EN' : 'FR';
+  
+  console.log(`🔍 Scan du dossier articles ${langLabel}...`);
   
   // Vérifier que le dossier existe
-  if (!fs.existsSync(ARTICLES_DIR)) {
-    console.error(`❌ Le dossier ${ARTICLES_DIR} n'existe pas`);
-    process.exit(1);
-  }
-  
-  // Lire tous les fichiers JSON
-  const files = fs.readdirSync(ARTICLES_DIR)
-    .filter(file => file.endsWith('.json'))
-    .map(file => path.join(ARTICLES_DIR, file));
-  
-  if (files.length === 0) {
-    console.warn('⚠️  Aucun fichier JSON trouvé dans le dossier articles');
+  if (!fs.existsSync(articlesDir)) {
+    console.error(`❌ Le dossier ${articlesDir} n'existe pas`);
     return;
   }
   
-  console.log(`📄 ${files.length} fichier(s) JSON trouvé(s)`);
+  // Lire tous les fichiers JSON
+  const files = fs.readdirSync(articlesDir)
+    .filter(file => file.endsWith('.json'))
+    .map(file => path.join(articlesDir, file));
+  
+  if (files.length === 0) {
+    console.warn(`⚠️  Aucun fichier JSON trouvé dans le dossier articles ${langLabel}`);
+    return;
+  }
+  
+  console.log(`📄 ${files.length} fichier(s) JSON trouvé(s) (${langLabel})`);
   
   // Charger tous les articles
   const articles = [];
@@ -65,27 +71,35 @@ function generateBlogIndex() {
   // Filtrer uniquement les articles publiés
   const publishedArticles = articles.filter(a => a.published !== false);
   
-  console.log(`\n📊 ${publishedArticles.length} article(s) publié(s) sur ${articles.length} total`);
+  console.log(`\n📊 ${publishedArticles.length} article(s) publié(s) sur ${articles.length} total (${langLabel})`);
   
   // Écrire le fichier JSON
   try {
     fs.writeFileSync(
-      OUTPUT_FILE,
+      outputFile,
       JSON.stringify(publishedArticles, null, 2),
       'utf8'
     );
-    console.log(`\n✅ Fichier ${OUTPUT_FILE} généré avec succès !`);
-    console.log(`   Articles triés du plus récent au plus ancien`);
+    console.log(`\n✅ Fichier ${outputFile} généré avec succès !`);
+    console.log(`   Articles triés du plus récent au plus ancien (${langLabel})`);
   } catch (error) {
     console.error(`❌ Erreur lors de l'écriture du fichier:`, error.message);
     process.exit(1);
   }
 }
 
-// Exécuter le script
-if (require.main === module) {
-  generateBlogIndex();
+function generateAll() {
+  console.log('🚀 Génération des index de blog (FR et EN)\n');
+  generateBlogIndex('fr');
+  console.log('\n');
+  generateBlogIndex('en');
+  console.log('\n✨ Génération terminée !');
 }
 
-module.exports = { generateBlogIndex };
+// Exécuter le script
+if (require.main === module) {
+  generateAll();
+}
+
+module.exports = { generateBlogIndex, generateAll };
 

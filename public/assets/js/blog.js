@@ -83,6 +83,9 @@ function renderArticles() {
   });
   
   // Afficher les teasers (articles en chantier)
+  const inProgressText = lang === 'en' ? '🏗️ In progress' : '🏗️ En chantier';
+  const dateLocaleTeaser = lang === 'en' ? 'en-US' : 'fr-FR';
+  
   teaserArticles.forEach(article => {
     const card = document.createElement('article');
     card.className = 'card reveal blog-teaser-card';
@@ -90,16 +93,16 @@ function renderArticles() {
     card.style.setProperty('--d', `${index * 0.1}s`);
     
     const date = new Date(article.date);
-    const dateStr = date.toLocaleDateString('fr-FR', { 
+    const dateStr = date.toLocaleDateString(dateLocaleTeaser, { 
       year: 'numeric', 
       month: 'long', 
       day: 'numeric' 
     });
     
     card.innerHTML = `
-      <span class="blog-teaser-badge">🏗️ En chantier</span>
+      <span class="blog-teaser-badge">${inProgressText}</span>
       <h3>${article.title}</h3>
-      <p><strong>${article.category || 'Article'}</strong> — ${article.excerpt}</p>
+      <p><strong>${article.category || (lang === 'en' ? 'Article' : 'Article')}</strong> — ${article.excerpt}</p>
       <p style="color:var(--muted);font-weight:700">📅 ${dateStr} • ⏱️ ${article.readTime} min</p>
       ${article.tags && article.tags.length > 0 ? `
         <div style="margin: 1rem 0; display: flex; gap: 0.5rem; flex-wrap: wrap;">
