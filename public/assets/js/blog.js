@@ -3,10 +3,18 @@
 let allArticles = [];
 let filteredArticles = [];
 
+// Détecter la langue (FR ou EN)
+function detectLanguage() {
+  const path = window.location.pathname;
+  return path.startsWith('/en/') ? 'en' : 'fr';
+}
+
 // Charger les articles depuis le JSON
 async function loadArticles() {
   try {
-    const response = await fetch('/data/articles.json');
+    const lang = detectLanguage();
+    const jsonFile = lang === 'en' ? '/data/articles-en.json' : '/data/articles.json';
+    const response = await fetch(jsonFile);
     allArticles = await response.json();
     // Trier par date (plus récent en premier)
     allArticles.sort((a, b) => new Date(b.date) - new Date(a.date));
@@ -14,7 +22,7 @@ async function loadArticles() {
     renderArticles();
     renderFilters();
   } catch (error) {
-    console.error('Erreur lors du chargement des articles:', error);
+    console.error('Error loading articles:', error);
   }
 }
 
@@ -25,8 +33,11 @@ function renderArticles() {
   
   grid.innerHTML = '';
   
+  const lang = detectLanguage();
+  const noArticlesText = lang === 'en' ? 'No articles found.' : 'Aucun article trouvé.';
+  
   if (filteredArticles.length === 0) {
-    grid.innerHTML = '<p style="grid-column: 1/-1; text-align: center; color: var(--muted); padding: 3rem;">Aucun article trouvé.</p>';
+    grid.innerHTML = `<p style="grid-column: 1/-1; text-align: center; color: var(--muted); padding: 3rem;">${noArticlesText}</p>`;
     return;
   }
   
@@ -36,6 +47,11 @@ function renderArticles() {
   
   let index = 0;
   
+  const lang = detectLanguage();
+  const articlesPath = lang === 'en' ? '/en/articles' : '/articles';
+  const readArticleText = lang === 'en' ? 'Read article' : 'Lire l'article';
+  const dateLocale = lang === 'en' ? 'en-US' : 'fr-FR';
+  
   // Afficher les articles publiés (structure identique aux projets)
   publishedArticles.forEach(article => {
     const card = document.createElement('article');
@@ -44,7 +60,7 @@ function renderArticles() {
     card.style.setProperty('--d', `${index * 0.1}s`);
     
     const date = new Date(article.date);
-    const dateStr = date.toLocaleDateString('fr-FR', { 
+    const dateStr = date.toLocaleDateString(dateLocale, { 
       year: 'numeric', 
       month: 'long', 
       day: 'numeric' 
@@ -52,14 +68,14 @@ function renderArticles() {
     
     card.innerHTML = `
       <h3>${article.title}</h3>
-      <p><strong>${article.category || 'Article'}</strong> — ${article.excerpt}</p>
+      <p><strong>${article.category || (lang === 'en' ? 'Article' : 'Article')}</strong> — ${article.excerpt}</p>
       <p style="color:var(--accent);font-weight:700">📅 ${dateStr} • ⏱️ ${article.readTime} min</p>
       ${article.tags && article.tags.length > 0 ? `
         <div style="margin: 1rem 0; display: flex; gap: 0.5rem; flex-wrap: wrap;">
           ${article.tags.slice(0, 3).map(tag => `<span class="tech-tag">${tag}</span>`).join('')}
         </div>
       ` : ''}
-      <a class="cta cta-small" href="/articles/${article.slug}.html">Lire l'article</a>
+      <a class="cta cta-small" href="${articlesPath}/${article.slug}.html">${readArticleText}</a>
     `;
     
     grid.appendChild(card);
@@ -118,27 +134,33 @@ function renderFilters() {
   const filtersContainer = document.getElementById('blog-filters');
   if (!filtersContainer) return;
   
+  const lang = detectLanguage();
+  const categoriesLabel = lang === 'en' ? 'Categories:' : 'Catégories:';
+  const tagsLabel = lang === 'en' ? 'Tags:' : 'Tags:';
+  const allText = lang === 'en' ? 'All' : 'Tous';
+  const searchPlaceholder = lang === 'en' ? 'Search an article...' : 'Rechercher un article...';
+  
   // Extraire toutes les catégories et tags uniques
   const categories = [...new Set(allArticles.map(a => a.category).filter(Boolean))];
   const allTags = [...new Set(allArticles.flatMap(a => a.tags || []))];
   
   let filtersHTML = `
     <div class="blog-filter-group">
-      <span class="blog-filter-label">Catégories:</span>
-      <button class="blog-filter-button active" data-filter="category" data-value="all">Tous</button>
+      <span class="blog-filter-label">${categoriesLabel}</span>
+      <button class="blog-filter-button active" data-filter="category" data-value="all">${allText}</button>
       ${categories.map(cat => `
         <button class="blog-filter-button" data-filter="category" data-value="${cat}">${cat}</button>
       `).join('')}
     </div>
     <div class="blog-filter-group">
-      <span class="blog-filter-label">Tags:</span>
-      <button class="blog-filter-button active" data-filter="tag" data-value="all">Tous</button>
+      <span class="blog-filter-label">${tagsLabel}</span>
+      <button class="blog-filter-button active" data-filter="tag" data-value="all">${allText}</button>
       ${allTags.slice(0, 10).map(tag => `
         <button class="blog-filter-button" data-filter="tag" data-value="${tag}">${tag}</button>
       `).join('')}
     </div>
     <div class="blog-search">
-      <input type="text" id="blog-search-input" placeholder="Rechercher un article...">
+      <input type="text" id="blog-search-input" placeholder="${searchPlaceholder}">
     </div>
   `;
   
@@ -208,9 +230,14 @@ function debounce(func, wait) {
 // Navigation entre articles (pour les pages d'articles individuels)
 async function loadArticleNavigation() {
   const currentSlug = window.location.pathname.split('/').pop().replace('.html', '');
+  const lang = detectLanguage();
+  const jsonFile = lang === 'en' ? '/data/articles-en.json' : '/data/articles.json';
+  const articlesPath = lang === 'en' ? '/en/articles' : '/articles';
+  const prevLabel = lang === 'en' ? '← Previous' : '← Précédent';
+  const nextLabel = lang === 'en' ? 'Next →' : 'Suivant →';
   
   try {
-    const response = await fetch('/data/articles.json');
+    const response = await fetch(jsonFile);
     const articles = await response.json();
     articles.sort((a, b) => new Date(b.date) - new Date(a.date));
     
@@ -226,8 +253,8 @@ async function loadArticleNavigation() {
     if (currentIndex < articles.length - 1) {
       const prevArticle = articles[currentIndex + 1];
       navHTML += `
-        <a href="/articles/${prevArticle.slug}.html" class="article-nav-link prev">
-          <span class="nav-label">← Précédent</span>
+        <a href="${articlesPath}/${prevArticle.slug}.html" class="article-nav-link prev">
+          <span class="nav-label">${prevLabel}</span>
           <span class="nav-title">${prevArticle.title}</span>
         </a>
       `;
@@ -239,8 +266,8 @@ async function loadArticleNavigation() {
     if (currentIndex > 0) {
       const nextArticle = articles[currentIndex - 1];
       navHTML += `
-        <a href="/articles/${nextArticle.slug}.html" class="article-nav-link next">
-          <span class="nav-label">Suivant →</span>
+        <a href="${articlesPath}/${nextArticle.slug}.html" class="article-nav-link next">
+          <span class="nav-label">${nextLabel}</span>
           <span class="nav-title">${nextArticle.title}</span>
         </a>
       `;
@@ -248,7 +275,7 @@ async function loadArticleNavigation() {
     
     navContainer.innerHTML = navHTML;
   } catch (error) {
-    console.error('Erreur lors du chargement de la navigation:', error);
+    console.error('Error loading navigation:', error);
   }
 }
 

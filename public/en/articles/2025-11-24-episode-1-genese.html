@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-57SWSFPG');</script>
+    <!-- End Google Tag Manager -->
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NR6L88V61P"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-NR6L88V61P');
+    </script>
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Episode 1: The Genesis — From Idea to Architecture | SquidResearch Blog</title>
+    <meta name="description" content="SquidResearch was born from a simple observation: job searching is time-consuming and repetitive. Why not automate this process while maintaining quality and personalization?">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Episode 1: The Genesis — From Idea to Architecture">
+    <meta property="og:description" content="SquidResearch was born from a simple observation: job searching is time-consuming and repetitive.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://landingpage-cv-page-perso.vercel.app/en/articles/2025-11-24-episode-1-genese.html">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Episode 1: The Genesis">
+    <meta name="twitter:description" content="From idea to architecture of SquidResearch">
+    
+    <link rel="icon" type="image/svg+xml" href="/Monogramme_Round_Whites_plainSvg.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <link rel="stylesheet" href="/assets/css/blog.css" />
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-57SWSFPG"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    
+    <header class="site-header">
+      <a class="logo" href="/en/"><img src="/Monogramme_Round_Whites_plainSvg.svg" alt="Lucas Tymen" style="height: 32px; vertical-align: middle; margin-right: 8px;">Lucas Tymen</a>
+      <nav class="nav">
+        <a href="/en/cv.html">Resume</a>
+        <a href="/en/services.html">What I Do</a>
+        <a href="/en/projects.html">Projects</a>
+        <a href="/en/blog-squid-research.html">Current Project</a>
+        <a href="/en/contact.html" class="cta cta-small">Contact</a>
+        <div class="language-switcher">
+          <a href="/en/" class="lang-link active" title="English">
+            <span class="flag-icon">🇬🇧</span>
+          </a>
+          <a href="/" class="lang-link" title="Français">
+            <span class="flag-icon">🇫🇷</span>
+          </a>
+        </div>
+      </nav>
+    </header>
+    
+    <main class="container">
+      <article class="blog-article">
+        <nav class="article-breadcrumb">
+          <a href="/en/blog-squid-research.html">← Back to blog</a>
+          <span>•</span>
+          <a href="/en/squid-research.html">View project</a>
+        </nav>
+        
+        <header class="article-header">
+          <div class="article-meta-top">
+            <span class="article-category">Architecture</span>
+            <time datetime="2025-11-24T07:00:00+01:00">📅 November 24, 2025</time>
+            <span class="article-read-time">⏱️ 5 min read</span>
+          </div>
+          <h1 class="article-title">Episode 1: The Genesis — From Idea to Architecture</h1>
+          <p class="article-excerpt">SquidResearch was born from a simple observation: job searching is time-consuming and repetitive. Why not automate this process while maintaining quality and personalization?</p>
+          <div class="article-tags">
+            <span class="tag">Architecture</span>
+            <span class="tag">Docker</span>
+            <span class="tag">Django</span>
+          </div>
+        </header>
+        
+        <div class="article-content">
+          <p>
+            SquidResearch was born from a simple observation: job searching is time-consuming and repetitive. 
+            Why not automate this process while maintaining quality and personalization?
+          </p>
+          
+          <h2>🎯 The Initial Idea</h2>
+          <p>
+            The goal was to create a platform that combines multiple technologies to offer a complete experience: 
+            application management, automatic company enrichment, LinkedIn prospect search, and automated follow-ups.
+          </p>
+          
+          <h2>🏗️ Architectural Choices</h2>
+          <p>
+            From the start, I opted for a microservices architecture with Docker. This approach enables:
+          </p>
+          <ul>
+            <li><strong>Scalability</strong>: Each service can be scaled independently</li>
+            <li><strong>Isolation</strong>: Services are independent, facilitating maintenance</li>
+            <li><strong>Flexibility</strong>: Easy to add new services (n8n, Flowise, etc.)</li>
+          </ul>
+          
+          <h2>🔧 Technical Stack</h2>
+          <p>
+            The choice fell on Django for the backend (robustness, powerful ORM, rich ecosystem), 
+            React for the frontend (reusable components, reactive state), and PostgreSQL for the database 
+            (reliability, performance, JSON support).
+          </p>
+          
+          <h2>📊 First Challenges</h2>
+          <p>
+            The first challenges were integrating multiple services (n8n, Flowise, Celery) and managing 
+            multi-source enrichment. The solution: an intelligent Redis caching system and domain-optimized orchestration.
+          </p>
+          
+          <div class="article-insight" style="background: var(--card); border-left-color: #667eea;">
+            <strong>💡 Key Learning</strong>: A well-thought-out architecture from the start avoids costly refactorings 
+            later. Taking the time to design the architecture is a profitable investment.
+          </div>
+        </div>
+        
+        <footer class="article-footer">
+          <div class="article-share">
+            <span>Share:</span>
+            <a href="https://twitter.com/intent/tweet?text=Episode 1: The Genesis&url=https://landingpage-cv-page-perso.vercel.app/en/articles/2025-11-24-episode-1-genese.html" target="_blank" rel="noopener">Twitter</a>
+            <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://landingpage-cv-page-perso.vercel.app/en/articles/2025-11-24-episode-1-genese.html" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+          <nav class="article-navigation" id="article-nav">
+            <!-- Will be filled by JavaScript -->
+          </nav>
+        </footer>
+      </article>
+    </main>
+    
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div><img src="/Monogramme_Round_Whites_plainSvg.svg" alt="Lucas Tymen" style="height: 20px; vertical-align: middle; margin-right: 6px;">Lucas Tymen — Full-Stack Growth Engineer</div>
+        <nav class="foot-nav">
+          <a href="/en/cv.html">Resume</a>
+          <a href="/en/projects.html">Projects</a>
+          <a href="/en/contact.html">Contact</a>
+        </nav>
+      </div>
+    </footer>
+    
+    <script src="/assets/js/blog.js"></script>
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>
+

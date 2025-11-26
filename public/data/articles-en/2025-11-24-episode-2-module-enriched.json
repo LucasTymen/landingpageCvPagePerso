@@ -1,0 +1,17 @@
+{
+  "id": "episode-2-module-enriched",
+  "slug": "2025-11-24-episode-2-module-enriched",
+  "title": "Episode 2: The Enriched Module — Intelligent Orchestration",
+  "excerpt": "The Enriched Module is at the heart of enterprise data enrichment. It orchestrates multiple sources (INSEE, Pappers, Société.com) to provide complete and reliable data.",
+  "date": "2025-11-24T08:00:00+01:00",
+  "updated": "2025-11-24T08:00:00+01:00",
+  "author": "Lucas Tymen",
+  "tags": ["Enrichment", "APIs", "Cache"],
+  "category": "Development",
+  "readTime": 6,
+  "image": null,
+  "featured": false,
+  "published": true,
+  "gradient": "linear-gradient(135deg, #10b981 0%, #059669 100%)"
+}
+
