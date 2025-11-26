@@ -26,18 +26,22 @@ function renderArticles() {
   grid.innerHTML = '';
   
   if (filteredArticles.length === 0) {
-    grid.innerHTML = '<p style="grid-column: 1/-1; text-align: center; color: #718096; padding: 3rem;">Aucun article trouvé.</p>';
+    grid.innerHTML = '<p style="grid-column: 1/-1; text-align: center; color: var(--muted); padding: 3rem;">Aucun article trouvé.</p>';
     return;
   }
   
-  filteredArticles.forEach(article => {
-    if (!article.published) return;
-    
-    const card = document.createElement('a');
-    card.href = `/articles/${article.slug}.html`;
-    card.className = `card blog-card ${article.featured ? 'blog-card-featured' : ''}`;
+  // Séparer les articles publiés et les teasers
+  const publishedArticles = filteredArticles.filter(a => a.published);
+  const teaserArticles = filteredArticles.filter(a => !a.published);
+  
+  let index = 0;
+  
+  // Afficher les articles publiés (structure identique aux projets)
+  publishedArticles.forEach(article => {
+    const card = document.createElement('article');
+    card.className = 'card reveal';
     card.setAttribute('data-reveal', '');
-    card.style.setProperty('--d', `${filteredArticles.indexOf(article) * 0.1}s`);
+    card.style.setProperty('--d', `${index * 0.1}s`);
     
     const date = new Date(article.date);
     const dateStr = date.toLocaleDateString('fr-FR', { 
@@ -47,26 +51,49 @@ function renderArticles() {
     });
     
     card.innerHTML = `
-      <div class="blog-card-header">
-        <h3 class="blog-card-title">${article.title}</h3>
-      </div>
-      <div class="blog-card-body">
-        <p class="blog-card-excerpt">${article.excerpt}</p>
-        <div class="blog-card-meta">
-          <span>📅 ${dateStr}</span>
-          <span>•</span>
-          <span>⏱️ ${article.readTime} min</span>
-          ${article.category ? `<span>•</span><span>${article.category}</span>` : ''}
+      <h3>${article.title}</h3>
+      <p><strong>${article.category || 'Article'}</strong> — ${article.excerpt}</p>
+      <p style="color:var(--accent);font-weight:700">📅 ${dateStr} • ⏱️ ${article.readTime} min</p>
+      ${article.tags && article.tags.length > 0 ? `
+        <div style="margin: 1rem 0; display: flex; gap: 0.5rem; flex-wrap: wrap;">
+          ${article.tags.slice(0, 3).map(tag => `<span class="tech-tag">${tag}</span>`).join('')}
         </div>
-        ${article.tags && article.tags.length > 0 ? `
-          <div class="blog-card-tags">
-            ${article.tags.slice(0, 3).map(tag => `<span class="tag">${tag}</span>`).join('')}
-          </div>
-        ` : ''}
-      </div>
+      ` : ''}
+      <a class="cta cta-small" href="/articles/${article.slug}.html">Lire l'article</a>
     `;
     
     grid.appendChild(card);
+    index++;
+  });
+  
+  // Afficher les teasers (articles en chantier)
+  teaserArticles.forEach(article => {
+    const card = document.createElement('article');
+    card.className = 'card reveal blog-teaser-card';
+    card.setAttribute('data-reveal', '');
+    card.style.setProperty('--d', `${index * 0.1}s`);
+    
+    const date = new Date(article.date);
+    const dateStr = date.toLocaleDateString('fr-FR', { 
+      year: 'numeric', 
+      month: 'long', 
+      day: 'numeric' 
+    });
+    
+    card.innerHTML = `
+      <span class="blog-teaser-badge">🏗️ En chantier</span>
+      <h3>${article.title}</h3>
+      <p><strong>${article.category || 'Article'}</strong> — ${article.excerpt}</p>
+      <p style="color:var(--muted);font-weight:700">📅 ${dateStr} • ⏱️ ${article.readTime} min</p>
+      ${article.tags && article.tags.length > 0 ? `
+        <div style="margin: 1rem 0; display: flex; gap: 0.5rem; flex-wrap: wrap;">
+          ${article.tags.slice(0, 3).map(tag => `<span class="tech-tag">${tag}</span>`).join('')}
+        </div>
+      ` : ''}
+    `;
+    
+    grid.appendChild(card);
+    index++;
   });
   
   // Réinitialiser les animations
@@ -141,8 +168,6 @@ function applyFilters() {
   const searchTerm = document.getElementById('blog-search-input')?.value.toLowerCase() || '';
   
   filteredArticles = allArticles.filter(article => {
-    if (!article.published) return false;
-    
     // Filtre par catégorie
     if (activeCategory && activeCategory !== 'all' && article.category !== activeCategory) {
       return false;
