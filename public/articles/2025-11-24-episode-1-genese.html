@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-57SWSFPG');</script>
+    <!-- End Google Tag Manager -->
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NR6L88V61P"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-NR6L88V61P');
+    </script>
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Épisode 1 : La Genèse — De l'idée à l'architecture | Blog SquidResearch</title>
+    <meta name="description" content="SquidResearch est né d'un constat simple : la recherche d'emploi est chronophage et répétitive. Pourquoi ne pas automatiser ce processus tout en gardant la qualité et la personnalisation ?">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Épisode 1 : La Genèse — De l'idée à l'architecture">
+    <meta property="og:description" content="SquidResearch est né d'un constat simple : la recherche d'emploi est chronophage et répétitive.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://landingpage-cv-page-perso.vercel.app/articles/2025-11-24-episode-1-genese.html">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Épisode 1 : La Genèse">
+    <meta name="twitter:description" content="De l'idée à l'architecture de SquidResearch">
+    
+    <link rel="icon" type="image/svg+xml" href="/Monogramme_Round_Whites_plainSvg.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <link rel="stylesheet" href="/assets/css/blog.css" />
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-57SWSFPG"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    
+    <header class="site-header">
+      <a class="logo" href="/"><img src="/Monogramme_Round_Whites_plainSvg.svg" alt="Lucas Tymen" style="height: 32px; vertical-align: middle; margin-right: 8px;">Lucas Tymen</a>
+      <nav class="nav">
+        <a href="/cv.html">CV</a>
+        <a href="/projets.html">Projets</a>
+        <a href="/blog-squid-research.html">Projet en cours</a>
+        <a href="/contact.html" class="cta cta-small">Contact</a>
+      </nav>
+    </header>
+    
+    <main class="container">
+      <article class="blog-article">
+        <nav class="article-breadcrumb">
+          <a href="/blog-squid-research.html">← Retour au blog</a>
+          <span>•</span>
+          <a href="/squid-research.html">Voir le projet</a>
+        </nav>
+        
+        <header class="article-header">
+          <div class="article-meta-top">
+            <span class="article-category">Architecture</span>
+            <time datetime="2025-11-24T07:00:00+01:00">📅 24 novembre 2025</time>
+            <span class="article-read-time">⏱️ 5 min de lecture</span>
+          </div>
+          <h1 class="article-title">Épisode 1 : La Genèse — De l'idée à l'architecture</h1>
+          <p class="article-excerpt">SquidResearch est né d'un constat simple : la recherche d'emploi est chronophage et répétitive. Pourquoi ne pas automatiser ce processus tout en gardant la qualité et la personnalisation ?</p>
+          <div class="article-tags">
+            <span class="tag">Architecture</span>
+            <span class="tag">Docker</span>
+            <span class="tag">Django</span>
+          </div>
+        </header>
+        
+        <div class="article-content">
+          <p>
+            SquidResearch est né d'un constat simple : la recherche d'emploi est chronophage et répétitive. 
+            Pourquoi ne pas automatiser ce processus tout en gardant la qualité et la personnalisation ?
+          </p>
+          
+          <h2>🎯 L'idée initiale</h2>
+          <p>
+            L'objectif était de créer une plateforme qui combine plusieurs technologies pour offrir une expérience 
+            complète : gestion des candidatures, enrichissement automatique des entreprises, recherche de prospects 
+            sur LinkedIn, et automatisation des relances.
+          </p>
+          
+          <h2>🏗️ Choix architecturaux</h2>
+          <p>
+            Dès le départ, j'ai opté pour une architecture microservices avec Docker. Cette approche permet :
+          </p>
+          <ul>
+            <li><strong>Scalabilité</strong> : Chaque service peut être monté en charge indépendamment</li>
+            <li><strong>Isolation</strong> : Les services sont indépendants, facilitant la maintenance</li>
+            <li><strong>Flexibilité</strong> : Facile d'ajouter de nouveaux services (n8n, Flowise, etc.)</li>
+          </ul>
+          
+          <h2>🔧 Stack technique</h2>
+          <p>
+            Le choix s'est porté sur Django pour le backend (robustesse, ORM puissant, écosystème riche), 
+            React pour le frontend (composants réutilisables, état réactif), et PostgreSQL pour la base de données 
+            (fiabilité, performances, support JSON).
+          </p>
+          
+          <h2>📊 Premiers défis</h2>
+          <p>
+            Les premiers défis ont été l'intégration de multiples services (n8n, Flowise, Celery) et la gestion 
+            de l'enrichissement multi-sources. La solution : un système de cache Redis intelligent et une orchestration 
+            optimisée par domaine.
+          </p>
+          
+          <div class="article-insight" style="background: #f8fafc; border-left-color: #667eea;">
+            <strong>💡 Apprentissage clé</strong> : Une architecture bien pensée dès le départ évite les refactorings 
+            coûteux plus tard. Prendre le temps de concevoir l'architecture est un investissement rentable.
+          </div>
+        </div>
+        
+        <footer class="article-footer">
+          <div class="article-share">
+            <span>Partager :</span>
+            <a href="https://twitter.com/intent/tweet?text=Épisode 1 : La Genèse&url=https://landingpage-cv-page-perso.vercel.app/articles/2025-11-24-episode-1-genese.html" target="_blank" rel="noopener">Twitter</a>
+            <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://landingpage-cv-page-perso.vercel.app/articles/2025-11-24-episode-1-genese.html" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+          <nav class="article-navigation" id="article-nav">
+            <!-- Sera rempli par JavaScript -->
+          </nav>
+        </footer>
+      </article>
+    </main>
+    
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div><img src="/Monogramme_Round_Whites_plainSvg.svg" alt="Lucas Tymen" style="height: 20px; vertical-align: middle; margin-right: 6px;">Lucas Tymen — Optimisation & Automatisation</div>
+        <nav class="foot-nav">
+          <a href="/cv.html">CV</a>
+          <a href="/projets.html">Projets</a>
+          <a href="/contact.html">Contact</a>
+        </nav>
+      </div>
+    </footer>
+    
+    <script src="/assets/js/blog.js"></script>
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>
+

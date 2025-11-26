@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-57SWSFPG');</script>
+    <!-- End Google Tag Manager -->
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NR6L88V61P"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-NR6L88V61P');
+    </script>
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Épisode 2 : Le Module Enriched — Orchestration intelligente | Blog SquidResearch</title>
+    <meta name="description" content="Le Module Enriched est le cœur de l'enrichissement des données entreprises. Il orchestre plusieurs sources (INSEE, Pappers, Société.com) pour fournir des données complètes et fiables.">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Épisode 2 : Le Module Enriched — Orchestration intelligente">
+    <meta property="og:description" content="Le Module Enriched orchestre plusieurs sources pour fournir des données complètes et fiables.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://landingpage-cv-page-perso.vercel.app/articles/2025-11-24-episode-2-module-enriched.html">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Épisode 2 : Le Module Enriched">
+    <meta name="twitter:description" content="Orchestration intelligente de l'enrichissement multi-sources">
+    
+    <link rel="icon" type="image/svg+xml" href="/Monogramme_Round_Whites_plainSvg.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <link rel="stylesheet" href="/assets/css/blog.css" />
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-57SWSFPG"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    
+    <header class="site-header">
+      <a class="logo" href="/"><img src="/Monogramme_Round_Whites_plainSvg.svg" alt="Lucas Tymen" style="height: 32px; vertical-align: middle; margin-right: 8px;">Lucas Tymen</a>
+      <nav class="nav">
+        <a href="/cv.html">CV</a>
+        <a href="/projets.html">Projets</a>
+        <a href="/blog-squid-research.html">Projet en cours</a>
+        <a href="/contact.html" class="cta cta-small">Contact</a>
+      </nav>
+    </header>
+    
+    <main class="container">
+      <article class="blog-article">
+        <nav class="article-breadcrumb">
+          <a href="/blog-squid-research.html">← Retour au blog</a>
+          <span>•</span>
+          <a href="/squid-research.html">Voir le projet</a>
+        </nav>
+        
+        <header class="article-header">
+          <div class="article-meta-top">
+            <span class="article-category">Développement</span>
+            <time datetime="2025-11-24T08:00:00+01:00">📅 24 novembre 2025</time>
+            <span class="article-read-time">⏱️ 6 min de lecture</span>
+          </div>
+          <h1 class="article-title">Épisode 2 : Le Module Enriched — Orchestration intelligente</h1>
+          <p class="article-excerpt">Le Module Enriched est le cœur de l'enrichissement des données entreprises. Il orchestre plusieurs sources (INSEE, Pappers, Société.com) pour fournir des données complètes et fiables.</p>
+          <div class="article-tags">
+            <span class="tag">Enrichissement</span>
+            <span class="tag">APIs</span>
+            <span class="tag">Cache</span>
+          </div>
+        </header>
+        
+        <div class="article-content">
+          <p>
+            Le Module Enriched est le cœur de l'enrichissement des données entreprises. Il orchestre plusieurs sources 
+            (INSEE, Pappers, Société.com) pour fournir des données complètes et fiables.
+          </p>
+          
+          <h2>🎯 Problématique</h2>
+          <p>
+            L'enrichissement B2B présente plusieurs défis :
+          </p>
+          <ul>
+            <li><strong>Multiplicité des sources</strong> : Chaque source a ses propres limites et formats</li>
+            <li><strong>Rate limiting</strong> : Les APIs ont des limites de requêtes</li>
+            <li><strong>Qualité des données</strong> : Certaines sources sont plus fiables que d'autres</li>
+            <li><strong>Performance</strong> : L'enrichissement ne doit pas ralentir l'application</li>
+          </ul>
+          
+          <h2>💡 Solution : Orchestration intelligente</h2>
+          <p>
+            J'ai développé un système d'orchestration qui :
+          </p>
+          <ul>
+            <li><strong>Groupe les requêtes par domaine</strong> : Évite les requêtes redondantes</li>
+            <li><strong>Cache Redis intelligent</strong> : Réponses en moins de 0.1s si données en cache</li>
+            <li><strong>Cascade de sources</strong> : Si une source échoue, passe à la suivante</li>
+            <li><strong>Rate limiting humanisé</strong> : Délais de 5-8s entre requêtes pour éviter les blocages</li>
+          </ul>
+          
+          <h2>🔧 Architecture technique</h2>
+          <p>
+            Le module utilise un pattern Factory pour gérer les différentes sources d'enrichissement. Chaque source 
+            implémente une interface commune, permettant d'ajouter facilement de nouvelles sources.
+          </p>
+          
+          <h2>📊 Résultats</h2>
+          <p>
+            Avec ce système, l'enrichissement est :
+          </p>
+          <ul>
+            <li><strong>Rapide</strong> : Cache hit en moins de 0.1s</li>
+            <li><strong>Fiable</strong> : Cascade automatique si une source échoue</li>
+            <li><strong>Respectueux</strong> : Rate limiting pour éviter les blocages</li>
+            <li><strong>Évolutif</strong> : Facile d'ajouter de nouvelles sources</li>
+          </ul>
+          
+          <h2>🔄 NOUVEAU : Import CSV Intelligent</h2>
+          <p>
+            <strong>Problème résolu</strong> : Le module de normalisation ne détectait pas correctement les colonnes CSV, 
+            causant 100% d'éléments ignorés lors de l'import.
+          </p>
+          <p>
+            <strong>Solution déployée</strong> : Refactorisation complète avec détection automatique intelligente des colonnes :
+          </p>
+          <ul>
+            <li><strong>Détection automatique</strong> : Reconnaissance de multiples variantes (Entreprise, Société, Nom, Company, etc.)</li>
+            <li><strong>Normalisation intelligente</strong> : Transformation automatique vers schéma unifié avant import</li>
+            <li><strong>Recherche multi-champs</strong> : Recherche du nom d'entreprise dans plusieurs champs possibles (insensible à la casse)</li>
+            <li><strong>Fallback intelligent</strong> : Si nom non trouvé, utilise la première colonne non vide qui ressemble à un nom</li>
+            <li><strong>Nettoyage automatique</strong> : Extraction du domaine depuis URLs complètes, suppression de "www."</li>
+            <li><strong>Support multiples encodages</strong> : UTF-8, latin-1</li>
+          </ul>
+          <p>
+            <strong>Résultats</strong> :
+          </p>
+          <ul>
+            <li><strong>Avant</strong> : 145 éléments ignorés, 0 créés, 0 mis à jour</li>
+            <li><strong>Après</strong> : 145 créés, 0 ignorés (100% de succès) ✅</li>
+          </ul>
+          
+          <div class="article-insight" style="background: #f0fdf4; border-left-color: #10b981;">
+            <strong>💡 Apprentissage clé</strong> : L'orchestration intelligente permet de transformer des APIs 
+            limitées en un système robuste et performant. Le cache est votre meilleur ami pour les performances.
+            <br/><br/>
+            <strong>🔄 Nouveau</strong> : La détection automatique des colonnes transforme l'import CSV d'un processus 
+            fragile en une expérience fluide et fiable, même avec des formats de données variés.
+          </div>
+        </div>
+        
+        <footer class="article-footer">
+          <div class="article-share">
+            <span>Partager :</span>
+            <a href="https://twitter.com/intent/tweet?text=Épisode 2 : Le Module Enriched&url=https://landingpage-cv-page-perso.vercel.app/articles/2025-11-24-episode-2-module-enriched.html" target="_blank" rel="noopener">Twitter</a>
+            <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://landingpage-cv-page-perso.vercel.app/articles/2025-11-24-episode-2-module-enriched.html" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+          <nav class="article-navigation" id="article-nav">
+            <!-- Sera rempli par JavaScript -->
+          </nav>
+        </footer>
+      </article>
+    </main>
+    
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div><img src="/Monogramme_Round_Whites_plainSvg.svg" alt="Lucas Tymen" style="height: 20px; vertical-align: middle; margin-right: 6px;">Lucas Tymen — Optimisation & Automatisation</div>
+        <nav class="foot-nav">
+          <a href="/cv.html">CV</a>
+          <a href="/projets.html">Projets</a>
+          <a href="/contact.html">Contact</a>
+        </nav>
+      </div>
+    </footer>
+    
+    <script src="/assets/js/blog.js"></script>
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>
+

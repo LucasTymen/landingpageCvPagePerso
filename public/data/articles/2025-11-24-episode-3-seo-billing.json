@@ -1,0 +1,17 @@
+{
+  "id": "episode-3-seo-billing",
+  "slug": "2025-11-24-episode-3-seo-billing",
+  "title": "Épisode 3 : SEO & Billing — Optimisation et monétisation",
+  "excerpt": "Après avoir développé les fonctionnalités core, il était temps de penser à la visibilité (SEO) et à la monétisation (billing). Deux aspects cruciaux pour une plateforme SaaS.",
+  "date": "2025-11-24T09:00:00+01:00",
+  "updated": "2025-11-24T09:00:00+01:00",
+  "author": "Lucas Tymen",
+  "tags": ["SEO", "Stripe", "Abonnements"],
+  "category": "Optimisation",
+  "readTime": 4,
+  "image": null,
+  "featured": false,
+  "published": false,
+  "gradient": "linear-gradient(135deg, #f59e0b 0%, #d97706 100%)"
+}
+

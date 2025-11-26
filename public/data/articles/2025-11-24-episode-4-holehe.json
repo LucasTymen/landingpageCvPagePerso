@@ -1,0 +1,17 @@
+{
+  "id": "episode-4-holehe",
+  "slug": "2025-11-24-episode-4-holehe",
+  "title": "Épisode 4 : Intégration holehe — Vérification emails sur 120+ plateformes",
+  "excerpt": "L'intégration de holehe (outil Kali Linux) dans le système ENRICHED permet de vérifier les emails sur 120+ plateformes pour détecter les comptes actifs. Cette fonctionnalité améliore significativement la qualité de l'enrichissement de contacts.",
+  "date": "2025-11-24T10:00:00+01:00",
+  "updated": "2025-11-24T10:00:00+01:00",
+  "author": "Lucas Tymen",
+  "tags": ["ENRICHED", "holehe", "Kali Linux", "Tests"],
+  "category": "Développement",
+  "readTime": 5,
+  "image": null,
+  "featured": true,
+  "published": false,
+  "gradient": "linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%)"
+}
+

@@ -1,0 +1,17 @@
+{
+  "id": "episode-1-genese",
+  "slug": "2025-11-24-episode-1-genese",
+  "title": "Épisode 1 : La Genèse — De l'idée à l'architecture",
+  "excerpt": "SquidResearch est né d'un constat simple : la recherche d'emploi est chronophage et répétitive. Pourquoi ne pas automatiser ce processus tout en gardant la qualité et la personnalisation ?",
+  "date": "2025-11-24T07:00:00+01:00",
+  "updated": "2025-11-24T07:00:00+01:00",
+  "author": "Lucas Tymen",
+  "tags": ["Architecture", "Docker", "Django"],
+  "category": "Architecture",
+  "readTime": 5,
+  "image": null,
+  "featured": false,
+  "published": true,
+  "gradient": "linear-gradient(135deg, #667eea 0%, #764ba2 100%)"
+}
+

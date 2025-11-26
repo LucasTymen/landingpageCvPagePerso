@@ -27,6 +27,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/styles.css" />
+    <link rel="stylesheet" href="/assets/css/blog.css" />
     <style>
       /* Style BOGOSS pour le blog */
       .bogoss-card {
@@ -215,6 +216,23 @@
         <p class="subhead">Découvrez l'histoire du développement, les défis techniques et les apprentissages</p>
       </div>
       
+      <!-- Filtres et recherche -->
+      <div id="blog-filters" class="blog-filters">
+        <!-- Sera rempli par JavaScript -->
+      </div>
+      
+      <!-- Grille d'articles -->
+      <div id="blog-grid" class="blog-grid">
+        <!-- Les articles seront chargés dynamiquement par JavaScript -->
+      </div>
+      
+      <div style="text-align: center; margin-top: 3rem; padding: 2rem; background: rgba(102, 126, 234, 0.1); border-radius: 16px;">
+        <h3 style="margin-bottom: 1rem; color: #667eea;">Plus d'articles à venir</h3>
+        <p style="color: var(--muted); margin-bottom: 1.5rem;">
+          Chaque développement d'outils ou amélioration fera l'objet d'un nouvel article.
+        </p>
+        <a href="/squid-research.html" class="cta">Voir le projet complet</a>
+      </div>
       <!-- IMPORTANT: Les articles doivent être classés du PLUS RÉCENT au PLUS ANCIEN -->
       <!-- Nouveaux articles à ajouter EN HAUT de cette liste -->
       
@@ -414,9 +432,36 @@
               <li><strong>Évolutif</strong> : Facile d'ajouter de nouvelles sources</li>
             </ul>
             
+            <h2>🔄 NOUVEAU : Import CSV Intelligent</h2>
+            <p>
+              <strong>Problème résolu</strong> : Le module de normalisation ne détectait pas correctement les colonnes CSV, 
+              causant 100% d'éléments ignorés lors de l'import.
+            </p>
+            <p>
+              <strong>Solution déployée</strong> : Refactorisation complète avec détection automatique intelligente des colonnes :
+            </p>
+            <ul>
+              <li><strong>Détection automatique</strong> : Reconnaissance de multiples variantes (Entreprise, Société, Nom, Company, etc.)</li>
+              <li><strong>Normalisation intelligente</strong> : Transformation automatique vers schéma unifié avant import</li>
+              <li><strong>Recherche multi-champs</strong> : Recherche du nom d'entreprise dans plusieurs champs possibles (insensible à la casse)</li>
+              <li><strong>Fallback intelligent</strong> : Si nom non trouvé, utilise la première colonne non vide qui ressemble à un nom</li>
+              <li><strong>Nettoyage automatique</strong> : Extraction du domaine depuis URLs complètes, suppression de "www."</li>
+              <li><strong>Support multiples encodages</strong> : UTF-8, latin-1</li>
+            </ul>
+            <p>
+              <strong>Résultats</strong> :
+            </p>
+            <ul>
+              <li><strong>Avant</strong> : 145 éléments ignorés, 0 créés, 0 mis à jour</li>
+              <li><strong>Après</strong> : 145 créés, 0 ignorés (100% de succès) ✅</li>
+            </ul>
+            
             <div style="margin-top: 2rem; padding: 1.5rem; background: #f0fdf4; border-radius: 12px; border-left: 4px solid #10b981;">
               <strong>💡 Apprentissage clé</strong> : L'orchestration intelligente permet de transformer des APIs 
               limitées en un système robuste et performant. Le cache est votre meilleur ami pour les performances.
+              <br/><br/>
+              <strong>🔄 Nouveau</strong> : La détection automatique des colonnes transforme l'import CSV d'un processus 
+              fragile en une expérience fluide et fiable, même avec des formats de données variés.
             </div>
           </div>
         </div>
@@ -497,6 +542,7 @@
         </p>
         <a href="/squid-research.html" class="cta">Voir le projet complet</a>
       </div>
+      -->
     </main>
     
     <footer class="site-footer">
@@ -510,6 +556,7 @@
       </div>
     </footer>
     
+    <script src="/assets/js/blog.js"></script>
     <script src="/assets/js/main.js"></script>
   </body>
 </html>

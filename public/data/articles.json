@@ -1,0 +1,42 @@
+[
+  {
+    "id": "episode-2-module-enriched",
+    "slug": "2025-11-24-episode-2-module-enriched",
+    "title": "Épisode 2 : Le Module Enriched — Orchestration intelligente",
+    "excerpt": "Le Module Enriched est le cœur de l'enrichissement des données entreprises. Il orchestre plusieurs sources (INSEE, Pappers, Société.com) pour fournir des données complètes et fiables.",
+    "date": "2025-11-24T08:00:00+01:00",
+    "updated": "2025-11-24T08:00:00+01:00",
+    "author": "Lucas Tymen",
+    "tags": [
+      "Enrichissement",
+      "APIs",
+      "Cache"
+    ],
+    "category": "Développement",
+    "readTime": 6,
+    "image": null,
+    "featured": false,
+    "published": true,
+    "gradient": "linear-gradient(135deg, #10b981 0%, #059669 100%)"
+  },
+  {
+    "id": "episode-1-genese",
+    "slug": "2025-11-24-episode-1-genese",
+    "title": "Épisode 1 : La Genèse — De l'idée à l'architecture",
+    "excerpt": "SquidResearch est né d'un constat simple : la recherche d'emploi est chronophage et répétitive. Pourquoi ne pas automatiser ce processus tout en gardant la qualité et la personnalisation ?",
+    "date": "2025-11-24T07:00:00+01:00",
+    "updated": "2025-11-24T07:00:00+01:00",
+    "author": "Lucas Tymen",
+    "tags": [
+      "Architecture",
+      "Docker",
+      "Django"
+    ],
+    "category": "Architecture",
+    "readTime": 5,
+    "image": null,
+    "featured": false,
+    "published": true,
+    "gradient": "linear-gradient(135deg, #667eea 0%, #764ba2 100%)"
+  }
+]

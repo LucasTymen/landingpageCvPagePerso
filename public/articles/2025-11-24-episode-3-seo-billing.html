@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-57SWSFPG');</script>
+    <!-- End Google Tag Manager -->
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NR6L88V61P"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-NR6L88V61P');
+    </script>
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Épisode 3 : SEO & Billing — Optimisation et monétisation | Blog SquidResearch</title>
+    <meta name="description" content="Après avoir développé les fonctionnalités core, il était temps de penser à la visibilité (SEO) et à la monétisation (billing). Deux aspects cruciaux pour une plateforme SaaS.">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Épisode 3 : SEO & Billing — Optimisation et monétisation">
+    <meta property="og:description" content="Après avoir développé les fonctionnalités core, il était temps de penser à la visibilité (SEO) et à la monétisation (billing).">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://landingpage-cv-page-perso.vercel.app/articles/2025-11-24-episode-3-seo-billing.html">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Épisode 3 : SEO & Billing">
+    <meta name="twitter:description" content="Optimisation et monétisation de SquidResearch">
+    
+    <link rel="icon" type="image/svg+xml" href="/Monogramme_Round_Whites_plainSvg.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <link rel="stylesheet" href="/assets/css/blog.css" />
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-57SWSFPG"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    
+    <header class="site-header">
+      <a class="logo" href="/"><img src="/Monogramme_Round_Whites_plainSvg.svg" alt="Lucas Tymen" style="height: 32px; vertical-align: middle; margin-right: 8px;">Lucas Tymen</a>
+      <nav class="nav">
+        <a href="/cv.html">CV</a>
+        <a href="/projets.html">Projets</a>
+        <a href="/blog-squid-research.html">Projet en cours</a>
+        <a href="/contact.html" class="cta cta-small">Contact</a>
+      </nav>
+    </header>
+    
+    <main class="container">
+      <article class="blog-article">
+        <nav class="article-breadcrumb">
+          <a href="/blog-squid-research.html">← Retour au blog</a>
+          <span>•</span>
+          <a href="/squid-research.html">Voir le projet</a>
+        </nav>
+        
+        <header class="article-header">
+          <div class="article-meta-top">
+            <span class="article-category">Optimisation</span>
+            <time datetime="2025-11-24T09:00:00+01:00">📅 24 novembre 2025</time>
+            <span class="article-read-time">⏱️ 4 min de lecture</span>
+          </div>
+          <h1 class="article-title">Épisode 3 : SEO & Billing — Optimisation et monétisation</h1>
+          <p class="article-excerpt">Après avoir développé les fonctionnalités core, il était temps de penser à la visibilité (SEO) et à la monétisation (billing). Deux aspects cruciaux pour une plateforme SaaS.</p>
+          <div class="article-tags">
+            <span class="tag">SEO</span>
+            <span class="tag">Stripe</span>
+            <span class="tag">Abonnements</span>
+          </div>
+        </header>
+        
+        <div class="article-content">
+          <p>
+            Après avoir développé les fonctionnalités core, il était temps de penser à la visibilité (SEO) et à la 
+            monétisation (billing). Deux aspects cruciaux pour une plateforme SaaS.
+          </p>
+          
+          <h2>🔍 Optimisation SEO</h2>
+          <p>
+            L'audit SEO a révélé plusieurs points à corriger :
+          </p>
+          <ul>
+            <li><strong>Pages privées indexées</strong> : Les pages protégées étaient accessibles aux crawlers</li>
+            <li><strong>Redirections 302</strong> : Plusieurs pages redirigeaient vers login</li>
+            <li><strong>robots.txt incomplet</strong> : Certaines routes API étaient bloquées</li>
+            <li><strong>Meta tags manquants</strong> : Pas de Open Graph ni Twitter Cards</li>
+          </ul>
+          
+          <h2>✅ Solutions mises en place</h2>
+          <p>
+            J'ai implémenté une stratégie SEO complète :
+          </p>
+          <ul>
+            <li><strong>robots.txt optimisé</strong> : Blocage des pages privées, autorisation des pages publiques</li>
+            <li><strong>sitemap.xml</strong> : Uniquement les pages publiques indexables</li>
+            <li><strong>Meta robots</strong> : `noindex, nofollow` par défaut, `index, follow` pour pages publiques</li>
+            <li><strong>Canonical URLs</strong> : Évite le contenu dupliqué</li>
+            <li><strong>Open Graph & Twitter Cards</strong> : Meilleur partage sur réseaux sociaux</li>
+          </ul>
+          
+          <h2>💳 Système de billing Stripe</h2>
+          <p>
+            Pour la monétisation, j'ai intégré Stripe avec 6 plans d'abonnement :
+          </p>
+          <ul>
+            <li><strong>Gratuit</strong> : 5 candidatures/mois pour tester</li>
+            <li><strong>Essai 15 jours</strong> : Accès complet sans CB</li>
+            <li><strong>3 plans Starter/Pro</strong> : Prospection, Email Marketing, Réseaux Sociaux</li>
+            <li><strong>Offre Complète</strong> : Tout illimité avec économie de 29%</li>
+          </ul>
+          
+          <h2>🔒 Sécurité</h2>
+          <p>
+            J'ai également corrigé un problème de throttle sur l'inscription : le rate limiting s'appliquait sur les 
+            requêtes GET (clics sur les plans), bloquant les utilisateurs légitimes. Solution : throttle uniquement 
+            sur les requêtes POST (soumission du formulaire).
+          </p>
+          
+          <div class="article-insight" style="background: #fffbeb; border-left-color: #f59e0b;">
+            <strong>💡 Apprentissage clé</strong> : Le SEO et la monétisation doivent être pensés dès le début. 
+            Corriger après coup est plus coûteux et peut impacter la croissance.
+          </div>
+        </div>
+        
+        <footer class="article-footer">
+          <div class="article-share">
+            <span>Partager :</span>
+            <a href="https://twitter.com/intent/tweet?text=Épisode 3 : SEO & Billing&url=https://landingpage-cv-page-perso.vercel.app/articles/2025-11-24-episode-3-seo-billing.html" target="_blank" rel="noopener">Twitter</a>
+            <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://landingpage-cv-page-perso.vercel.app/articles/2025-11-24-episode-3-seo-billing.html" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+          <nav class="article-navigation" id="article-nav">
+            <!-- Sera rempli par JavaScript -->
+          </nav>
+        </footer>
+      </article>
+    </main>
+    
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div><img src="/Monogramme_Round_Whites_plainSvg.svg" alt="Lucas Tymen" style="height: 20px; vertical-align: middle; margin-right: 6px;">Lucas Tymen — Optimisation & Automatisation</div>
+        <nav class="foot-nav">
+          <a href="/cv.html">CV</a>
+          <a href="/projets.html">Projets</a>
+          <a href="/contact.html">Contact</a>
+        </nav>
+      </div>
+    </footer>
+    
+    <script src="/assets/js/blog.js"></script>
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>
+
