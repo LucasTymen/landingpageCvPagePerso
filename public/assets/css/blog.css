@@ -1,29 +1,15 @@
-/* Styles spécifiques au blog */
+/* Styles spécifiques au blog - Réutilise les classes existantes */
 
-/* Page d'accueil du blog */
-.blog-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
-  margin-top: 2rem;
-}
+/* Les cards utilisent déjà .card et .cards de styles.css */
+/* Pas besoin de redéfinir les styles de base */
 
 .blog-card {
-  background: var(--card);
-  border: 1px solid var(--border);
-  border-radius: 14px;
-  padding: 20px;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  text-decoration: none;
-  color: inherit;
+  /* Réutilise .card - juste ajouter flex column */
   display: flex;
   flex-direction: column;
   height: 100%;
-}
-
-.blog-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 16px 40px rgba(0, 225, 255, 0.08);
+  text-decoration: none;
+  color: inherit;
 }
 
 .blog-card-header {
@@ -72,19 +58,70 @@
   margin-top: 1rem;
 }
 
-.blog-card-tag {
-  display: inline-block;
-  padding: 0.25rem 0.75rem;
-  background: rgba(109, 94, 252, 0.1);
-  border-radius: 20px;
-  font-size: 0.75rem;
-  color: var(--grad1);
-  font-weight: 500;
-  border: 1px solid rgba(109, 94, 252, 0.2);
+/* Filtres et recherche */
+.blog-filters {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
 }
 
-.blog-card-featured {
+.blog-filter-group {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.blog-filter-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.blog-filter-button {
+  padding: 0.5rem 1rem;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  font-size: 0.875rem;
+  color: var(--text);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.blog-filter-button:hover {
   border-color: var(--accent);
+  color: var(--accent);
+}
+
+.blog-filter-button.active {
+  background: linear-gradient(135deg, var(--grad1), var(--grad2));
+  color: #001018;
+  border-color: transparent;
+}
+
+.blog-search {
+  flex: 1;
+  min-width: 200px;
+}
+
+.blog-search input {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  font-size: 0.875rem;
+  color: var(--text);
+}
+
+.blog-search input::placeholder {
+  color: var(--muted);
 }
 
 /* Article individuel */
@@ -103,17 +140,17 @@
 }
 
 .article-breadcrumb a {
-  color: var(--accent);
+  color: var(--muted);
   text-decoration: none;
-  transition: opacity 0.2s;
+  transition: color 0.2s ease;
 }
 
 .article-breadcrumb a:hover {
-  opacity: 0.8;
+  color: var(--accent);
 }
 
 .article-breadcrumb span {
-  color: #cbd5e0;
+  color: var(--muted);
 }
 
 .article-header {
@@ -127,14 +164,14 @@
   align-items: center;
   margin-bottom: 1rem;
   font-size: 0.875rem;
-  color: #718096;
+  color: var(--muted);
 }
 
 .article-category {
   display: inline-block;
   padding: 0.375rem 1rem;
-  background: var(--accent);
-  color: white;
+  background: linear-gradient(135deg, var(--grad1), var(--grad2));
+  color: #001018;
   border-radius: 20px;
   font-weight: 600;
   font-size: 0.75rem;
@@ -147,12 +184,12 @@
   font-weight: 800;
   margin: 1rem 0;
   line-height: 1.2;
-  color: #1a1a1a;
+  color: var(--text);
 }
 
 .article-excerpt {
   font-size: 1.25rem;
-  color: #4a5568;
+  color: var(--muted);
   line-height: 1.6;
   margin: 1rem 0;
 }
@@ -164,24 +201,14 @@
   margin-top: 1.5rem;
 }
 
-.article-tags .tag {
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  background: #f1f5f9;
-  border-radius: 20px;
-  font-size: 0.875rem;
-  color: #475569;
-  font-weight: 500;
-}
-
 .article-content {
   line-height: 1.8;
-  color: #1a1a1a;
+  color: var(--text);
   font-size: 1.125rem;
 }
 
 .article-content h2 {
-  color: #1a1a1a;
+  color: var(--text);
   margin-top: 2.5rem;
   margin-bottom: 1rem;
   font-size: 1.75rem;
@@ -189,7 +216,7 @@
 }
 
 .article-content h3 {
-  color: #2d3748;
+  color: var(--text);
   margin-top: 2rem;
   margin-bottom: 0.75rem;
   font-size: 1.375rem;
@@ -204,7 +231,7 @@
 
 .article-content li {
   margin: 0.75rem 0;
-  color: #4a5568;
+  color: var(--muted);
 }
 
 .article-content p {
@@ -212,41 +239,48 @@
 }
 
 .article-content code {
-  background: #f1f5f9;
+  background: var(--card);
   padding: 0.2rem 0.5rem;
   border-radius: 4px;
   font-size: 0.875rem;
-  color: #6366f1;
+  color: var(--accent);
   font-family: 'Courier New', monospace;
+  border: 1px solid var(--border);
 }
 
 .article-content pre {
-  background: #1e293b;
-  color: #e2e8f0;
+  background: var(--card);
+  color: var(--text);
   padding: 1.5rem;
   border-radius: 12px;
   overflow-x: auto;
   margin: 2rem 0;
+  border: 1px solid var(--border);
 }
 
 .article-content pre code {
   background: transparent;
   color: inherit;
   padding: 0;
+  border: none;
 }
 
 .article-insight {
   margin-top: 2rem;
   padding: 1.5rem;
   border-radius: 12px;
-  border-left: 4px solid;
+  border-left: 4px solid var(--accent);
+  background: var(--card);
+  border-right: 1px solid var(--border);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
   line-height: 1.7;
 }
 
 .article-footer {
   margin-top: 4rem;
   padding-top: 2rem;
-  border-top: 2px solid #e2e8f0;
+  border-top: 2px solid var(--border);
 }
 
 .article-share {
@@ -255,14 +289,14 @@
   align-items: center;
   margin-bottom: 2rem;
   font-size: 0.875rem;
-  color: #718096;
+  color: var(--muted);
 }
 
 .article-share a {
   color: var(--accent);
   text-decoration: none;
   font-weight: 600;
-  transition: opacity 0.2s;
+  transition: opacity 0.2s ease;
 }
 
 .article-share a:hover {
@@ -279,16 +313,16 @@
 .article-nav-link {
   flex: 1;
   padding: 1rem;
-  background: #f7fafc;
+  background: var(--card);
   border-radius: 12px;
   text-decoration: none;
-  color: #2d3748;
-  transition: all 0.2s;
-  border: 1px solid #e2e8f0;
+  color: var(--text);
+  transition: all 0.2s ease;
+  border: 1px solid var(--border);
 }
 
 .article-nav-link:hover {
-  background: white;
+  background: var(--card);
   border-color: var(--accent);
   transform: translateX(4px);
 }
@@ -300,7 +334,7 @@
 .article-nav-link .nav-label {
   display: block;
   font-size: 0.75rem;
-  color: #718096;
+  color: var(--muted);
   margin-bottom: 0.25rem;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -308,75 +342,11 @@
 
 .article-nav-link .nav-title {
   font-weight: 600;
-  color: #1a1a1a;
-}
-
-/* Filtres et recherche */
-.blog-filters {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-  margin-bottom: 2rem;
-  padding: 1.5rem;
-  background: #f7fafc;
-  border-radius: 12px;
-}
-
-.blog-filter-group {
-  display: flex;
-  gap: 0.5rem;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-.blog-filter-label {
-  font-size: 0.875rem;
-  font-weight: 600;
-  color: #475569;
-}
-
-.blog-filter-button {
-  padding: 0.5rem 1rem;
-  background: white;
-  border: 1px solid #cbd5e0;
-  border-radius: 20px;
-  font-size: 0.875rem;
-  color: #475569;
-  cursor: pointer;
-  transition: all 0.2s;
-}
-
-.blog-filter-button:hover {
-  border-color: var(--accent);
-  color: var(--accent);
-}
-
-.blog-filter-button.active {
-  background: var(--accent);
-  color: white;
-  border-color: var(--accent);
-}
-
-.blog-search {
-  flex: 1;
-  min-width: 200px;
-}
-
-.blog-search input {
-  width: 100%;
-  padding: 0.5rem 1rem;
-  border: 1px solid #cbd5e0;
-  border-radius: 20px;
-  font-size: 0.875rem;
+  color: var(--text);
 }
 
 /* Responsive */
 @media (max-width: 920px) {
-  .blog-grid {
-    grid-template-columns: 1fr;
-    gap: 18px;
-  }
-  
   .article-title {
     font-size: 2rem;
   }
@@ -389,4 +359,3 @@
     flex-direction: column;
   }
 }
-

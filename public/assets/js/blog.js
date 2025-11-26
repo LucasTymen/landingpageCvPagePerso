@@ -35,7 +35,7 @@ function renderArticles() {
     
     const card = document.createElement('a');
     card.href = `/articles/${article.slug}.html`;
-    card.className = `blog-card ${article.featured ? 'blog-card-featured' : ''}`;
+    card.className = `card blog-card ${article.featured ? 'blog-card-featured' : ''}`;
     card.setAttribute('data-reveal', '');
     card.style.setProperty('--d', `${filteredArticles.indexOf(article) * 0.1}s`);
     
@@ -60,7 +60,7 @@ function renderArticles() {
         </div>
         ${article.tags && article.tags.length > 0 ? `
           <div class="blog-card-tags">
-            ${article.tags.slice(0, 3).map(tag => `<span class="blog-card-tag">${tag}</span>`).join('')}
+            ${article.tags.slice(0, 3).map(tag => `<span class="tag">${tag}</span>`).join('')}
           </div>
         ` : ''}
       </div>
