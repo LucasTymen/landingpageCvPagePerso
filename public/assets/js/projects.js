@@ -57,6 +57,15 @@ if (grid){
       <a class="cta cta-small" href="${p.link}">Détails</a>
     `;
     grid.appendChild(el);
+    
+    // Empêcher le comportement par défaut pour les liens "#"
+    const link = el.querySelector('a[href="#"]');
+    if (link) {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+      });
+    }
   });
   
   // Re-initialize animations for dynamically created elements
