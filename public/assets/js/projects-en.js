@@ -7,6 +7,13 @@ const sampleProjects = [
     link: "/en/squid-research.html" 
   },
   { 
+    title: "Origin Traiteur - Intelligent Automation", 
+    tag: "n8n + AI + PostgreSQL", 
+    impact: "2 AI agents • Multi-channel validation", 
+    brief: "Automation system with 2 AI agents (Analyzer + Writer) to automatically follow up on pending quotes. PostgreSQL architecture, multi-channel validation (Gmail + Slack), summary table with interactive actions.", 
+    link: "/en/origin-traiteur.html" 
+  },
+  { 
     title: "Parazar - Dating Site", 
     tag: "Growth Hacking", 
     impact: "🏆 1st Place - 20/20", 
