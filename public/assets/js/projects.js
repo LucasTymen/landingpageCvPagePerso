@@ -11,7 +11,7 @@ const sampleProjects = [
     tag: "n8n + IA + PostgreSQL", 
     impact: "2 agents IA • Validation multi-canal", 
     brief: "Système d'automatisation avec 2 agents IA (Analyseur + Rédacteur) pour relancer automatiquement les devis. Architecture PostgreSQL, validation multi-canal (Gmail + Slack), tableau récapitulatif avec actions interactives.", 
-    link: "#" 
+    link: "/origin-traiteur.html" 
   },
   { 
     title: "Parazar - Scraper automatisé", 

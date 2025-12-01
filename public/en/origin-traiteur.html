@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-57SWSFPG');</script>
+    <!-- End Google Tag Manager -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NR6L88V61P"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-NR6L88V61P');
+    </script>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Origin Traiteur - Intelligent Automation — Lucas Tymen</title>
+    <meta name="description" content="Origin Traiteur: automation system with 2 AI agents (Analyzer + Writer) to automatically follow up on pending quotes. PostgreSQL architecture, multi-channel validation (Gmail + Slack)." />
+    <link rel="icon" type="image/svg+xml" href="/Monogramme_Round_Whites_plainSvg.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <link rel="stylesheet" href="/assets/css/charts.css" />
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-57SWSFPG"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <header class="site-header">
+      <a class="logo" href="/en/"><img src="/Monogramme_Round_Whites_plainSvg.svg" alt="Lucas Tymen" style="height: 32px; vertical-align: middle; margin-right: 8px;">Lucas Tymen</a>
+      <nav class="nav">
+        <a href="/en/cv.html">Resume</a>
+        <a class="active" href="/en/projects.html">Projects</a>
+        <a href="/en/blog-squid-research.html">Current Project</a>
+        <a href="/en/contact.html" class="cta cta-small">Contact</a>
+        <div class="language-switcher">
+          <a href="/en/" class="lang-link active" title="English">
+            <span class="flag-icon">🇬🇧</span>
+          </a>
+          <a href="/" class="lang-link" title="Français">
+            <span class="flag-icon">🇫🇷</span>
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container">
+      <div class="project-header">
+        <div class="breadcrumb">
+          <a href="/en/projects.html">← Back to projects</a>
+        </div>
+        
+        <h1 data-reveal class="reveal" style="--d:.05s">Origin Traiteur - Intelligent Automation</h1>
+        <p class="project-subtitle" data-reveal class="reveal" style="--d:.1s">AI agent automation system for quote follow-up (July 2025 – October 2025)</p>
+        
+        <div class="project-meta" data-reveal class="reveal" style="--d:.15s">
+          <span class="tag">n8n</span>
+          <span class="tag">AI</span>
+          <span class="tag">PostgreSQL</span>
+          <span class="tag">Django</span>
+          <span class="tag">Flowise</span>
+        </div>
+      </div>
+
+      <div class="project-content">
+        <!-- Automation Performance Infographic - Complete Integration -->
+        <section class="project-section" data-reveal class="reveal" style="--d:.2s">
+          <div class="particles" id="particles-automation-main"></div>
+          
+          <div class="header">
+            <h1 class="title">Automation Performance</h1>
+            <p class="subtitle">Automation evolution over 3 months</p>
+          </div>
+          
+          <div class="main-chart">
+            <div class="chart-grid">
+              <svg width="100%" height="100%">
+                <defs>
+                  <pattern id="grid-origin" width="40" height="40" patternUnits="userSpaceOnUse">
+                    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#6cf0ff" stroke-width="0.5"/>
+                  </pattern>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#grid-origin)" />
+              </svg>
+            </div>
+            
+            <div class="chart-container">
+              <svg width="100%" height="100%" viewBox="0 0 800 400">
+                <defs>
+                  <linearGradient id="gradient-origin" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:#00bcd4"/>
+                    <stop offset="50%" style="stop-color:#6cf0ff"/>
+                    <stop offset="100%" style="stop-color:#0097a7"/>
+                  </linearGradient>
+                </defs>
+                
+                <!-- Axes -->
+                <line x1="80" y1="350" x2="720" y2="350" stroke="#8bb3c7" stroke-width="2"/>
+                <line x1="80" y1="350" x2="80" y2="50" stroke="#8bb3c7" stroke-width="2"/>
+                
+                <!-- Y-axis labels -->
+                <text x="70" y="350" class="axis-label">0%</text>
+                <text x="70" y="290" class="axis-label">25%</text>
+                <text x="70" y="230" class="axis-label">50%</text>
+                <text x="70" y="170" class="axis-label">75%</text>
+                <text x="70" y="110" class="axis-label">100%</text>
+                
+                <!-- X-axis labels -->
+                <text x="200" y="375" class="axis-label">Month 1</text>
+                <text x="400" y="375" class="axis-label">Month 2</text>
+                <text x="600" y="375" class="axis-label">Month 3</text>
+                
+                <!-- Curve -->
+                <path d="M 200,280 Q 300,240 400,180 Q 500,120 600,80" class="curve-path"/>
+                
+                <!-- Data points -->
+                <circle cx="200" cy="280" r="8" class="data-point" data-value="30%" data-week="1"/>
+                <circle cx="400" cy="180" r="8" class="data-point" data-value="70%" data-week="2"/>
+                <circle cx="600" cy="80" r="8" class="data-point" data-value="95%" data-week="3"/>
+                
+                <!-- Icons -->
+                <g transform="translate(180,260)">
+                  <circle r="15" fill="#6cf0ff" opacity="0.2"/>
+                  <path d="M-6,-8 L6,-8 L8,0 L6,8 L-6,8 L-8,0 Z M0,-4 L0,4" stroke="#6cf0ff" stroke-width="2" fill="none"/>
+                </g>
+                
+                <g transform="translate(580,60)">
+                  <circle r="15" fill="#4caf50" opacity="0.2"/>
+                  <path d="M-6,0 L-2,4 L6,-4" stroke="#4caf50" stroke-width="3" fill="none"/>
+                </g>
+              </svg>
+            </div>
+          </div>
+          
+          <div class="metrics-grid">
+            <div class="metric-card">
+              <svg class="metric-icon" viewBox="0 0 24 24">
+                <path d="M12,2C6.48,2 2,6.48 2,12S6.48,22 12,22 22,17.52 22,12 17.52,2 12,2M13,17H11V15H13V17M13,13H11V7H13V13Z"/>
+              </svg>
+              <div class="metric-title">Follow-up automation</div>
+              <div class="metric-value">95%</div>
+              <div class="metric-improvement">30% → 95%</div>
+            </div>
+            
+            <div class="metric-card">
+              <svg class="metric-icon" viewBox="0 0 24 24">
+                <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4M12,6A6,6 0 0,0 6,12A6,6 0 0,0 12,18A6,6 0 0,0 18,12A6,6 0 0,0 12,6M12,8A4,4 0 0,1 16,12A4,4 0 0,1 12,16A4,4 0 0,1 8,12A4,4 0 0,1 12,8Z"/>
+              </svg>
+              <div class="metric-title">Active AI agents</div>
+              <div class="metric-value">2</div>
+              <div class="metric-improvement">Analyzer + Writer</div>
+            </div>
+            
+            <div class="metric-card">
+              <svg class="metric-icon" viewBox="0 0 24 24">
+                <path d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z"/>
+              </svg>
+              <div class="metric-title">Validated channels</div>
+              <div class="metric-value">2</div>
+              <div class="metric-improvement">Gmail + Slack</div>
+            </div>
+            
+            <div class="metric-card">
+              <svg class="metric-icon" viewBox="0 0 24 24">
+                <path d="M12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12.5,7V12.25L17,14.92L16.25,16.15L11,13V7H12.5Z"/>
+              </svg>
+              <div class="metric-title">Processing time</div>
+              <div class="metric-value">-80%</div>
+              <div class="metric-improvement">Significant reduction</div>
+            </div>
+          </div>
+          
+          <div class="timeline">
+            <h3 class="timeline-header">Project timeline</h3>
+            <div class="timeline-track">
+              <div class="timeline-progress"></div>
+            </div>
+            <div class="timeline-points">
+              <div class="timeline-point">
+                <div class="timeline-label">
+                  <strong>Month 1</strong><br>
+                  Infrastructure setup<br>
+                  Automation: 30%
+                </div>
+              </div>
+              <div class="timeline-point">
+                <div class="timeline-label">
+                  <strong>Month 2</strong><br>
+                  AI agents integration<br>
+                  Automation: 70%
+                </div>
+              </div>
+              <div class="timeline-point">
+                <div class="timeline-label">
+                  <strong>Month 3</strong><br>
+                  Optimization & scaling<br>
+                  Automation: 95%
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="timeline">
+            <h3 class="timeline-header">Technologies used</h3>
+            <div class="techniques-grid">
+              <div class="technique-item">
+                <div class="technique-category">Automation</div>
+                <div class="technique-list">
+                  • n8n workflows<br>
+                  • Flowise AI agents<br>
+                  • Django webhooks<br>
+                  • Multi-channel integration
+                </div>
+              </div>
+              
+              <div class="technique-item">
+                <div class="technique-category">Architecture</div>
+                <div class="technique-list">
+                  • Django REST API<br>
+                  • PostgreSQL<br>
+                  • Docker containers<br>
+                  • GitLab CI/CD
+                </div>
+              </div>
+              
+              <div class="technique-item">
+                <div class="technique-category">AI & Agents</div>
+                <div class="technique-list">
+                  • Analyzer Agent<br>
+                  • Writer Agent<br>
+                  • Flowise LLM<br>
+                  • Intelligent validation
+                </div>
+              </div>
+              
+              <div class="technique-item">
+                <div class="technique-category">Integrations</div>
+                <div class="technique-list">
+                  • Gmail API<br>
+                  • Slack API<br>
+                  • Summary table<br>
+                  • Interactive actions
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="project-section" data-reveal class="reveal" style="--d:.25s">
+          <h2>🎯 Project Objective</h2>
+          <p>Set up acquisition workflows and automate business processes for Origin Traiteur. The main objective was to create an intelligent automation system to automatically follow up on pending quotes, with multi-channel validation and real-time monitoring.</p>
+          <p><strong>Constraints:</strong> Integration with existing systems (Gmail, Slack), need for human validation, scalable and reproducible architecture.</p>
+        </section>
+
+        <section class="project-section" data-reveal class="reveal" style="--d:.25s">
+          <h2>🛠️ Solutions Developed</h2>
+          <div class="solution-grid">
+            <div class="solution-card">
+              <h3>AI Agent System</h3>
+              <p>Development of 2 specialized AI agents for analyzing and automatically writing quote follow-ups.</p>
+              <ul>
+                <li>Analyzer Agent: analyzes pending quotes and identifies priorities</li>
+                <li>Writer Agent: generates personalized messages for follow-ups</li>
+                <li>Flowise integration for LLM management</li>
+                <li>Intelligent validation with automatic scoring</li>
+              </ul>
+            </div>
+            
+            <div class="solution-card">
+              <h3>Containerized Architecture</h3>
+              <p>Setup of a scalable architecture with Django + n8n + Flowise in Docker containers.</p>
+              <ul>
+                <li>Containerized microservices architecture</li>
+                <li>PostgreSQL database for persistence</li>
+                <li>n8n orchestration for workflows</li>
+                <li>Django REST API for integrations</li>
+              </ul>
+            </div>
+            
+            <div class="solution-card">
+              <h3>Multi-Channel Validation</h3>
+              <p>Follow-up validation system via Gmail and Slack with interactive summary table.</p>
+              <ul>
+                <li>Gmail API integration for sending and tracking</li>
+                <li>Slack API integration for notifications</li>
+                <li>Summary table with interactive actions</li>
+                <li>Real-time follow-up monitoring</li>
+              </ul>
+            </div>
+            
+            <div class="solution-card">
+              <h3>Automated CI/CD</h3>
+              <p>Setup of a GitLab CI/CD pipeline for automated and reproducible deployments.</p>
+              <ul>
+                <li>Complete GitLab CI/CD pipeline</li>
+                <li>Automated deployments</li>
+                <li>Automated tests before deployment</li>
+                <li>Real-time monitoring and alerts</li>
+              </ul>
+            </div>
+            
+            <div class="solution-card">
+              <h3>Business Workflows</h3>
+              <p>Integration of business workflows with real-time monitoring and interactive actions.</p>
+              <ul>
+                <li>n8n workflows aligned with business processes</li>
+                <li>Real-time performance monitoring</li>
+                <li>Interactive dashboard</li>
+                <li>Manual actions possible on follow-ups</li>
+              </ul>
+            </div>
+          </div>
+          
+          <!-- Architecture Diagram -->
+          <div class="chart-container" data-reveal class="reveal" style="--d:.3s">
+            <h3 style="text-align: center; color: #6cf0ff; margin-bottom: 30px;">Technical Architecture</h3>
+            <div id="architecture-diagram"></div>
+          </div>
+        </section>
+
+        <section class="project-section" data-reveal class="reveal" style="--d:.3s">
+          <h2>📊 Results Obtained</h2>
+          <div class="results-grid">
+            <div class="result-card">
+              <div class="result-number">95%</div>
+              <div class="result-label">follow-up automation</div>
+            </div>
+            <div class="result-card">
+              <div class="result-number">2</div>
+              <div class="result-label">operational AI agents</div>
+            </div>
+            <div class="result-card">
+              <div class="result-number">2</div>
+              <div class="result-label">validated channels (Gmail + Slack)</div>
+            </div>
+            <div class="result-card">
+              <div class="result-number">-80%</div>
+              <div class="result-label">processing time</div>
+            </div>
+            <div class="result-card">
+              <div class="result-number">100%</div>
+              <div class="result-label">reproducible workflows</div>
+            </div>
+            <div class="result-card">
+              <div class="result-number">24/7</div>
+              <div class="result-label">real-time monitoring</div>
+            </div>
+          </div>
+          
+          <!-- Performance Chart - Complete Integration -->
+          <div class="chart-container" data-reveal class="reveal" style="--d:.35s">
+            <div class="particles" id="particles-automation"></div>
+            <div class="chart-grid">
+              <svg width="100%" height="100%">
+                <defs>
+                  <pattern id="grid-origin-2" width="40" height="40" patternUnits="userSpaceOnUse">
+                    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#6cf0ff" stroke-width="0.5"/>
+                  </pattern>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#grid-origin-2)" />
+              </svg>
+            </div>
+            
+            <div class="chart-container">
+              <svg width="100%" height="100%" viewBox="0 0 800 400">
+                <defs>
+                  <linearGradient id="gradient-origin-2" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:#00bcd4"/>
+                    <stop offset="50%" style="stop-color:#6cf0ff"/>
+                    <stop offset="100%" style="stop-color:#0097a7"/>
+                  </linearGradient>
+                </defs>
+                
+                <!-- Axes -->
+                <line x1="80" y1="350" x2="720" y2="350" stroke="#8bb3c7" stroke-width="2"/>
+                <line x1="80" y1="350" x2="80" y2="50" stroke="#8bb3c7" stroke-width="2"/>
+                
+                <!-- Y-axis labels -->
+                <text x="70" y="350" class="axis-label">0%</text>
+                <text x="70" y="290" class="axis-label">25%</text>
+                <text x="70" y="230" class="axis-label">50%</text>
+                <text x="70" y="170" class="axis-label">75%</text>
+                <text x="70" y="110" class="axis-label">100%</text>
+                
+                <!-- X-axis labels -->
+                <text x="200" y="375" class="axis-label">Month 1</text>
+                <text x="400" y="375" class="axis-label">Month 2</text>
+                <text x="600" y="375" class="axis-label">Month 3</text>
+                
+                <!-- Curve -->
+                <path d="M 200,280 Q 300,240 400,180 Q 500,120 600,80" class="curve-path"/>
+                
+                <!-- Data points -->
+                <circle cx="200" cy="280" r="8" class="data-point" data-value="30%" data-week="1"/>
+                <circle cx="400" cy="180" r="8" class="data-point" data-value="70%" data-week="2"/>
+                <circle cx="600" cy="80" r="8" class="data-point" data-value="95%" data-week="3"/>
+                
+                <!-- Icons -->
+                <g transform="translate(180,260)">
+                  <circle r="15" fill="#6cf0ff" opacity="0.2"/>
+                  <path d="M-6,-8 L6,-8 L8,0 L6,8 L-6,8 L-8,0 Z M0,-4 L0,4" stroke="#6cf0ff" stroke-width="2" fill="none"/>
+                </g>
+                
+                <g transform="translate(580,60)">
+                  <circle r="15" fill="#4caf50" opacity="0.2"/>
+                  <path d="M-6,0 L-2,4 L6,-4" stroke="#4caf50" stroke-width="3" fill="none"/>
+                </g>
+              </svg>
+            </div>
+            
+            <!-- Automation Metrics Grid -->
+            <div class="metrics-grid">
+              <div class="metric-card">
+                <svg class="metric-icon" viewBox="0 0 24 24">
+                  <path d="M12,2C6.48,2 2,6.48 2,12S6.48,22 12,22 22,17.52 22,12 17.52,2 12,2M13,17H11V15H13V17M13,13H11V7H13V13Z"/>
+                </svg>
+                <div class="metric-title">Follow-up automation</div>
+                <div class="metric-value">95%</div>
+                <div class="metric-improvement">30% → 95%</div>
+              </div>
+              
+              <div class="metric-card">
+                <svg class="metric-icon" viewBox="0 0 24 24">
+                  <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4M12,6A6,6 0 0,0 6,12A6,6 0 0,0 12,18A6,6 0 0,0 18,12A6,6 0 0,0 12,6M12,8A4,4 0 0,1 16,12A4,4 0 0,1 12,16A4,4 0 0,1 8,12A4,4 0 0,1 12,8Z"/>
+                </svg>
+                <div class="metric-title">Active AI agents</div>
+                <div class="metric-value">2</div>
+                <div class="metric-improvement">Analyzer + Writer</div>
+              </div>
+              
+              <div class="metric-card">
+                <svg class="metric-icon" viewBox="0 0 24 24">
+                  <path d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z"/>
+                </svg>
+                <div class="metric-title">Validated channels</div>
+                <div class="metric-value">2</div>
+                <div class="metric-improvement">Gmail + Slack</div>
+              </div>
+              
+              <div class="metric-card">
+                <svg class="metric-icon" viewBox="0 0 24 24">
+                  <path d="M12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12.5,7V12.25L17,14.92L16.25,16.15L11,13V7H12.5Z"/>
+                </svg>
+                <div class="metric-title">Processing time</div>
+                <div class="metric-value">-80%</div>
+                <div class="metric-improvement">Significant reduction</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="project-section" data-reveal class="reveal" style="--d:.35s">
+          <h2>💰 Operational Impact</h2>
+          <div class="results-grid">
+            <div class="result-card">
+              <div class="result-number">-80%</div>
+              <div class="result-label">processing time</div>
+            </div>
+            <div class="result-card">
+              <div class="result-number">24/7</div>
+              <div class="result-label">system availability</div>
+            </div>
+            <div class="result-card">
+              <div class="result-number">100%</div>
+              <div class="result-label">reproducible deployments</div>
+            </div>
+          </div>
+          <p><strong>Improvement details:</strong></p>
+          <ul>
+            <li><strong>Follow-up automation:</strong> Drastic reduction in processing time for pending quotes</li>
+            <li><strong>AI agents:</strong> Automatic analysis and writing with intelligent validation</li>
+            <li><strong>Scalable architecture:</strong> Robust and reproducible infrastructure with CI/CD</li>
+          </ul>
+        </section>
+
+        <section class="project-section" data-reveal class="reveal" style="--d:.35s">
+          <h2>💡 Key Learnings</h2>
+          <ul class="learning-list">
+            <li><strong>Intelligent automation:</strong> Combination of specialized AI agents for complex workflows</li>
+            <li><strong>Containerized architecture:</strong> Setup of scalable infrastructure with Docker and CI/CD</li>
+            <li><strong>Multi-channel integration:</strong> Synchronization between Gmail, Slack and internal systems</li>
+            <li><strong>Technical stack:</strong> Django, n8n, Flowise, PostgreSQL, GitLab CI/CD</li>
+          </ul>
+        </section>
+
+        <section class="project-section" data-reveal class="reveal" style="--d:.4s">
+          <h2>🔗 Technologies Used</h2>
+          <div class="tech-stack">
+            <span class="tech-tag">Django</span>
+            <span class="tech-tag">n8n</span>
+            <span class="tech-tag">Flowise</span>
+            <span class="tech-tag">PostgreSQL</span>
+            <span class="tech-tag">Docker</span>
+            <span class="tech-tag">GitLab CI/CD</span>
+            <span class="tech-tag">Gmail API</span>
+            <span class="tech-tag">Slack API</span>
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">REST API</span>
+            <span class="tech-tag">Webhooks</span>
+            <span class="tech-tag">LLM</span>
+          </div>
+        </section>
+      </div>
+
+      <div class="project-navigation" data-reveal class="reveal" style="--d:.5s">
+        <a href="/en/projects.html" class="cta ghost">← Back to projects</a>
+        <a href="/en/parazar.html" class="cta">Next project →</a>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div><img src="/Monogramme_Round_Whites_plainSvg.svg" alt="Lucas Tymen" style="height: 20px; vertical-align: middle; margin-right: 6px;">Lucas Tymen — Full-Stack Growth Engineer</div>
+        <nav class="foot-nav">
+          <a href="/en/cv.html">Resume</a>
+          <a href="/en/services.html">What I Do</a>
+          <a href="/en/projects.html">Projects</a>
+          <a href="/en/contact.html">Contact</a>
+        </nav>
+      </div>
+    </footer>
+
+    <div class="tooltip" id="chart-tooltip"></div>
+    
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/charts.js"></script>
+  </body>
+</html>
+
