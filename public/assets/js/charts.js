@@ -209,48 +209,171 @@ class ParazarCharts {
     const container = document.getElementById(containerId);
     if (!container) return;
 
-    const svg = `
-      <svg class="chart-svg architecture-diagram" viewBox="0 0 800 500">
-        <defs>
-          <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-            <polygon points="0 0, 10 3.5, 0 7" fill="#6cf0ff"/>
-          </marker>
-        </defs>
-        
-        <!-- Sources -->
-        <rect x="50" y="50" width="120" height="80" class="component-box" data-component="Sources" data-description="LinkedIn, Indeed, WTTJ"/>
-        <text x="110" y="95" class="component-text">Sources</text>
-        
-        <!-- Scraper -->
-        <rect x="250" y="50" width="120" height="80" class="component-box" data-component="Scraper" data-description="Python + Scrapy + Selenium"/>
-        <text x="310" y="95" class="component-text">Scraper</text>
-        
-        <!-- Database -->
-        <rect x="450" y="50" width="120" height="80" class="component-box" data-component="Base de données" data-description="SQL pour stockage"/>
-        <text x="510" y="95" class="component-text">Base SQL</text>
-        
-        <!-- Dashboard -->
-        <rect x="650" y="50" width="120" height="80" class="component-box" data-component="Dashboard" data-description="Looker Studio"/>
-        <text x="710" y="95" class="component-text">Dashboard</text>
-        
-        <!-- Automation -->
-        <rect x="150" y="200" width="120" height="80" class="component-box" data-component="Automatisation" data-description="Zapier + APIs"/>
-        <text x="210" y="245" class="component-text">Zapier</text>
-        
-        <!-- Analytics -->
-        <rect x="350" y="200" width="120" height="80" class="component-box" data-component="Analytics" data-description="Métriques de performance"/>
-        <text x="410" y="245" class="component-text">Analytics</text>
-        
-        <!-- Flow arrows -->
-        <path d="M 170 90 L 250 90" class="flow-arrow"/>
-        <path d="M 370 90 L 450 90" class="flow-arrow"/>
-        <path d="M 570 90 L 650 90" class="flow-arrow"/>
-        <path d="M 310 130 L 210 200" class="flow-arrow"/>
-        <path d="M 510 130 L 410 200" class="flow-arrow"/>
-      </svg>
-    `;
+    // Vérifier si c'est la page Origin Traiteur
+    const isOriginTraiteur = window.location.pathname.includes('origin-traiteur');
     
-    container.innerHTML = svg;
+    if (isOriginTraiteur) {
+      // Architecture Origin Traiteur - Workflow réel détaillé
+      const svg = `
+        <svg class="chart-svg architecture-diagram" viewBox="0 0 1000 700">
+          <defs>
+            <marker id="arrowhead-origin" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+              <polygon points="0 0, 10 3.5, 0 7" fill="#6cf0ff"/>
+            </marker>
+            <linearGradient id="grad-box" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color:#1a3a4a;stop-opacity:0.8"/>
+              <stop offset="100%" style="stop-color:#0d1f2a;stop-opacity:0.9"/>
+            </linearGradient>
+          </defs>
+          
+          <!-- Ligne 1 : Déclenchement & Requête -->
+          <!-- Cron 9h -->
+          <rect x="50" y="30" width="120" height="60" rx="5" fill="url(#grad-box)" stroke="#6cf0ff" stroke-width="2" class="component-box" data-component="Cron 9h" data-description="Déclenchement quotidien"/>
+          <text x="110" y="65" class="component-text" style="font-size: 14px;">Cron 9h</text>
+          
+          <!-- PostgreSQL Query -->
+          <rect x="220" y="30" width="140" height="60" rx="5" fill="url(#grad-box)" stroke="#6cf0ff" stroke-width="2" class="component-box" data-component="PostgreSQL Query" data-description="Devis J+3, J+5, J+9, J+15"/>
+          <text x="290" y="65" class="component-text" style="font-size: 13px;">PostgreSQL</text>
+          
+          <!-- Préparation Données -->
+          <rect x="410" y="30" width="140" height="60" rx="5" fill="url(#grad-box)" stroke="#6cf0ff" stroke-width="2" class="component-box" data-component="Préparation" data-description="Enrichissement contexte, session_id"/>
+          <text x="480" y="65" class="component-text" style="font-size: 13px;">Préparation</text>
+          
+          <!-- Ligne 2 : Agents IA -->
+          <!-- Agent Analyseur -->
+          <rect x="50" y="130" width="160" height="80" rx="5" fill="url(#grad-box)" stroke="#6cf0ff" stroke-width="2" class="component-box" data-component="Agent Analyseur" data-description="Google Gemini + Postgres Memory + Code Tool"/>
+          <text x="130" y="160" class="component-text" style="font-size: 13px;">Agent Analyseur</text>
+          <text x="130" y="180" class="component-text" style="font-size: 11px; fill: #8bb3c7;">Scoring & Priorité</text>
+          
+          <!-- Agent Rédacteur -->
+          <rect x="250" y="130" width="160" height="80" rx="5" fill="url(#grad-box)" stroke="#6cf0ff" stroke-width="2" class="component-box" data-component="Agent Rédacteur" data-description="Google Gemini + Postgres Memory + Code Tool"/>
+          <text x="330" y="160" class="component-text" style="font-size: 13px;">Agent Rédacteur</text>
+          <text x="330" y="180" class="component-text" style="font-size: 11px; fill: #8bb3c7;">Emails personnalisés</text>
+          
+          <!-- Collecteur -->
+          <rect x="460" y="130" width="140" height="80" rx="5" fill="url(#grad-box)" stroke="#6cf0ff" stroke-width="2" class="component-box" data-component="Collecteur" data-description="Fusion résultats agents"/>
+          <text x="530" y="175" class="component-text" style="font-size: 13px;">Collecteur</text>
+          
+          <!-- Ligne 3 : Routing & Update -->
+          <!-- Route by Priority -->
+          <rect x="50" y="250" width="140" height="70" rx="5" fill="url(#grad-box)" stroke="#6cf0ff" stroke-width="2" class="component-box" data-component="Route Priority" data-description="HAUTE / MOYENNE / BASSE"/>
+          <text x="120" y="285" class="component-text" style="font-size: 13px;">Route Priority</text>
+          
+          <!-- Update PostgreSQL -->
+          <rect x="240" y="250" width="160" height="70" rx="5" fill="url(#grad-box)" stroke="#6cf0ff" stroke-width="2" class="component-box" data-component="Update PostgreSQL" data-description="nb_relances_precedentes++"/>
+          <text x="320" y="285" class="component-text" style="font-size: 12px;">Update PostgreSQL</text>
+          
+          <!-- Validation MITL -->
+          <rect x="450" y="250" width="150" height="70" rx="5" fill="url(#grad-box)" stroke="#6cf0ff" stroke-width="2" class="component-box" data-component="Validation MITL" data-description="Tableau récapitulatif"/>
+          <text x="525" y="285" class="component-text" style="font-size: 13px;">Validation MITL</text>
+          
+          <!-- Ligne 4 : Canaux de sortie -->
+          <!-- Gmail Drafts -->
+          <rect x="50" y="360" width="160" height="70" rx="5" fill="url(#grad-box)" stroke="#6cf0ff" stroke-width="2" class="component-box" data-component="Gmail Drafts" data-description="Tableau + actions Accepter/Décaler/Annuler"/>
+          <text x="130" y="395" class="component-text" style="font-size: 13px;">Gmail Drafts</text>
+          
+          <!-- Slack Notifications -->
+          <rect x="250" y="360" width="160" height="70" rx="5" fill="url(#grad-box)" stroke="#6cf0ff" stroke-width="2" class="component-box" data-component="Slack Blocks" data-description="Blocks interactifs, mêmes actions"/>
+          <text x="330" y="395" class="component-text" style="font-size: 13px;">Slack Blocks</text>
+          
+          <!-- Webhook Validation -->
+          <rect x="450" y="360" width="150" height="70" rx="5" fill="url(#grad-box)" stroke="#6cf0ff" stroke-width="2" class="component-box" data-component="Webhook" data-description="Approve/Reject/Defer/Cancel"/>
+          <text x="525" y="395" class="component-text" style="font-size: 13px;">Webhook</text>
+          
+          <!-- Ligne 5 : Logging -->
+          <!-- Logging -->
+          <rect x="250" y="470" width="200" height="60" rx="5" fill="url(#grad-box)" stroke="#6cf0ff" stroke-width="2" class="component-box" data-component="Logging" data-description="relances_log, approval_events"/>
+          <text x="350" y="500" class="component-text" style="font-size: 13px;">Logging PostgreSQL</text>
+          
+          <!-- Flow arrows - Ligne 1 -->
+          <path d="M 170 60 L 220 60" marker-end="url(#arrowhead-origin)" class="flow-arrow" stroke="#6cf0ff" stroke-width="2"/>
+          <path d="M 360 60 L 410 60" marker-end="url(#arrowhead-origin)" class="flow-arrow" stroke="#6cf0ff" stroke-width="2"/>
+          
+          <!-- Flow arrows - Ligne 1 vers 2 -->
+          <path d="M 480 90 L 130 130" marker-end="url(#arrowhead-origin)" class="flow-arrow" stroke="#6cf0ff" stroke-width="2"/>
+          <path d="M 480 90 L 330 130" marker-end="url(#arrowhead-origin)" class="flow-arrow" stroke="#6cf0ff" stroke-width="2"/>
+          
+          <!-- Flow arrows - Ligne 2 -->
+          <path d="M 210 170 L 250 170" marker-end="url(#arrowhead-origin)" class="flow-arrow" stroke="#6cf0ff" stroke-width="2"/>
+          <path d="M 410 170 L 460 170" marker-end="url(#arrowhead-origin)" class="flow-arrow" stroke="#6cf0ff" stroke-width="2"/>
+          
+          <!-- Flow arrows - Ligne 2 vers 3 -->
+          <path d="M 530 210 L 120 250" marker-end="url(#arrowhead-origin)" class="flow-arrow" stroke="#6cf0ff" stroke-width="2"/>
+          
+          <!-- Flow arrows - Ligne 3 -->
+          <path d="M 190 285 L 240 285" marker-end="url(#arrowhead-origin)" class="flow-arrow" stroke="#6cf0ff" stroke-width="2"/>
+          <path d="M 400 285 L 450 285" marker-end="url(#arrowhead-origin)" class="flow-arrow" stroke="#6cf0ff" stroke-width="2"/>
+          
+          <!-- Flow arrows - Ligne 3 vers 4 -->
+          <path d="M 525 320 L 130 360" marker-end="url(#arrowhead-origin)" class="flow-arrow" stroke="#6cf0ff" stroke-width="2"/>
+          <path d="M 525 320 L 330 360" marker-end="url(#arrowhead-origin)" class="flow-arrow" stroke="#6cf0ff" stroke-width="2"/>
+          <path d="M 525 320 L 525 360" marker-end="url(#arrowhead-origin)" class="flow-arrow" stroke="#6cf0ff" stroke-width="2"/>
+          
+          <!-- Flow arrows - Ligne 4 vers 5 -->
+          <path d="M 130 430 L 350 470" marker-end="url(#arrowhead-origin)" class="flow-arrow" stroke="#6cf0ff" stroke-width="2"/>
+          <path d="M 330 430 L 350 470" marker-end="url(#arrowhead-origin)" class="flow-arrow" stroke="#6cf0ff" stroke-width="2"/>
+          <path d="M 525 430 L 350 470" marker-end="url(#arrowhead-origin)" class="flow-arrow" stroke="#6cf0ff" stroke-width="2"/>
+          
+          <!-- Retour Webhook vers Update -->
+          <path d="M 525 395 L 525 320" marker-end="url(#arrowhead-origin)" class="flow-arrow" stroke="#6cf0ff" stroke-width="2" stroke-dasharray="5,5"/>
+          
+          <!-- Labels de flux -->
+          <text x="195" y="55" class="axis-label" style="font-size: 10px; fill: #8bb3c7;">Déclenchement</text>
+          <text x="365" y="55" class="axis-label" style="font-size: 10px; fill: #8bb3c7;">Requête</text>
+          <text x="200" y="155" class="axis-label" style="font-size: 10px; fill: #8bb3c7;">Analyse</text>
+          <text x="405" y="155" class="axis-label" style="font-size: 10px; fill: #8bb3c7;">Rédaction</text>
+          <text x="535" y="205" class="axis-label" style="font-size: 10px; fill: #8bb3c7;">Fusion</text>
+          <text x="195" y="275" class="axis-label" style="font-size: 10px; fill: #8bb3c7;">Routing</text>
+          <text x="400" y="275" class="axis-label" style="font-size: 10px; fill: #8bb3c7;">Update</text>
+          <text x="530" y="315" class="axis-label" style="font-size: 10px; fill: #8bb3c7;">Validation</text>
+          <text x="350" y="465" class="axis-label" style="font-size: 10px; fill: #8bb3c7;">Logging</text>
+        </svg>
+      `;
+      container.innerHTML = svg;
+    } else {
+      // Architecture Parazar (originale)
+      const svg = `
+        <svg class="chart-svg architecture-diagram" viewBox="0 0 800 500">
+          <defs>
+            <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+              <polygon points="0 0, 10 3.5, 0 7" fill="#6cf0ff"/>
+            </marker>
+          </defs>
+          
+          <!-- Sources -->
+          <rect x="50" y="50" width="120" height="80" class="component-box" data-component="Sources" data-description="LinkedIn, Indeed, WTTJ"/>
+          <text x="110" y="95" class="component-text">Sources</text>
+          
+          <!-- Scraper -->
+          <rect x="250" y="50" width="120" height="80" class="component-box" data-component="Scraper" data-description="Python + Scrapy + Selenium"/>
+          <text x="310" y="95" class="component-text">Scraper</text>
+          
+          <!-- Database -->
+          <rect x="450" y="50" width="120" height="80" class="component-box" data-component="Base de données" data-description="SQL pour stockage"/>
+          <text x="510" y="95" class="component-text">Base SQL</text>
+          
+          <!-- Dashboard -->
+          <rect x="650" y="50" width="120" height="80" class="component-box" data-component="Dashboard" data-description="Looker Studio"/>
+          <text x="710" y="95" class="component-text">Dashboard</text>
+          
+          <!-- Automation -->
+          <rect x="150" y="200" width="120" height="80" class="component-box" data-component="Automatisation" data-description="Zapier + APIs"/>
+          <text x="210" y="245" class="component-text">Zapier</text>
+          
+          <!-- Analytics -->
+          <rect x="350" y="200" width="120" height="80" class="component-box" data-component="Analytics" data-description="Métriques de performance"/>
+          <text x="410" y="245" class="component-text">Analytics</text>
+          
+          <!-- Flow arrows -->
+          <path d="M 170 90 L 250 90" class="flow-arrow"/>
+          <path d="M 370 90 L 450 90" class="flow-arrow"/>
+          <path d="M 570 90 L 650 90" class="flow-arrow"/>
+          <path d="M 310 130 L 210 200" class="flow-arrow"/>
+          <path d="M 510 130 L 410 200" class="flow-arrow"/>
+        </svg>
+      `;
+      container.innerHTML = svg;
+    }
   }
 
   // Timeline Chart

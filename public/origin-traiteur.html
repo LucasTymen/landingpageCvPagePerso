@@ -94,85 +94,16 @@
           <div class="particles" id="particles-automation-main"></div>
           
           <div class="header">
-            <h1 class="title">Performance Automatisation</h1>
-            <p class="subtitle">Évolution de l'automatisation sur 3 mois</p>
-          </div>
-          
-          <div class="main-chart">
-            <div class="chart-grid">
-              <svg width="100%" height="100%">
-                <defs>
-                  <pattern id="grid-origin" width="40" height="40" patternUnits="userSpaceOnUse">
-                    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#6cf0ff" stroke-width="0.5"/>
-                  </pattern>
-                </defs>
-                <rect width="100%" height="100%" fill="url(#grid-origin)" />
-              </svg>
-            </div>
-            
-            <div class="chart-container">
-              <svg width="100%" height="100%" viewBox="0 0 800 400">
-                <defs>
-                  <linearGradient id="gradient-origin" x1="0%" y1="0%" x2="100%" y2="0%">
-                    <stop offset="0%" style="stop-color:#00bcd4"/>
-                    <stop offset="50%" style="stop-color:#6cf0ff"/>
-                    <stop offset="100%" style="stop-color:#0097a7"/>
-                  </linearGradient>
-                </defs>
-                
-                <!-- Axes -->
-                <line x1="80" y1="350" x2="720" y2="350" stroke="#8bb3c7" stroke-width="2"/>
-                <line x1="80" y1="350" x2="80" y2="50" stroke="#8bb3c7" stroke-width="2"/>
-                
-                <!-- Y-axis labels -->
-                <text x="70" y="350" class="axis-label">0%</text>
-                <text x="70" y="290" class="axis-label">25%</text>
-                <text x="70" y="230" class="axis-label">50%</text>
-                <text x="70" y="170" class="axis-label">75%</text>
-                <text x="70" y="110" class="axis-label">100%</text>
-                
-                <!-- X-axis labels -->
-                <text x="200" y="375" class="axis-label">Mois 1</text>
-                <text x="400" y="375" class="axis-label">Mois 2</text>
-                <text x="600" y="375" class="axis-label">Mois 3</text>
-                
-                <!-- Curve -->
-                <path d="M 200,280 Q 300,240 400,180 Q 500,120 600,80" class="curve-path"/>
-                
-                <!-- Data points -->
-                <circle cx="200" cy="280" r="8" class="data-point" data-value="30%" data-week="1"/>
-                <circle cx="400" cy="180" r="8" class="data-point" data-value="70%" data-week="2"/>
-                <circle cx="600" cy="80" r="8" class="data-point" data-value="95%" data-week="3"/>
-                
-                <!-- Icons -->
-                <g transform="translate(180,260)">
-                  <circle r="15" fill="#6cf0ff" opacity="0.2"/>
-                  <path d="M-6,-8 L6,-8 L8,0 L6,8 L-6,8 L-8,0 Z M0,-4 L0,4" stroke="#6cf0ff" stroke-width="2" fill="none"/>
-                </g>
-                
-                <g transform="translate(580,60)">
-                  <circle r="15" fill="#4caf50" opacity="0.2"/>
-                  <path d="M-6,0 L-2,4 L6,-4" stroke="#4caf50" stroke-width="3" fill="none"/>
-                </g>
-              </svg>
-            </div>
+            <h1 class="title">Architecture & Fonctionnalités</h1>
+            <p class="subtitle">Système d'automatisation avec agents IA et validation multi-canal</p>
           </div>
           
           <div class="metrics-grid">
             <div class="metric-card">
               <svg class="metric-icon" viewBox="0 0 24 24">
-                <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4M12,6A6,6 0 0,0 6,12A6,6 0 0,0 12,18A6,6 0 0,0 18,12A6,6 0 0,0 12,6M12,8A4,4 0 0,1 16,12A4,4 0 0,1 12,16A4,4 0 0,1 8,12A4,4 0 0,1 12,8Z"/>
-              </svg>
-              <div class="metric-title">Automatisation des relances</div>
-              <div class="metric-value">95%</div>
-              <div class="metric-improvement">30% → 95%</div>
-            </div>
-            
-            <div class="metric-card">
-              <svg class="metric-icon" viewBox="0 0 24 24">
                 <path d="M12,2C6.48,2 2,6.48 2,12S6.48,22 12,22 22,17.52 22,12 17.52,2 12,2M13,17H11V15H13V17M13,13H11V7H13V13Z"/>
               </svg>
-              <div class="metric-title">Agents IA actifs</div>
+              <div class="metric-title">Agents IA</div>
               <div class="metric-value">2</div>
               <div class="metric-improvement">Analyseur + Rédacteur</div>
             </div>
@@ -181,7 +112,7 @@
               <svg class="metric-icon" viewBox="0 0 24 24">
                 <path d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z"/>
               </svg>
-              <div class="metric-title">Canaux validés</div>
+              <div class="metric-title">Canaux validation</div>
               <div class="metric-value">2</div>
               <div class="metric-improvement">Gmail + Slack</div>
             </div>
@@ -190,39 +121,18 @@
               <svg class="metric-icon" viewBox="0 0 24 24">
                 <path d="M12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12.5,7V12.25L17,14.92L16.25,16.15L11,13V7H12.5Z"/>
               </svg>
-              <div class="metric-title">Temps de traitement</div>
-              <div class="metric-value">-80%</div>
-              <div class="metric-improvement">Réduction significative</div>
+              <div class="metric-title">Paliers relance</div>
+              <div class="metric-value">4</div>
+              <div class="metric-improvement">J+3, J+5, J+9, J+15</div>
             </div>
-          </div>
-          
-          <div class="timeline">
-            <h3 class="timeline-header">Timeline du projet</h3>
-            <div class="timeline-track">
-              <div class="timeline-progress"></div>
-            </div>
-            <div class="timeline-points">
-              <div class="timeline-point">
-                <div class="timeline-label">
-                  <strong>Mois 1</strong><br>
-                  Mise en place infrastructure<br>
-                  Automatisation: 30%
-                </div>
-              </div>
-              <div class="timeline-point">
-                <div class="timeline-label">
-                  <strong>Mois 2</strong><br>
-                  Intégration agents IA<br>
-                  Automatisation: 70%
-                </div>
-              </div>
-              <div class="timeline-point">
-                <div class="timeline-label">
-                  <strong>Mois 3</strong><br>
-                  Optimisation & scaling<br>
-                  Automatisation: 95%
-                </div>
-              </div>
+            
+            <div class="metric-card">
+              <svg class="metric-icon" viewBox="0 0 24 24">
+                <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4M12,6A6,6 0 0,0 6,12A6,6 0 0,0 12,18A6,6 0 0,0 18,12A6,6 0 0,0 12,6M12,8A4,4 0 0,1 16,12A4,4 0 0,1 12,16A4,4 0 0,1 8,12A4,4 0 0,1 12,8Z"/>
+              </svg>
+              <div class="metric-title">Tables PostgreSQL</div>
+              <div class="metric-value">4</div>
+              <div class="metric-improvement">devis, relances_log, approval_events, benchmark_logs</div>
             </div>
           </div>
           
@@ -341,35 +251,40 @@
           <div class="chart-container" data-reveal class="reveal" style="--d:.3s">
             <h3 style="text-align: center; color: #6cf0ff; margin-bottom: 30px;">Architecture Technique</h3>
             <div id="architecture-diagram"></div>
+            <p style="text-align: center; color: #8bb3c7; margin: 20px 0; line-height: 1.8; font-size: 0.9em;">
+              <strong>4 tables PostgreSQL</strong> : devis, relances_log, approval_events, benchmark_logs<br/>
+              <strong>Calcul automatique</strong> : Paliers (J+3, J+5, J+9, J+15), Scoring par montant TTC<br/>
+              <strong>Sécurité</strong> : Tokens UUID, nonces, expiration 72h
+            </p>
           </div>
         </section>
 
         <section class="project-section" data-reveal class="reveal" style="--d:.3s">
-          <h2>📊 Résultats obtenus</h2>
+          <h2>📊 Architecture & Fonctionnalités</h2>
           <div class="results-grid">
             <div class="result-card">
-              <div class="result-number">95%</div>
-              <div class="result-label">automatisation des relances</div>
+              <div class="result-number">2</div>
+              <div class="result-label">agents IA (Analyseur + Rédacteur)</div>
+            </div>
+            <div class="result-card">
+              <div class="result-number">~50</div>
+              <div class="result-label">nodes n8n</div>
+            </div>
+            <div class="result-card">
+              <div class="result-number">4</div>
+              <div class="result-label">tables PostgreSQL</div>
             </div>
             <div class="result-card">
               <div class="result-number">2</div>
-              <div class="result-label">agents IA opérationnels</div>
+              <div class="result-label">canaux validation (Gmail + Slack)</div>
             </div>
             <div class="result-card">
-              <div class="result-number">2</div>
-              <div class="result-label">canaux validés (Gmail + Slack)</div>
+              <div class="result-number">4</div>
+              <div class="result-label">paliers relance (J+3, J+5, J+9, J+15)</div>
             </div>
             <div class="result-card">
-              <div class="result-number">-80%</div>
-              <div class="result-label">temps de traitement</div>
-            </div>
-            <div class="result-card">
-              <div class="result-number">100%</div>
-              <div class="result-label">workflows reproductibles</div>
-            </div>
-            <div class="result-card">
-              <div class="result-number">24/7</div>
-              <div class="result-label">monitoring en temps réel</div>
+              <div class="result-number">3</div>
+              <div class="result-label">niveaux priorité (HAUTE/MOYENNE/BASSE)</div>
             </div>
           </div>
           
@@ -467,35 +382,23 @@
                 <svg class="metric-icon" viewBox="0 0 24 24">
                   <path d="M12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12.5,7V12.25L17,14.92L16.25,16.15L11,13V7H12.5Z"/>
                 </svg>
-                <div class="metric-title">Temps de traitement</div>
-                <div class="metric-value">-80%</div>
-                <div class="metric-improvement">Réduction significative</div>
+                <div class="metric-title">Paliers de relance</div>
+                <div class="metric-value">4</div>
+                <div class="metric-improvement">J+3, J+5, J+9, J+15</div>
               </div>
             </div>
           </div>
         </section>
 
         <section class="project-section" data-reveal class="reveal" style="--d:.35s">
-          <h2>💰 Impact opérationnel</h2>
-          <div class="results-grid">
-            <div class="result-card">
-              <div class="result-number">-80%</div>
-              <div class="result-label">temps de traitement</div>
-            </div>
-            <div class="result-card">
-              <div class="result-number">24/7</div>
-              <div class="result-label">disponibilité système</div>
-            </div>
-            <div class="result-card">
-              <div class="result-number">100%</div>
-              <div class="result-label">déploiements reproductibles</div>
-            </div>
-          </div>
-          <p><strong>Détail des améliorations :</strong></p>
+          <h2>🔧 Fonctionnalités Implémentées</h2>
           <ul>
-            <li><strong>Automatisation des relances :</strong> Réduction drastique du temps de traitement des devis en attente</li>
-            <li><strong>Agents IA :</strong> Analyse et rédaction automatiques avec validation intelligente</li>
-            <li><strong>Architecture scalable :</strong> Infrastructure robuste et reproductible avec CI/CD</li>
+            <li><strong>Workflow n8n automatisé :</strong> Déclenchement quotidien à 9h, requête PostgreSQL, scoring et priorisation automatiques</li>
+            <li><strong>Agents IA :</strong> Agent Analyseur (scoring devis) + Agent Rédacteur (emails personnalisés) avec mémoire Postgres</li>
+            <li><strong>Validation multi-canal :</strong> Tableau récapitulatif dans brouillons Gmail + notifications Slack avec blocks interactifs</li>
+            <li><strong>Actions disponibles :</strong> Accepter / Décaler / Annuler par devis, synchronisation Gmail ↔ Slack</li>
+            <li><strong>Architecture PostgreSQL :</strong> 4 tables (devis, relances_log, approval_events, benchmark_logs), requêtes SQL optimisées</li>
+            <li><strong>Sécurité :</strong> Tokens UUID, nonces uniques, expiration 72h, protection anti-doublon</li>
           </ul>
         </section>
 
