@@ -11,7 +11,7 @@ const sampleProjects = [
     tag: "n8n + AI + PostgreSQL", 
     impact: "2 AI agents • Multi-channel validation", 
     brief: "Automation system with 2 AI agents (Analyzer + Writer) to automatically follow up on pending quotes. PostgreSQL architecture, multi-channel validation (Gmail + Slack), summary table with interactive actions.", 
-    link: "/en/origin-traiteur.html" 
+    link: "#" 
   },
   { 
     title: "Parazar - Dating Site", 
