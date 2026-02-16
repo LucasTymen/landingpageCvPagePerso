@@ -1,0 +1,122 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Pool d'agents connecté à Squid Research, LPPP-generator et SquidCommunication. Sous supervision Chef de projet.",
+  "version": "1.2",
+  "governance": {
+    "supervisor": "chef_de_projet",
+    "supervision_mode": "real_time",
+    "rules": [
+      {
+        "id": "no_hallucination",
+        "label": "Ne jamais halluciner",
+        "scope": "all_agents",
+        "description": "Tous les agents sont cadrés par le Chef de projet ; aucune sortie inventée ou non sourcée. Données et contenus doivent reposer sur des sources réelles (Squid Research, LPPP-generator, SquidCommunication, assets existants)."
+      }
+    ]
+  },
+  "sources": {
+    "squid_research": {
+      "label": "Squid Research",
+      "role": "Source d'opportunités, entreprises, candidatures et données enrichies",
+      "env": { "base_url": "SQUID_RESEARCH_API_URL", "api_key": "SQUID_RESEARCH_API_KEY" },
+      "endpoints": {
+        "opportunities": "/api/opportunities/",
+        "companies": "/api/companies/",
+        "applications": "/api/applications/"
+      }
+    },
+    "squid_communication": {
+      "label": "SquidCommunication",
+      "role": "Liaison d'information : contenu, messages, contexte communication (projet lié au pool)",
+      "env": { "base_url": "SQUID_COMMUNICATION_URL", "api_key": "SQUID_COMMUNICATION_API_KEY" },
+      "endpoints": {
+        "content": "/api/content/",
+        "messages": "/api/messages/",
+        "context": "/api/context/"
+      }
+    },
+    "lppp_generator": {
+      "label": "LPPP-generator",
+      "role": "Génération automatisée de landing pages pour démarchage",
+      "env": { "base_url": "LPPP_GENERATOR_URL", "api_key": "LPPP_GENERATOR_API_KEY" },
+      "endpoints": {
+        "generate": "/api/generate",
+        "templates": "/api/templates/"
+      }
+    }
+  },
+  "agents": [
+    {
+      "id": "sync-opportunities",
+      "name": "Agent Actualisation des données",
+      "description": "À l'allumage et toutes les 20 minutes : contrôle l'actualisation des données par rapport à LPPP-generator et Squid Research. Synchronise opportunités et entreprises depuis Squid Research vers le pool et vérifie la cohérence des données côté LPPP-generator (templates, dernières générations).",
+      "source": "squid_research",
+      "target": null,
+      "inputs": [],
+      "outputs": ["opportunities", "companies", "actualisation_report"],
+      "params": {
+        "run_on_startup": true,
+        "interval_minutes": 20,
+        "check_lppp_generator": true,
+        "check_squid_research": true
+      }
+    },
+    {
+      "id": "data-enricher",
+      "name": "Agent Enrichissement données",
+      "description": "Enrichit les données (contexte, résumés) pour améliorer la qualité des inputs envoyés à LPPP-generator et à Squid Research.",
+      "source": "squid_research",
+      "target": "squid_research",
+      "inputs": ["companies", "applications"],
+      "outputs": ["enriched_context"],
+      "params": { "use_module_enriched": true }
+    },
+    {
+      "id": "qualification",
+      "name": "Agent Qualification",
+      "description": "Qualifie les opportunités Squid Research (scoring, filtres) pour décider si une landing LPPP doit être générée.",
+      "source": "squid_research",
+      "target": "lppp_generator",
+      "inputs": ["opportunities", "companies"],
+      "outputs": ["qualified_leads"],
+      "params": { "min_score": 70, "filters": ["has_company", "has_role"] }
+    },
+    {
+      "id": "graphiste",
+      "name": "Agent Graphiste",
+      "description": "Produit des pages à fort impact visuel (effet waouh) et des infographies de qualité, facilement compréhensibles, en gardant les contextes métier. Autorisé à récupérer des éléments des autres projets : images (fonds d'écran, fonds de pages), éléments graphiques, CSS, tout asset pour améliorer et rendre cohérent le style visuel.",
+      "source": "squid_research",
+      "target": "lppp_generator",
+      "inputs": ["enriched_context", "qualified_leads", "company_context", "cross_project_assets"],
+      "outputs": ["visual_assets", "infographics", "page_design_specs"],
+      "params": {
+        "style_guide": "charte-pool",
+        "infographic_templates": ["funnel", "kpi", "timeline"],
+        "wow_effects": ["hero", "stats", "testimonials"],
+        "allow_cross_project_assets": true,
+        "asset_sources": ["lppp_generator", "squid_research", "squid_communication", "other_projects"],
+        "asset_types": ["images", "backgrounds", "page_backgrounds", "graphic_elements", "css", "fonts"]
+      }
+    },
+    {
+      "id": "redacteur-en-chef",
+      "name": "Agent Rédacteur en chef",
+      "description": "Contrôle la cohésion du style rédactionnel et la qualité rédactionnelle sur l'ensemble des contenus (landings, infographies, textes générés). Valide ton, clarté et cohérence avant publication.",
+      "source": "squid_research",
+      "target": "lppp_generator",
+      "inputs": ["visual_assets", "landing_copy", "infographics"],
+      "outputs": ["approved_content", "style_report", "corrections"],
+      "params": { "tone": "professionnel-bienveillant", "check_cohesion": true, "check_quality": true }
+    },
+    {
+      "id": "landing-generator",
+      "name": "Agent Génération Landing",
+      "description": "Déclenche la génération d'une landing page (LPPP-generator) pour une cible qualifiée issue de Squid Research.",
+      "source": "squid_research",
+      "target": "lppp_generator",
+      "inputs": ["qualified_leads", "company_context"],
+      "outputs": ["landing_url", "deploy_status"],
+      "params": { "template_default": "lppp-standard", "include_company_data": true }
+    }
+  ]
+}

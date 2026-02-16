@@ -7,10 +7,12 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "translate": "node scripts/translate-content.js"
+    "translate": "node scripts/translate-content.js",
+    "agents": "node scripts/run-pool-agents.js"
   },
   "dependencies": {
-    "next": "16.0.7",
+    "install": "^0.13.0",
+    "next": "^16.1.6",
     "react": "19.2.1",
     "react-dom": "19.2.1"
   },
@@ -21,4 +23,3 @@
     "typescript": "^5"
   }
 }
-
