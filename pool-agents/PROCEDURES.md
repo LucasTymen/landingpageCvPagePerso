@@ -86,9 +86,16 @@ Rien ne part en production sans passage par **Graphiste** (visuel) et **Rédacte
 
 ---
 
+## Avis équipe — Page activité & blog
+
+**À surveiller** : la page d’activité (SquidCommunication) et le blog personnel pour actualiser l’**activité Squid Research** et la **communication LinkedIn**. Voir `AVIS_EQUIPE.md` et `../docs/INTEGRATION_ACTIVITE_BLOG.md` (document destiné à l’orchestrateur et à l’équipe technique).
+
+---
+
 ## Checklist « rien d’important oublié »
 
 - [ ] **Supervision Chef de projet** : cadrage temps réel, règle « Ne jamais halluciner » appliquée à tous les agents (GOVERNANCE.md).
+- [ ] **Page activité & blog** : surveillance et actualisation selon AVIS_EQUIPE.md et INTEGRATION_ACTIVITE_BLOG.md (logs, registre, LinkedIn).
 - [ ] Actualisation à l’allumage et toutes les 20 min (Squid Research + SquidCommunication + LPPP-generator).
 - [ ] Graphiste : pages waouh + infographies qualité, contextes gardés ; récupération d’assets cross-projets autorisée (fonds, CSS, images) – uniquement sourcés.
 - [ ] Rédacteur en chef : cohésion style + qualité rédactionnelle sur tout le contenu.

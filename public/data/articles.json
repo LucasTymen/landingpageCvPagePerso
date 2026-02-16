@@ -1,42 +1,14 @@
 [
-  {
-    "id": "episode-2-module-enriched",
-    "slug": "2025-11-24-episode-2-module-enriched",
-    "title": "Épisode 2 : Le Module Enriched — Orchestration intelligente",
-    "excerpt": "Le Module Enriched est le cœur de l'enrichissement des données entreprises. Il orchestre plusieurs sources (INSEE, Pappers, Société.com) pour fournir des données complètes et fiables.",
-    "date": "2025-11-24T08:00:00+01:00",
-    "updated": "2025-11-24T08:00:00+01:00",
-    "author": "Lucas Tymen",
-    "tags": [
-      "Enrichissement",
-      "APIs",
-      "Cache"
-    ],
-    "category": "Développement",
-    "readTime": 6,
-    "image": null,
-    "featured": false,
-    "published": true,
-    "gradient": "linear-gradient(135deg, #10b981 0%, #059669 100%)"
-  },
-  {
-    "id": "episode-1-genese",
-    "slug": "2025-11-24-episode-1-genese",
-    "title": "Épisode 1 : La Genèse — De l'idée à l'architecture",
-    "excerpt": "SquidResearch est né d'un constat simple : la recherche d'emploi est chronophage et répétitive. Pourquoi ne pas automatiser ce processus tout en gardant la qualité et la personnalisation ?",
-    "date": "2025-11-24T07:00:00+01:00",
-    "updated": "2025-11-24T07:00:00+01:00",
-    "author": "Lucas Tymen",
-    "tags": [
-      "Architecture",
-      "Docker",
-      "Django"
-    ],
-    "category": "Architecture",
-    "readTime": 5,
-    "image": null,
-    "featured": false,
-    "published": true,
-    "gradient": "linear-gradient(135deg, #667eea 0%, #764ba2 100%)"
-  }
+  {"id":"linkedin-squid-research-avancement","slug":"linkedin-avancement","title":"Squid Research — Avancement et retours d'expérience","excerpt":"Retour sur l'avancement du projet : Module Enriched, recherche LinkedIn, OAuth, SEO & Stripe. Post LinkedIn à jour avec les derniers développements.","date":"2026-02-01T12:00:00+01:00","updated":"2026-02-01T12:00:00+01:00","author":"Lucas Tymen","tags":["Squid Research","LinkedIn","Retour d'expérience"],"category":"LinkedIn","readTime":null,"image":null,"featured":false,"published":true,"linkedinUrl":"https://www.linkedin.com/in/lucas-tymen-310255123/","gradient":"linear-gradient(135deg, #0a66c2 0%, #004182 100%)"},
+  {"id":"linkedin-pool-agents","slug":"linkedin-pool-agents","title":"Pool d'agents et écosystème (Squid Research, LPPP, Squid Communication)","excerpt":"Comment le pool d'agents relie les briques pour qualifier les opportunités et générer des landings. Post LinkedIn sur l'architecture et la gouvernance.","date":"2026-01-15T10:00:00+01:00","updated":"2026-01-15T10:00:00+01:00","author":"Lucas Tymen","tags":["Pool d'agents","Squid Communication","Architecture"],"category":"LinkedIn","readTime":null,"image":null,"featured":false,"published":true,"linkedinUrl":"https://www.linkedin.com/in/lucas-tymen-310255123/","gradient":"linear-gradient(135deg, #0a66c2 0%, #004182 100%)"},
+  {"id":"episode-4-holehe","slug":"2025-11-24-episode-4-holehe","title":"Épisode 4 : Intégration holehe — Vérification emails sur 120+ plateformes","excerpt":"L'intégration de holehe (outil Kali Linux) dans le système ENRICHED permet de vérifier les emails sur 120+ plateformes pour détecter les comptes actifs.","date":"2025-11-24T10:00:00+01:00","updated":"2025-11-24T10:00:00+01:00","author":"Lucas Tymen","tags":["holehe","Email","Enrichissement"],"category":"Développement","readTime":5,"image":null,"featured":false,"published":true,"gradient":"linear-gradient(135deg, #f59e0b 0%, #d97706 100%)"},
+  {"id":"episode-3-seo-billing","slug":"2025-11-24-episode-3-seo-billing","title":"Épisode 3 : SEO & Billing — Optimisation et monétisation","excerpt":"Après avoir développé les fonctionnalités core, il était temps de penser à la visibilité (SEO) et à la monétisation (billing). Deux aspects cruciaux pour une plateforme SaaS.","date":"2025-11-24T09:00:00+01:00","updated":"2025-11-24T09:00:00+01:00","author":"Lucas Tymen","tags":["SEO","Stripe","Abonnements"],"category":"Optimisation","readTime":4,"image":null,"featured":false,"published":true,"gradient":"linear-gradient(135deg, #3b82f6 0%, #2563eb 100%)"},
+  {"id":"episode-2-module-enriched","slug":"2025-11-24-episode-2-module-enriched","title":"Épisode 2 : Le Module Enriched — Orchestration intelligente","excerpt":"Le Module Enriched est le cœur de l'enrichissement des données entreprises. Il orchestre plusieurs sources (INSEE, Pappers, Société.com) pour fournir des données complètes et fiables.","date":"2025-11-24T08:00:00+01:00","updated":"2025-11-24T08:00:00+01:00","author":"Lucas Tymen","tags":["Enrichissement","APIs","Cache"],"category":"Développement","readTime":6,"image":null,"featured":false,"published":true,"gradient":"linear-gradient(135deg, #10b981 0%, #059669 100%)"},
+  {"id":"episode-1-genese","slug":"2025-11-24-episode-1-genese","title":"Épisode 1 : La Genèse — De l'idée à l'architecture","excerpt":"SquidResearch est né d'un constat simple : la recherche d'emploi est chronophage et répétitive. Pourquoi ne pas automatiser ce processus tout en gardant la qualité et la personnalisation ?","date":"2025-11-24T07:00:00+01:00","updated":"2025-11-24T07:00:00+01:00","author":"Lucas Tymen","tags":["Architecture","Docker","Django"],"category":"Architecture","readTime":5,"image":null,"featured":false,"published":true,"gradient":"linear-gradient(135deg, #667eea 0%, #764ba2 100%)"},
+  {"id":"episode-5-react","slug":"episode-5-react","title":"Épisode 5 : Frontend React — Interface et UX","excerpt":"Mise en place de l'interface utilisateur React : composants, état, intégration avec l'API Django. À venir à partir des retours de développement et des logs Squid Research.","date":"2025-12-01T10:00:00+01:00","updated":"2025-12-01T10:00:00+01:00","author":"Lucas Tymen","tags":["React","Frontend","Django"],"category":"Développement","readTime":6,"image":null,"featured":false,"published":false,"gradient":"linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%)"},
+  {"id":"episode-6-pool-squid-com","slug":"episode-6-pool-squid-com","title":"Pool d'agents & Squid Communication — Liaison et écosystème","excerpt":"Comment le pool d'agents relie Squid Research à LPPP-generator et Squid Communication. Logs et retours pour documenter la liaison d'information et la gouvernance.","date":"2025-12-05T10:00:00+01:00","updated":"2025-12-05T10:00:00+01:00","author":"Lucas Tymen","tags":["Pool d'agents","Squid Communication","LPPP-generator"],"category":"Architecture","readTime":7,"image":null,"featured":false,"published":false,"gradient":"linear-gradient(135deg, #8b5cf6 0%, #6d28d9 100%)"},
+  {"id":"retours-logs-squid-research","slug":"retours-logs-squid-research","title":"Retours d'expérience — Logs Squid Research","excerpt":"Synthèse des logs et retours terrain Squid Research : opportunités, enrichissement, qualification. Matière issue du projet et des posts LinkedIn, à formaliser en articles.","date":"2025-12-10T10:00:00+01:00","updated":"2025-12-10T10:00:00+01:00","author":"Lucas Tymen","tags":["Logs","Squid Research","Retours"],"category":"Retours d'expérience","readTime":5,"image":null,"featured":false,"published":false,"gradient":"linear-gradient(135deg, #64748b 0%, #475569 100%)"},
+  {"id":"squid-communication-logs","slug":"squid-communication-logs","title":"Squid Communication — Logs et liaison d'information","excerpt":"Contenu, messages et contexte : ce que les logs Squid Communication apportent. Articles à venir à partir de la matière disponible et des publications LinkedIn.","date":"2025-12-12T10:00:00+01:00","updated":"2025-12-12T10:00:00+01:00","author":"Lucas Tymen","tags":["Squid Communication","Logs","Contenu"],"category":"Retours d'expérience","readTime":5,"image":null,"featured":false,"published":false,"gradient":"linear-gradient(135deg, #ec4899 0%, #db2777 100%)"},
+  {"id":"episode-7-n8n","slug":"episode-7-n8n","title":"Épisode 7 : Automatisation n8n avancée","excerpt":"Workflows n8n, intégrations et relances automatisées. À documenter à partir des logs et de l'avancement du projet.","date":"2025-12-15T10:00:00+01:00","updated":"2025-12-15T10:00:00+01:00","author":"Lucas Tymen","tags":["n8n","Automatisation","Workflows"],"category":"Développement","readTime":6,"image":null,"featured":false,"published":false,"gradient":"linear-gradient(135deg, #22c55e 0%, #16a34a 100%)"},
+  {"id":"episode-8-flowise","slug":"episode-8-flowise","title":"Épisode 8 : IA Flowise avancée","excerpt":"LLM, assistant conversationnel et optimisation de CV. Retours à venir à partir des logs et des usages réels.","date":"2025-12-20T10:00:00+01:00","updated":"2025-12-20T10:00:00+01:00","author":"Lucas Tymen","tags":["Flowise","IA","LLM"],"category":"Développement","readTime":6,"image":null,"featured":false,"published":false,"gradient":"linear-gradient(135deg, #eab308 0%, #ca8a04 100%)"}
 ]

@@ -66,16 +66,19 @@ function renderArticles() {
       day: 'numeric' 
     });
     
+    const isExternal = article.externalUrl || article.linkedinUrl;
+    const articleLink = isExternal ? (article.externalUrl || article.linkedinUrl) : `${articlesPath}/${article.slug}.html`;
+    const linkLabel = article.linkedinUrl ? (lang === 'en' ? 'View on LinkedIn' : 'Voir sur LinkedIn') : (isExternal ? (lang === 'en' ? 'Read more' : 'Lire la suite') : readArticleText);
     card.innerHTML = `
       <h3>${article.title}</h3>
       <p><strong>${article.category || (lang === 'en' ? 'Article' : 'Article')}</strong> — ${article.excerpt}</p>
-      <p style="color:var(--accent);font-weight:700">📅 ${dateStr} • ⏱️ ${article.readTime} min</p>
+      <p style="color:var(--accent);font-weight:700">📅 ${dateStr}${article.readTime ? ` • ⏱️ ${article.readTime} min` : ''}</p>
       ${article.tags && article.tags.length > 0 ? `
         <div style="margin: 1rem 0; display: flex; gap: 0.5rem; flex-wrap: wrap;">
           ${article.tags.slice(0, 3).map(tag => `<span class="tech-tag">${tag}</span>`).join('')}
         </div>
       ` : ''}
-      <a class="cta cta-small" href="${articlesPath}/${article.slug}.html">${readArticleText}</a>
+      <a class="cta cta-small" href="${articleLink}" ${isExternal ? 'target="_blank" rel="noopener noreferrer"' : ''}>${linkLabel}</a>
     `;
     
     grid.appendChild(card);

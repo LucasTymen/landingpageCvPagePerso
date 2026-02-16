@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-57SWSFPG');</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NR6L88V61P"></script>
+    <script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-NR6L88V61P');</script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Episode 4: holehe Integration — Email verification on 120+ platforms | SquidResearch Blog</title>
+    <meta name="description" content="Integrating holehe (Kali Linux tool) into the ENRICHED system allows checking emails on 120+ platforms to detect active accounts.">
+    <meta property="og:title" content="Episode 4: holehe Integration — Email verification on 120+ platforms">
+    <meta property="og:description" content="Integrating holehe (Kali Linux tool) into the ENRICHED system allows checking emails on 120+ platforms to detect active accounts.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://landingpage-cv-page-perso.vercel.app/en/articles/2025-11-24-episode-4-holehe.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Episode 4: holehe Integration">
+    <meta name="twitter:description" content="Email verification on 120+ platforms with holehe">
+    <link rel="icon" type="image/svg+xml" href="/Monogramme_Round_Whites_plainSvg.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <link rel="stylesheet" href="/assets/css/blog.css" />
+  </head>
+  <body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-57SWSFPG" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <header class="site-header">
+      <a class="logo" href="/en/"><img src="/Monogramme_Round_Whites_plainSvg.svg" alt="Lucas Tymen" style="height: 32px; vertical-align: middle; margin-right: 8px;">Lucas Tymen</a>
+      <nav class="nav">
+        <a href="/en/cv.html">Resume</a>
+        <a href="/en/projects.html">Projects</a>
+        <a href="/en/blog-squid-research.html">Current Project</a>
+        <a href="/en/contact.html" class="cta cta-small">Contact</a>
+        <div class="language-switcher">
+          <a href="/en/" class="lang-link active" title="English"><span class="flag-icon">🇬🇧</span></a>
+          <a href="/articles/2025-11-24-episode-4-holehe.html" class="lang-link" title="Français"><span class="flag-icon">🇫🇷</span></a>
+        </div>
+      </nav>
+    </header>
+    <main class="container">
+      <article class="blog-article">
+        <nav class="article-breadcrumb">
+          <a href="/en/blog-squid-research.html">← Back to blog</a>
+          <span>•</span>
+          <a href="/en/squid-research.html">View project</a>
+        </nav>
+        <header class="article-header">
+          <div class="article-meta-top">
+            <span class="article-category">Development</span>
+            <time datetime="2025-11-24T10:00:00+01:00">📅 November 24, 2025</time>
+            <span class="article-read-time">⏱️ 5 min read</span>
+          </div>
+          <h1 class="article-title">Episode 4: holehe Integration — Email verification on 120+ platforms</h1>
+          <p class="article-excerpt">Integrating holehe (Kali Linux tool) into the ENRICHED system allows checking emails on 120+ platforms to detect active accounts. This significantly improves contact enrichment quality.</p>
+          <div class="article-tags">
+            <span class="tag">ENRICHED</span>
+            <span class="tag">holehe</span>
+            <span class="tag">Kali Linux</span>
+            <span class="tag">Tests</span>
+          </div>
+        </header>
+        <div class="article-content">
+          <p>Integrating <strong>holehe</strong> (Kali Linux tool) into the ENRICHED system allows verifying emails on 120+ platforms to detect active accounts. This significantly improves contact enrichment quality.</p>
+          <h2>🎯 Goal</h2>
+          <p>When enriching a contact, verifying whether the found email is actually active is crucial. holehe checks 120+ platforms (Amazon, Office365, Twitter, Spotify, WordPress, etc.) to see if an email is registered, validating its quality.</p>
+          <h2>🔧 Technical integration</h2>
+          <p>Integration was added to all enrichment flows:</p>
+          <ul>
+            <li><strong>ContactEnriched</strong>: Direct enrichment with holehe</li>
+            <li><strong>ContactFinderLight</strong>: Automatic enrichment of found prospects</li>
+            <li><strong>JobApplicationEnrichmentService</strong>: Job ad enrichment with email verification</li>
+            <li><strong>Enrichment APIs</strong>: Dedicated endpoint for prospect enrichment</li>
+          </ul>
+          <h2>📊 Results</h2>
+          <p>Tests on real contacts showed strong results:</p>
+          <ul>
+            <li><strong>Execution time</strong>: 15–30 seconds per email (checks 121 sites)</li>
+            <li><strong>Success rate</strong>: 100% of unit and integration tests passing</li>
+            <li><strong>Standardized JSON</strong>: holehe data in enriched_data['social_accounts']</li>
+          </ul>
+          <h2>🧪 Tests and coverage</h2>
+          <ul>
+            <li><strong>Unit tests</strong>: ContactEnriched (success, timeout, exception, JSON structure)</li>
+            <li><strong>Integration tests</strong>: Prospect email enrichment API tested</li>
+            <li><strong>Non-blocking</strong>: Timeouts handled gracefully so enrichment continues even if holehe fails</li>
+          </ul>
+          <div class="article-insight" style="background: #faf5ff; border-left-color: #8b5cf6;">
+            <strong>💡 Key learning</strong>: Integrating Kali Linux tools (holehe) into a Django workflow requires robust timeout and error handling. A non-blocking approach keeps enrichment running even when holehe fails, for a smooth user experience.
+          </div>
+        </div>
+        <footer class="article-footer">
+          <div class="article-share">
+            <span>Share:</span>
+            <a href="https://twitter.com/intent/tweet?text=Episode%204%3A%20holehe%20Integration&url=https://landingpage-cv-page-perso.vercel.app/en/articles/2025-11-24-episode-4-holehe.html" target="_blank" rel="noopener">Twitter</a>
+            <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://landingpage-cv-page-perso.vercel.app/en/articles/2025-11-24-episode-4-holehe.html" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+          <nav class="article-navigation" id="article-nav"></nav>
+        </footer>
+      </article>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div><img src="/Monogramme_Round_Whites_plainSvg.svg" alt="Lucas Tymen" style="height: 20px; vertical-align: middle; margin-right: 6px;">Lucas Tymen — Optimization & Automation</div>
+        <nav class="foot-nav">
+          <a href="/en/cv.html">Resume</a>
+          <a href="/en/projects.html">Projects</a>
+          <a href="/en/contact.html">Contact</a>
+        </nav>
+      </div>
+    </footer>
+    <script src="/assets/js/blog.js"></script>
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>

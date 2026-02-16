@@ -21,7 +21,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Blog — SquidResearch Genesis | Lucas Tymen</title>
-    <meta name="description" content="Discover the genesis of SquidResearch: an intelligent automation platform for job searching. Articles on development, technical challenges and learnings.">
+    <meta name="description" content="SquidResearch blog: genesis, Enriched Module, SEO, holehe. Fed by Squid Research and Squid Communication logs, and LinkedIn posts. Published and upcoming articles (React, n8n, Flowise, agent pool).">
     <link rel="icon" type="image/svg+xml" href="/Monogramme_Round_Whites_plainSvg.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -72,25 +72,40 @@
         </div>
       </section>
 
-      <!-- Section Articles -->
+      <!-- Editorial -->
+      <section class="section alt">
+        <div class="container">
+          <div class="blog-editorial" style="max-width: 720px; margin: 0 auto;">
+            <p class="eyebrow">Editorial</p>
+            <h2 style="font-size: 1.5rem; margin-bottom: 1rem;">A series fed by logs and comms</h2>
+            <p style="color: var(--muted); line-height: 1.7;">
+              This blog tracks SquidResearch and the ecosystem (agent pool, Squid Communication). <strong>Squid Research logs</strong> and <strong>Squid Communication logs</strong> provide material for many articles; I also post regularly on <strong>LinkedIn</strong>. Published episodes (genesis, Enriched Module, SEO & Billing, holehe) are completed over time with experience feedback, React frontend, advanced n8n, Flowise, and the Squid Communication liaison. The page is updated as we go.
+            </p>
+            <p style="margin-top: 1rem;">
+              <a href="https://www.linkedin.com/in/lucas-tymen-310255123/" target="_blank" rel="noopener noreferrer" class="cta cta-small" style="display: inline-flex; align-items: center; gap: 0.5rem;">See my LinkedIn posts</a>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Articles Section -->
       <section class="section">
         <div class="container">
-          <!-- Filtres et recherche -->
-          <div id="blog-filters" class="blog-filters">
-            <!-- Will be filled by JavaScript -->
-          </div>
-          
-          <!-- Grille d'articles - utilise la classe .cards existante -->
-          <div id="blog-grid" class="cards">
-            <!-- Articles will be loaded dynamically by JavaScript -->
-          </div>
-          
-          <div style="text-align: center; margin-top: 3rem; padding: 2rem; background: var(--card); border: 1px solid var(--border); border-radius: 14px;">
-            <h3 style="margin-bottom: 1rem; color: var(--accent);">More articles coming soon</h3>
-            <p style="color: var(--muted); margin-bottom: 1.5rem;">
-              Each tool development or improvement will be the subject of a new article.
+          <h2 style="margin-bottom: 1.5rem; color: var(--text);">Published articles</h2>
+          <div id="blog-filters" class="blog-filters"></div>
+          <div id="blog-grid" class="cards"></div>
+          <noscript>
+            <p style="text-align: center; color: var(--muted); padding: 2rem;">Enable JavaScript to load the article list, or view the <a href="/en/squid-research.html">Squid Research project</a>.</p>
+          </noscript>
+          <div class="blog-upcoming" style="text-align: center; margin-top: 3rem; padding: 2rem; background: var(--card); border: 1px solid var(--border); border-radius: 14px;">
+            <h3 style="margin-bottom: 0.75rem; color: var(--accent);">Upcoming episodes & sources</h3>
+            <p style="color: var(--muted); margin-bottom: 1rem;">
+              Plenty of material to come: Squid Research logs, Squid Communication logs, and the many posts already on LinkedIn. On this blog: React frontend, advanced n8n, Flowise, agent pool & Squid Communication. The “in progress” articles above will be published as we update.
             </p>
-            <a href="/en/squid-research.html" class="cta">View full project</a>
+            <div style="display: flex; flex-wrap: wrap; gap: 0.75rem; justify-content: center; margin-top: 1rem;">
+              <a href="https://www.linkedin.com/in/lucas-tymen-310255123/" target="_blank" rel="noopener noreferrer" class="cta cta-small">LinkedIn</a>
+              <a href="/en/squid-research.html" class="cta cta-secondary">View Squid Research project</a>
+            </div>
           </div>
         </div>
       </section>

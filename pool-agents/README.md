@@ -41,6 +41,8 @@ Ce pool d’agents relie **Squid Research** (recherche d’emploi / opportunité
 | `EQUIPE-RACI.md` | Équipe et matrice RACI (Chef de projet, Chef d’équipe, Graphiste, Rédacteur en chef, Sync/Actualisation, SquidCommunication). |
 | `PROCEDURES.md` | Procédures opérationnelles (pompes) : supervision, actualisation, chaîne de production, qualité, SquidCommunication. |
 | `SCRUM.md` | Réunion Scrum : cadence, ordre du jour, optimisation des rôles et fonctions. |
+| `AVIS_EQUIPE.md` | Avis à toute l’équipe : page d’activité et blog à surveiller pour Squid Research et communication LinkedIn. |
+| `../docs/INTEGRATION_ACTIVITE_BLOG.md` | Intégration page activité (SquidCommunication) ↔ blog : chemins, logs, registre articles, rôle orchestrateur/équipe technique. |
 
 ## Prérequis
 
