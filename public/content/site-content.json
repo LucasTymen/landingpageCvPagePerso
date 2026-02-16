@@ -1,0 +1,50 @@
+{
+  "fr": {
+    "projectsPage": {
+      "title": "Projets & études de cas",
+      "subtitle": "Growth Marketing, Développement Full Stack et Design Web",
+      "landingSectionTitle": "Landing pages commerciales",
+      "landingSectionDescription": "Candidatures et livrables sous forme de sites dédiés : étude marketing, propositions de valeur et chartes graphiques alignées sur chaque marque.",
+      "detailsCta": "Détails",
+      "landingCta": "Voir la landing →",
+      "projects": [
+        { "title": "Squid Research - Assistant recherche d'emploi", "tag": "Django + IA + Docker", "impact": "9 services Docker • 88% tests", "brief": "Plateforme d'automatisation intelligente avec Module Enriched (multi-sources), recherche LinkedIn, OAuth email, architecture Docker scalable. 29 tests unitaires, 88% couverture.", "link": "/squid-research.html" },
+        { "title": "Origin Traiteur - Automatisation Intelligente", "tag": "n8n + IA + PostgreSQL", "impact": "2 agents IA • Validation multi-canal", "brief": "Système d'automatisation avec 2 agents IA (Analyseur + Rédacteur) pour relancer automatiquement les devis. Architecture PostgreSQL, validation multi-canal (Gmail + Slack), tableau récapitulatif avec actions interactives.", "link": "/origin-traiteur.html" },
+        { "title": "Parazar - Scraper automatisé", "tag": "Growth Hacking", "impact": "1er de promo", "brief": "Développement d'un scraper automatisé pour collecter des offres d'emploi tech avec dashboard de suivi des performances.", "link": "/parazar.html" },
+        { "title": "Avtis - Spoutnik65 Astral", "tag": "Projet d'études", "impact": "Présentation complète", "brief": "Projet d'études avec présentation détaillée des solutions développées et des résultats obtenus.", "link": "/avtis.html" },
+        { "title": "Engage Paris - Performance Max", "tag": "Google Ads", "impact": "Multi-régional", "brief": "Création et déploiement d'une campagne Google Ads Performance Max avec ciblage géographique multi-régional.", "link": "/engage-paris.html" },
+        { "title": "SEO & Analytics - Blog personnel", "tag": "Optimisation", "impact": "+40% trafic", "brief": "Analyse et amélioration du SEO d'un blog personnel avec utilisation de Google Analytics et Looker Studio.", "link": "/seo-project.html" }
+      ],
+      "landingPages": [
+        { "title": "FitClem — Responsable Marketing Digital", "sector": "Lifestyle / Fitness / Compléments", "summary": "Lecture avancée de l'appareil marketing et propositions de valeur : étude complète (PESTEL, SWOT, Porter, concurrence), estimation SEO 132–324 k€/an, plan KPI 0–30 j / 30–60 j, proposition iconographique (rose poudré, orange CTA) et playbook claims.", "tech": ["Next.js", "Vercel", "SEO", "Étude marketing", "KPI"], "url": "https://lppp-fit-clem.vercel.app/", "impact": "Étude marketing + SEO + plan d'action" },
+        { "title": "Ackuracy", "sector": "Cybersécurité / Conformité", "summary": "Landing candidature avec propositions de valeur alignées sur la charte graphique Ackuracy : positionnement, preuves et offre claire pour le recruteur.", "tech": ["Next.js", "Vercel", "Charte Ackuracy", "UX"], "url": "https://lppp-ackuracy-j7gfptes9-lucas-tymens-projects.vercel.app/", "impact": "Propositions de valeur + charte marque" },
+        { "title": "0Flow — De la donnée à l'action automatisée", "sector": "IA / BPA / Automatisation", "summary": "Rapport d'audit d'automatisation offert : enjeux connecteurs, RGPD et cybersécurité, Python Glue Code, LLM Ops. Positionnement « spécialiste de la colle » entre outils, avec angle cybersécurité et maintenance des API.", "tech": ["Next.js", "Vercel", "Python", "n8n", "Flowise", "SEO"], "url": "https://lppp-0flow.vercel.app/", "impact": "Audit automatisation + angle cybersécurité" },
+        { "title": "Yuwell — Portfolio charte graphique", "sector": "Pharmacie / Équipement médical", "summary": "Étude graphique pour dispositifs médicaux : système couleur par gamme produit, principes de design, charte graphique (palettes HEX, RGB, Pantone) et study cases structurés.", "tech": ["HTML/CSS", "Design system", "Charte graphique", "Study case"], "url": "https://lppp-yuwell-portfolio.vercel.app/", "impact": "Charte graphique & design par gamme" }
+      ]
+    }
+  },
+  "en": {
+    "projectsPage": {
+      "title": "Projects & Case Studies",
+      "subtitle": "Growth Marketing, Full Stack Development and Web Design",
+      "landingSectionTitle": "Commercial landing pages",
+      "landingSectionDescription": "Application deliverables as dedicated sites: marketing studies, value propositions, and brand-aligned visual charters.",
+      "detailsCta": "Details",
+      "landingCta": "View landing →",
+      "projects": [
+        { "title": "Squid Research - Job Search Assistant", "tag": "Django + AI + Docker", "impact": "9 Docker services • 88% tests", "brief": "Intelligent automation platform with Enriched Module (multi-sources), LinkedIn search, OAuth email, scalable Docker architecture. 29 unit tests, 88% coverage.", "link": "/en/squid-research.html" },
+        { "title": "Origin Traiteur - Intelligent Automation", "tag": "n8n + AI + PostgreSQL", "impact": "2 AI agents • Multi-channel validation", "brief": "Automation system with 2 AI agents (Analyzer + Writer) to automatically follow up on pending quotes. PostgreSQL architecture, multi-channel validation (Gmail + Slack), summary table with interactive actions.", "link": "/en/origin-traiteur.html" },
+        { "title": "Parazar - Dating Site", "tag": "Growth Hacking", "impact": "🏆 1st Place - 20/20", "brief": "Complete automation solution for a dating platform with matching algorithm, SEO optimization, and email deliverability improvements.", "link": "/en/parazar.html" },
+        { "title": "Avtis - Spoutnik65 Astral", "tag": "Study Project", "impact": "🏅 1st Team", "brief": "Containerized architecture project with Django + n8n + Flowise, GitLab CI/CD, and intelligent LLM workflows for business processes.", "link": "/en/avtis.html" },
+        { "title": "Engage Paris - Training", "tag": "Google Ads", "impact": "🥈 2nd Place UX/SEO", "brief": "Multi-regional Google Ads Performance Max campaign with optimized landing page and complete tracking setup.", "link": "/en/engage-paris.html" },
+        { "title": "SEO & Analytics - Personal Blog", "tag": "Optimization", "impact": "+40% traffic", "brief": "Analysis and improvement of personal blog SEO using Google Analytics and Looker Studio.", "link": "/en/seo-project.html" }
+      ],
+      "landingPages": [
+        { "title": "FitClem — Digital Marketing Manager", "sector": "Lifestyle / Fitness / Supplements", "summary": "In-depth marketing overview and value propositions: full study (PESTEL, SWOT, Porter, competition), SEO estimate 132–324 k€/year, 0–30 d / 30–60 d KPI plan, visual proposal (blush pink, orange CTA) and claims playbook.", "tech": ["Next.js", "Vercel", "SEO", "Marketing study", "KPI"], "url": "https://lppp-fit-clem.vercel.app/", "impact": "Marketing study + SEO + action plan" },
+        { "title": "Ackuracy", "sector": "Cybersecurity / Compliance", "summary": "Application landing with value propositions aligned to Ackuracy brand guidelines: positioning, proof points, and clear offer for recruiters.", "tech": ["Next.js", "Vercel", "Ackuracy charter", "UX"], "url": "https://lppp-ackuracy-j7gfptes9-lucas-tymens-projects.vercel.app/", "impact": "Value propositions + brand charter" },
+        { "title": "0Flow — From raw data to automated action", "sector": "AI / BPA / Automation", "summary": "Free automation audit report: connector challenges, GDPR and cybersecurity, Python glue code, LLM Ops. « Connector specialist » positioning with a cybersecurity angle and API maintenance.", "tech": ["Next.js", "Vercel", "Python", "n8n", "Flowise", "SEO"], "url": "https://lppp-0flow.vercel.app/", "impact": "Automation audit + cybersecurity angle" },
+        { "title": "Yuwell — Graphic charter portfolio", "sector": "Pharma / Medical equipment", "summary": "Visual study for medical devices: colour system by product line, design principles, graphic charter (HEX, RGB, Pantone palettes) and structured case studies.", "tech": ["HTML/CSS", "Design system", "Graphic charter", "Case study"], "url": "https://lppp-yuwell-portfolio.vercel.app/", "impact": "Graphic charter & design by product line" }
+      ]
+    }
+  }
+}

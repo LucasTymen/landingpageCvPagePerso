@@ -29,11 +29,25 @@ npm run build
 npm start
 ```
 
-## 📝 Notes
+## 🌐 Traductions (FR / EN)
 
-- Les fichiers HTML statiques existants sont conservés dans `/public`
-- Migration progressive vers Next.js en cours
-- Configuration Vercel incluse pour le déploiement
+Le site est bilingue. **Une seule source de contenu** pour les pages dynamiques (ex. Projets) :  
+`public/content/site-content.json` (clés `fr` et `en`).
+
+### Quand tu modifies le contenu
+
+1. **Éditer** `public/content/site-content.json` : ajoute ou modifie le contenu dans la clé **`fr`** (titres, projets, landing pages, etc.).
+2. **Traduire automatiquement** la clé **`en`** :
+   ```bash
+   node scripts/translate-content.js
+   ```
+   Ou avec [DeepL](https://www.deepl.com/pro-api) (meilleure qualité) :
+   ```bash
+   DEEPL_AUTH_KEY=ta-clé node scripts/translate-content.js
+   ```
+   Sans clé, le script tente d’utiliser LibreTranslate (gratuit).
+
+Les pages `/projets.html` et `/en/projects.html` chargent ce JSON et affichent la langue selon `lang` du HTML. **Dès que tu mets à jour le JSON et relances la traduction, tout le site reste à jour en FR et EN.**
 
 ## 🔒 Sécurité
 
