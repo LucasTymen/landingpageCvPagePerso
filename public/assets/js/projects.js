@@ -43,6 +43,42 @@ const sampleProjects = [
   }
 ];
 
+/** Landing pages commerciales : candidatures / livrables sous forme de sites dédiés */
+const landingPagesCommerciales = [
+  {
+    title: "FitClem — Responsable Marketing Digital",
+    sector: "Lifestyle / Fitness / Compléments",
+    summary: "Lecture avancée de l'appareil marketing et propositions de valeur : étude complète (PESTEL, SWOT, Porter, concurrence), estimation SEO 132–324 k€/an, plan KPI 0–30 j / 30–60 j, proposition iconographique (rose poudré, orange CTA) et playbook claims.",
+    tech: ["Next.js", "Vercel", "SEO", "Étude marketing", "KPI"],
+    url: "https://lppp-fit-clem.vercel.app/",
+    impact: "Étude marketing + SEO + plan d'action"
+  },
+  {
+    title: "Ackuracy",
+    sector: "Cybersécurité / Conformité",
+    summary: "Landing candidature avec propositions de valeur alignées sur la charte graphique Ackuracy : positionnement, preuves et offre claire pour le recruteur.",
+    tech: ["Next.js", "Vercel", "Charte Ackuracy", "UX"],
+    url: "https://lppp-ackuracy-j7gfptes9-lucas-tymens-projects.vercel.app/",
+    impact: "Propositions de valeur + charte marque"
+  },
+  {
+    title: "0Flow — De la donnée à l'action automatisée",
+    sector: "IA / BPA / Automatisation",
+    summary: "Rapport d'audit d'automatisation offert : enjeux connecteurs, RGPD et cybersécurité, Python Glue Code, LLM Ops. Positionnement « spécialiste de la colle » entre outils, avec angle cybersécurité et maintenance des API.",
+    tech: ["Next.js", "Vercel", "Python", "n8n", "Flowise", "SEO"],
+    url: "https://lppp-0flow.vercel.app/",
+    impact: "Audit automatisation + angle cybersécurité"
+  },
+  {
+    title: "Yuwell — Portfolio charte graphique",
+    sector: "Pharmacie / Équipement médical",
+    summary: "Étude graphique pour dispositifs médicaux : système couleur par gamme produit, principes de design, charte graphique (palettes HEX, RGB, Pantone) et study cases structurés.",
+    tech: ["HTML/CSS", "Design system", "Charte graphique", "Study case"],
+    url: "https://lppp-yuwell-portfolio.vercel.app/",
+    impact: "Charte graphique & design par gamme"
+  }
+];
+
 const grid = document.getElementById('projects-grid');
 if (grid){
   sampleProjects.forEach((p, i) => {
@@ -82,6 +118,43 @@ if (grid){
         });
       }, { threshold: .15, rootMargin: '0px 0px -10% 0px' });
       newNodes.forEach(el => io.observe(el));
+    }
+  }, 100);
+}
+
+// Landing pages commerciales
+const landingGrid = document.getElementById('landing-pages-grid');
+if (landingGrid && typeof landingPagesCommerciales !== 'undefined') {
+  landingPagesCommerciales.forEach((lp, i) => {
+    const article = document.createElement('article');
+    article.className = 'card landing-page-card reveal';
+    article.setAttribute('data-reveal', '');
+    article.style.setProperty('--d', `${0.05 + i * 0.08}s`);
+    const techTags = (lp.tech || []).map(t => `<span class="tech-tag">${t}</span>`).join('');
+    article.innerHTML = `
+      <div class="landing-page-card-header">
+        <h3>${lp.title}</h3>
+        <span class="landing-page-sector">${lp.sector}</span>
+      </div>
+      <p class="landing-page-summary">${lp.summary}</p>
+      <p class="landing-page-impact"><strong>${lp.impact}</strong></p>
+      <div class="landing-page-tech">${techTags}</div>
+      <a class="cta cta-small" href="${lp.url}" target="_blank" rel="noopener noreferrer">Voir la landing →</a>
+    `;
+    landingGrid.appendChild(article);
+  });
+  setTimeout(() => {
+    const lpReveals = landingGrid.querySelectorAll('[data-reveal]:not(.in)');
+    if ('IntersectionObserver' in window && lpReveals.length) {
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('in');
+            io.unobserve(entry.target);
+          }
+        });
+      }, { threshold: .15, rootMargin: '0px 0px -10% 0px' });
+      lpReveals.forEach(el => io.observe(el));
     }
   }, 100);
 }
