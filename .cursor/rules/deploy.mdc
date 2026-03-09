@@ -1,0 +1,11 @@
+---
+description: Rappel déploiement Vercel
+globs: 
+alwaysApply: true
+---
+
+# Déploiement Vercel
+
+- **origin** pointe vers **GitHub** ; c’est lui qui déclenche le déploiement Vercel.
+- Lors d’un commit + push, **toujours faire `git push`** (ou `git push origin main`) pour pousser sur GitHub.
+- Optionnel : pousser aussi sur GitLab avec `git push gitlab main` pour garder les deux remotes à jour.

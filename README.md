@@ -49,6 +49,17 @@ Le site est bilingue. **Une seule source de contenu** pour les pages dynamiques 
 
 Les pages `/projets.html` et `/en/projects.html` chargent ce JSON et affichent la langue selon `lang` du HTML. **Dès que tu mets à jour le JSON et relances la traduction, tout le site reste à jour en FR et EN.**
 
+## 🚢 Déploiement (Vercel)
+
+Le déploiement est déclenché par **GitHub**. Toujours pousser sur **origin** (GitHub) pour que Vercel prenne en compte les changements :
+
+```bash
+git push
+```
+
+- **origin** = GitHub → déclenche Vercel  
+- **gitlab** = GitLab (miroir optionnel) : `git push gitlab main` si tu veux garder les deux à jour.
+
 ## 🔒 Sécurité
 
 Ce projet utilise les versions sécurisées de Next.js et React recommandées par Vercel :
