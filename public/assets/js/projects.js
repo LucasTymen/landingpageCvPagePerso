@@ -48,12 +48,14 @@
       landingGrid.innerHTML = '';
       p.landingPages.forEach(function (lp, i) {
         var article = document.createElement('article');
-        article.className = 'card landing-page-card reveal';
+        article.className = 'card landing-page-card reveal' + (lp.featured ? ' landing-page-card--featured' : '');
         article.setAttribute('data-reveal', '');
         article.style.setProperty('--d', (0.05 + i * 0.08) + 's');
         var techTags = (lp.tech || []).map(function (t) { return '<span class="tech-tag">' + escapeHtml(t) + '</span>'; }).join('');
+        var badgeHtml = (lp.featured && lp.featuredLabel) ? '<span class="landing-page-featured-badge">' + escapeHtml(lp.featuredLabel) + '</span>' : '';
         article.innerHTML =
           '<div class="landing-page-card-header">' +
+            badgeHtml +
             '<h3>' + escapeHtml(lp.title) + '</h3>' +
             '<span class="landing-page-sector">' + escapeHtml(lp.sector) + '</span>' +
           '</div>' +
